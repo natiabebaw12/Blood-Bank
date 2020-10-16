@@ -193,5 +193,12 @@ namespace BloodBank
         {
             CloseChildForm(copyForm);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Login log = new Login();
+            log.Show();
+        }
     }
 }
