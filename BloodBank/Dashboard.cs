@@ -24,7 +24,6 @@ namespace BloodBank
             //hide the side menu initially
             panelSideSubMenu1.Visible = false;
             panelSideSubMenu2.Visible = false;
-            panelSideSubMenu3.Visible = false;
         }
         #endregion
         #region HideMenu 
@@ -38,10 +37,7 @@ namespace BloodBank
             {
                 panelSideSubMenu2.Visible = false;
             }
-            if (panelSideSubMenu3.Visible == true)
-            {
-                panelSideSubMenu3.Visible = false;
-            }
+            
         }
         #endregion
         #region SubMenu
@@ -64,7 +60,6 @@ namespace BloodBank
             SubMenu(panelSideSubMenu1);//pass the sub panel when clicked
             //if this is opend close the others
             panelSideSubMenu2.Visible = false;
-            panelSideSubMenu3.Visible = false;
         }
 
         private void guna2Button2_Click(object sender, EventArgs e)
@@ -93,6 +88,7 @@ namespace BloodBank
         }
 
         private Form activeForm = null;
+        private Form copyForm = null;
         #region OpenChildForm
         private void OpenChildForm(Form childForm)
         {
@@ -108,20 +104,26 @@ namespace BloodBank
             panelAddForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
+            copyForm = childForm;
         }
         #endregion
 
+        #region CloseChildForm or Home
+        private void CloseChildForm(Form childForm)
+        {
+            childForm.Hide();
+        }
+        #endregion
         private void btn_receiver_Click(object sender, EventArgs e)
         {
             SubMenu(panelSideSubMenu2);//pass the sub panel when clicked
             //if this is opend close the others
             panelSideSubMenu1.Visible = false;
-            panelSideSubMenu3.Visible = false;
         }
 
         private void btn_blood_Click(object sender, EventArgs e)
         {
-            SubMenu(panelSideSubMenu3);//pass the sub panel when clicked
+            
             //if this is opend close the others
             panelSideSubMenu1.Visible = false;
             panelSideSubMenu2.Visible = false;
@@ -184,6 +186,11 @@ namespace BloodBank
         private void button1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            CloseChildForm(copyForm);
         }
     }
 }
