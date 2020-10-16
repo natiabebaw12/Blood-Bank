@@ -1,4 +1,5 @@
-﻿using System;
+﻿using BloodBank.Forms.Donner;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -68,7 +69,7 @@ namespace BloodBank
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
-            //openChildForm(new Form2()); //pass the form to display on the child panel
+            OpenChildForm(new DonnerForm()); //pass the form to display on the child panel
             //...
             //Hide when clicked
             //...
@@ -103,8 +104,8 @@ namespace BloodBank
             childForm.TopLevel = false;
             childForm.FormBorderStyle = FormBorderStyle.None;
             childForm.Dock = DockStyle.Fill;
-            panelChildForm.Controls.Add(childForm);
-            panelChildForm.Tag = childForm;
+            panelAddForm.Controls.Add(childForm);
+            panelAddForm.Tag = childForm;
             childForm.BringToFront();
             childForm.Show();
         }
@@ -128,6 +129,7 @@ namespace BloodBank
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
+          
             //...
             //Hide when clicked
             //...
@@ -172,6 +174,16 @@ namespace BloodBank
             //Hide when clicked
             //...
             HideMenu();
+        }
+
+        private void panelChildForm_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

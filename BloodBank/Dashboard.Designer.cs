@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelSideMenu = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
             this.btn_Donner = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
@@ -49,10 +49,25 @@
             this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button9 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button10 = new Guna.UI2.WinForms.Guna2Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panelAddForm = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button2 = new System.Windows.Forms.Button();
+            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.button1 = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSideSubMenu1.SuspendLayout();
+            this.panelChildForm.SuspendLayout();
             this.panelSideSubMenu2.SuspendLayout();
             this.panelSideSubMenu3.SuspendLayout();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -81,16 +96,8 @@
             this.panelSideMenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelSideMenu.Location = new System.Drawing.Point(0, 0);
             this.panelSideMenu.Name = "panelSideMenu";
-            this.panelSideMenu.Size = new System.Drawing.Size(200, 608);
+            this.panelSideMenu.Size = new System.Drawing.Size(200, 593);
             this.panelSideMenu.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(183, 132);
-            this.panel2.TabIndex = 0;
             // 
             // btn_Donner
             // 
@@ -102,7 +109,7 @@
             this.btn_Donner.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Donner.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_Donner.HoverState.Parent = this.btn_Donner;
-            this.btn_Donner.Location = new System.Drawing.Point(0, 132);
+            this.btn_Donner.Location = new System.Drawing.Point(0, 211);
             this.btn_Donner.Name = "btn_Donner";
             this.btn_Donner.ShadowDecoration.Parent = this.btn_Donner;
             this.btn_Donner.Size = new System.Drawing.Size(183, 45);
@@ -118,7 +125,7 @@
             this.panelSideSubMenu1.Controls.Add(this.guna2Button3);
             this.panelSideSubMenu1.Controls.Add(this.guna2Button2);
             this.panelSideSubMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu1.Location = new System.Drawing.Point(0, 177);
+            this.panelSideSubMenu1.Location = new System.Drawing.Point(0, 256);
             this.panelSideSubMenu1.Name = "panelSideSubMenu1";
             this.panelSideSubMenu1.ShadowDecoration.Parent = this.panelSideSubMenu1;
             this.panelSideSubMenu1.Size = new System.Drawing.Size(183, 131);
@@ -186,13 +193,22 @@
             // 
             // panelChildForm
             // 
-            this.panelChildForm.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelChildForm.BorderRadius = 15;
+            this.panelChildForm.Controls.Add(this.label6);
+            this.panelChildForm.Controls.Add(this.guna2DateTimePicker1);
+            this.panelChildForm.Controls.Add(this.panelAddForm);
+            this.panelChildForm.Controls.Add(this.label5);
+            this.panelChildForm.Controls.Add(this.label4);
+            this.panelChildForm.Controls.Add(this.label3);
+            this.panelChildForm.Controls.Add(this.button2);
+            this.panelChildForm.Controls.Add(this.button1);
             this.panelChildForm.FillColor = System.Drawing.Color.White;
-            this.panelChildForm.Location = new System.Drawing.Point(200, 0);
+            this.panelChildForm.Location = new System.Drawing.Point(206, 5);
             this.panelChildForm.Name = "panelChildForm";
             this.panelChildForm.ShadowDecoration.Parent = this.panelChildForm;
-            this.panelChildForm.Size = new System.Drawing.Size(780, 608);
+            this.panelChildForm.Size = new System.Drawing.Size(774, 588);
             this.panelChildForm.TabIndex = 2;
+            this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
             // 
             // btn_receiver
             // 
@@ -204,7 +220,7 @@
             this.btn_receiver.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_receiver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_receiver.HoverState.Parent = this.btn_receiver;
-            this.btn_receiver.Location = new System.Drawing.Point(0, 308);
+            this.btn_receiver.Location = new System.Drawing.Point(0, 387);
             this.btn_receiver.Name = "btn_receiver";
             this.btn_receiver.ShadowDecoration.Parent = this.btn_receiver;
             this.btn_receiver.Size = new System.Drawing.Size(183, 45);
@@ -223,7 +239,7 @@
             this.btn_blood.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_blood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_blood.HoverState.Parent = this.btn_blood;
-            this.btn_blood.Location = new System.Drawing.Point(0, 484);
+            this.btn_blood.Location = new System.Drawing.Point(0, 563);
             this.btn_blood.Name = "btn_blood";
             this.btn_blood.ShadowDecoration.Parent = this.btn_blood;
             this.btn_blood.Size = new System.Drawing.Size(183, 45);
@@ -299,7 +315,7 @@
             this.panelSideSubMenu2.Controls.Add(this.guna2Button6);
             this.panelSideSubMenu2.Controls.Add(this.guna2Button7);
             this.panelSideSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 353);
+            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 432);
             this.panelSideSubMenu2.Name = "panelSideSubMenu2";
             this.panelSideSubMenu2.ShadowDecoration.Parent = this.panelSideSubMenu2;
             this.panelSideSubMenu2.Size = new System.Drawing.Size(183, 131);
@@ -312,7 +328,7 @@
             this.panelSideSubMenu3.Controls.Add(this.guna2Button9);
             this.panelSideSubMenu3.Controls.Add(this.guna2Button10);
             this.panelSideSubMenu3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu3.Location = new System.Drawing.Point(0, 529);
+            this.panelSideSubMenu3.Location = new System.Drawing.Point(0, 608);
             this.panelSideSubMenu3.Name = "panelSideSubMenu3";
             this.panelSideSubMenu3.ShadowDecoration.Parent = this.panelSideSubMenu3;
             this.panelSideSubMenu3.Size = new System.Drawing.Size(183, 131);
@@ -378,13 +394,153 @@
             this.guna2Button10.UseTransparentBackground = true;
             this.guna2Button10.Click += new System.EventHandler(this.guna2Button10_Click);
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(183, 211);
+            this.panel2.TabIndex = 0;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.InitialImage = null;
+            this.pictureBox2.Location = new System.Drawing.Point(78, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(49, 52);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.pictureBox2.TabIndex = 0;
+            this.pictureBox2.TabStop = false;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(60, 67);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(86, 33);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "2B";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Wide Latin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(6, 100);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(200, 19);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Management ";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.White;
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(684, 33);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(26, 15);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Log";
+            // 
+            // panelAddForm
+            // 
+            this.panelAddForm.BackColor = System.Drawing.Color.White;
+            this.panelAddForm.Location = new System.Drawing.Point(3, 85);
+            this.panelAddForm.Name = "panelAddForm";
+            this.panelAddForm.Size = new System.Drawing.Size(768, 492);
+            this.panelAddForm.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.White;
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(684, 48);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(26, 15);
+            this.label5.TabIndex = 5;
+            this.label5.Text = "Out";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.White;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(722, 35);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(25, 15);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Exit";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(687, 14);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(20, 49);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // guna2DateTimePicker1
+            // 
+            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
+            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gray;
+            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(642, 5);
+            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
+            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(30, 41);
+            this.guna2DateTimePicker1.TabIndex = 0;
+            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 10, 15, 18, 43, 33, 450);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(725, 16);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 34);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.White;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(647, 35);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(25, 15);
+            this.label6.TabIndex = 7;
+            this.label6.Text = "Cal";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ClientSize = new System.Drawing.Size(980, 608);
+            this.ClientSize = new System.Drawing.Size(970, 600);
             this.Controls.Add(this.panelChildForm);
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.guna2Panel1);
@@ -394,8 +550,13 @@
             this.Text = "Form1";
             this.panelSideMenu.ResumeLayout(false);
             this.panelSideSubMenu1.ResumeLayout(false);
+            this.panelChildForm.ResumeLayout(false);
+            this.panelChildForm.PerformLayout();
             this.panelSideSubMenu2.ResumeLayout(false);
             this.panelSideSubMenu3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -405,7 +566,6 @@
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private System.Windows.Forms.Panel panelSideMenu;
-        private System.Windows.Forms.Panel panel2;
         private Guna.UI2.WinForms.Guna2Button btn_Donner;
         private Guna.UI2.WinForms.Guna2Panel panelSideSubMenu1;
         private Guna.UI2.WinForms.Guna2Button guna2Button4;
@@ -422,6 +582,18 @@
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button btn_receiver;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panelAddForm;
+        private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
