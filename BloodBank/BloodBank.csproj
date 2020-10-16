@@ -63,6 +63,12 @@
     <Compile Include="Forms\Donor\DonorForm.Designer.cs">
       <DependentUpon>DonorForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Receiver\ReceiverForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Receiver\ReceiverForm.Designer.cs">
+      <DependentUpon>ReceiverForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
@@ -70,6 +76,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Donor\DonorForm.resx">
       <DependentUpon>DonorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Receiver\ReceiverForm.resx">
+      <DependentUpon>ReceiverForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

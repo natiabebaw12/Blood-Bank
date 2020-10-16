@@ -1,4 +1,5 @@
 ﻿using BloodBank.Forms.Donner;
+using BloodBank.Forms.Receiver;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -131,7 +132,7 @@ namespace BloodBank
 
         private void guna2Button7_Click(object sender, EventArgs e)
         {
-          
+            OpenChildForm(new ReceiverForm()); //pass the form to display on the child panel
             //...
             //Hide when clicked
             //...
