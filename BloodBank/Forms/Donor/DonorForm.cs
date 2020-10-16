@@ -15,7 +15,8 @@ namespace BloodBank.Forms.Donner
         public DonnerForm()
         {
             InitializeComponent();
-            combo_donnerBloodGroup.SelectedIndex = 0;
+            combo_donnerABOGroup.SelectedIndex = 0;
+            combo_donnerRH.SelectedIndex = 0;
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)

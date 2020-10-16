@@ -51,7 +51,7 @@
             this.label19 = new System.Windows.Forms.Label();
             this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.combo_donnerBloodGroup = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combo_donnerABOGroup = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label21 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
@@ -62,6 +62,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.label2 = new System.Windows.Forms.Label();
+            this.combo_donnerRH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -76,6 +78,8 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderThickness = 2;
+            this.guna2GroupBox1.Controls.Add(this.combo_donnerRH);
+            this.guna2GroupBox1.Controls.Add(this.label3);
             this.guna2GroupBox1.Controls.Add(this.label2);
             this.guna2GroupBox1.Controls.Add(this.monthCalendar1);
             this.guna2GroupBox1.Controls.Add(this.label1);
@@ -90,7 +94,7 @@
             this.guna2GroupBox1.Controls.Add(this.label19);
             this.guna2GroupBox1.Controls.Add(this.guna2TextBox5);
             this.guna2GroupBox1.Controls.Add(this.label20);
-            this.guna2GroupBox1.Controls.Add(this.combo_donnerBloodGroup);
+            this.guna2GroupBox1.Controls.Add(this.combo_donnerABOGroup);
             this.guna2GroupBox1.Controls.Add(this.label21);
             this.guna2GroupBox1.Controls.Add(this.guna2DateTimePicker1);
             this.guna2GroupBox1.Controls.Add(this.label22);
@@ -218,7 +222,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(78, 359);
+            this.label16.Location = new System.Drawing.Point(78, 386);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(67, 17);
             this.label16.TabIndex = 62;
@@ -229,7 +233,7 @@
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.Black;
-            this.label17.Location = new System.Drawing.Point(32, 357);
+            this.label17.Location = new System.Drawing.Point(32, 384);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(52, 19);
             this.label17.TabIndex = 61;
@@ -240,7 +244,7 @@
             this.label18.AutoSize = true;
             this.label18.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label18.ForeColor = System.Drawing.Color.Black;
-            this.label18.Location = new System.Drawing.Point(32, 323);
+            this.label18.Location = new System.Drawing.Point(32, 350);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(84, 19);
             this.label18.TabIndex = 59;
@@ -317,7 +321,7 @@
             this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(163, 314);
+            this.guna2TextBox3.Location = new System.Drawing.Point(163, 341);
             this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
@@ -344,7 +348,7 @@
             this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(164, 348);
+            this.guna2TextBox4.Location = new System.Drawing.Point(164, 375);
             this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
@@ -359,7 +363,7 @@
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label19.ForeColor = System.Drawing.Color.Black;
-            this.label19.Location = new System.Drawing.Point(253, 289);
+            this.label19.Location = new System.Drawing.Point(253, 316);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(34, 19);
             this.label19.TabIndex = 57;
@@ -382,7 +386,7 @@
             this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
             this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(163, 280);
+            this.guna2TextBox5.Location = new System.Drawing.Point(163, 307);
             this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2TextBox5.Name = "guna2TextBox5";
             this.guna2TextBox5.PasswordChar = '\0';
@@ -397,46 +401,38 @@
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(32, 289);
+            this.label20.Location = new System.Drawing.Point(32, 316);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(62, 19);
             this.label20.TabIndex = 55;
             this.label20.Text = "Weight";
             // 
-            // combo_donnerBloodGroup
+            // combo_donnerABOGroup
             // 
-            this.combo_donnerBloodGroup.BackColor = System.Drawing.Color.Silver;
-            this.combo_donnerBloodGroup.BorderColor = System.Drawing.Color.Black;
-            this.combo_donnerBloodGroup.BorderRadius = 3;
-            this.combo_donnerBloodGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_donnerBloodGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_donnerBloodGroup.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_donnerBloodGroup.FocusedState.Parent = this.combo_donnerBloodGroup;
-            this.combo_donnerBloodGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_donnerBloodGroup.ForeColor = System.Drawing.Color.Black;
-            this.combo_donnerBloodGroup.FormattingEnabled = true;
-            this.combo_donnerBloodGroup.HoverState.Parent = this.combo_donnerBloodGroup;
-            this.combo_donnerBloodGroup.ItemHeight = 20;
-            this.combo_donnerBloodGroup.Items.AddRange(new object[] {
-            "A ",
-            "A+",
-            "A-",
+            this.combo_donnerABOGroup.BackColor = System.Drawing.Color.Silver;
+            this.combo_donnerABOGroup.BorderColor = System.Drawing.Color.Black;
+            this.combo_donnerABOGroup.BorderRadius = 3;
+            this.combo_donnerABOGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_donnerABOGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_donnerABOGroup.FocusedColor = System.Drawing.Color.Empty;
+            this.combo_donnerABOGroup.FocusedState.Parent = this.combo_donnerABOGroup;
+            this.combo_donnerABOGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_donnerABOGroup.ForeColor = System.Drawing.Color.Black;
+            this.combo_donnerABOGroup.FormattingEnabled = true;
+            this.combo_donnerABOGroup.HoverState.Parent = this.combo_donnerABOGroup;
+            this.combo_donnerABOGroup.ItemHeight = 20;
+            this.combo_donnerABOGroup.Items.AddRange(new object[] {
+            "A",
             "B",
-            "B+",
-            "B-",
-            "O",
-            "O+",
-            "O-",
             "AB",
-            "AB+",
-            "AB-"});
-            this.combo_donnerBloodGroup.ItemsAppearance.Parent = this.combo_donnerBloodGroup;
-            this.combo_donnerBloodGroup.Location = new System.Drawing.Point(163, 242);
-            this.combo_donnerBloodGroup.Name = "combo_donnerBloodGroup";
-            this.combo_donnerBloodGroup.ShadowDecoration.Parent = this.combo_donnerBloodGroup;
-            this.combo_donnerBloodGroup.Size = new System.Drawing.Size(200, 26);
-            this.combo_donnerBloodGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_donnerBloodGroup.TabIndex = 54;
+            "O"});
+            this.combo_donnerABOGroup.ItemsAppearance.Parent = this.combo_donnerABOGroup;
+            this.combo_donnerABOGroup.Location = new System.Drawing.Point(163, 242);
+            this.combo_donnerABOGroup.Name = "combo_donnerABOGroup";
+            this.combo_donnerABOGroup.ShadowDecoration.Parent = this.combo_donnerABOGroup;
+            this.combo_donnerABOGroup.Size = new System.Drawing.Size(200, 26);
+            this.combo_donnerABOGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.combo_donnerABOGroup.TabIndex = 54;
             // 
             // label21
             // 
@@ -445,9 +441,9 @@
             this.label21.ForeColor = System.Drawing.Color.Black;
             this.label21.Location = new System.Drawing.Point(31, 244);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(106, 19);
+            this.label21.Size = new System.Drawing.Size(94, 19);
             this.label21.TabIndex = 53;
-            this.label21.Text = "Blood Group";
+            this.label21.Text = "ABO group";
             // 
             // guna2DateTimePicker1
             // 
@@ -600,6 +596,48 @@
             this.label2.TabIndex = 67;
             this.label2.Text = "0";
             // 
+            // combo_donnerRH
+            // 
+            this.combo_donnerRH.BackColor = System.Drawing.Color.Silver;
+            this.combo_donnerRH.BorderColor = System.Drawing.Color.Black;
+            this.combo_donnerRH.BorderRadius = 3;
+            this.combo_donnerRH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_donnerRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_donnerRH.FocusedColor = System.Drawing.Color.Empty;
+            this.combo_donnerRH.FocusedState.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_donnerRH.ForeColor = System.Drawing.Color.Black;
+            this.combo_donnerRH.FormattingEnabled = true;
+            this.combo_donnerRH.HoverState.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.ItemHeight = 20;
+            this.combo_donnerRH.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
+            this.combo_donnerRH.ItemsAppearance.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.Location = new System.Drawing.Point(163, 274);
+            this.combo_donnerRH.Name = "combo_donnerRH";
+            this.combo_donnerRH.ShadowDecoration.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.Size = new System.Drawing.Size(200, 26);
+            this.combo_donnerRH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.combo_donnerRH.TabIndex = 69;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(31, 276);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 19);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "RH.";
+            // 
             // DonnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -644,7 +682,7 @@
         private System.Windows.Forms.Label label19;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
         private System.Windows.Forms.Label label20;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_donnerBloodGroup;
+        private Guna.UI2.WinForms.Guna2ComboBox combo_donnerABOGroup;
         private System.Windows.Forms.Label label21;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label22;
@@ -657,5 +695,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2ComboBox combo_donnerRH;
+        private System.Windows.Forms.Label label3;
     }
 }

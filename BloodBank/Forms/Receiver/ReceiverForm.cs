@@ -15,6 +15,10 @@ namespace BloodBank.Forms.Receiver
         public ReceiverForm()
         {
             InitializeComponent();
+        ///default choose for combo_box
+            combo_bloodRequired.SelectedIndex = 0;
+            combo_receiverABOGroup.SelectedIndex = 0;
+            combo_receiverRH.SelectedIndex = 0;
         }
     }
 }
