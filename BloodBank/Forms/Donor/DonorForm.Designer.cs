@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.combo_donnerRH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -61,9 +64,8 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.combo_donnerRH = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -78,6 +80,8 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderThickness = 2;
+            this.guna2GroupBox1.Controls.Add(this.richTextBox1);
+            this.guna2GroupBox1.Controls.Add(this.label10);
             this.guna2GroupBox1.Controls.Add(this.combo_donnerRH);
             this.guna2GroupBox1.Controls.Add(this.label3);
             this.guna2GroupBox1.Controls.Add(this.label2);
@@ -112,6 +116,59 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(744, 468);
             this.guna2GroupBox1.TabIndex = 45;
             this.guna2GroupBox1.Text = "Donor  Form";
+            // 
+            // combo_donnerRH
+            // 
+            this.combo_donnerRH.BackColor = System.Drawing.Color.Silver;
+            this.combo_donnerRH.BorderColor = System.Drawing.Color.Black;
+            this.combo_donnerRH.BorderRadius = 3;
+            this.combo_donnerRH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_donnerRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_donnerRH.FocusedColor = System.Drawing.Color.Empty;
+            this.combo_donnerRH.FocusedState.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_donnerRH.ForeColor = System.Drawing.Color.Black;
+            this.combo_donnerRH.FormattingEnabled = true;
+            this.combo_donnerRH.HoverState.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.ItemHeight = 20;
+            this.combo_donnerRH.Items.AddRange(new object[] {
+            "A+",
+            "A-",
+            "B+",
+            "B-",
+            "AB+",
+            "AB-",
+            "O+",
+            "O-"});
+            this.combo_donnerRH.ItemsAppearance.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.Location = new System.Drawing.Point(163, 274);
+            this.combo_donnerRH.Name = "combo_donnerRH";
+            this.combo_donnerRH.ShadowDecoration.Parent = this.combo_donnerRH;
+            this.combo_donnerRH.Size = new System.Drawing.Size(200, 26);
+            this.combo_donnerRH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.combo_donnerRH.TabIndex = 69;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Black;
+            this.label3.Location = new System.Drawing.Point(31, 276);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(33, 19);
+            this.label3.TabIndex = 68;
+            this.label3.Text = "RH.";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Black;
+            this.label2.Location = new System.Drawing.Point(165, 63);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(18, 19);
+            this.label2.TabIndex = 67;
+            this.label2.Text = "0";
             // 
             // monthCalendar1
             // 
@@ -585,58 +642,24 @@
             this.guna2Button1.Text = "Submit";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // label2
+            // richTextBox1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(165, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 19);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "0";
+            this.richTextBox1.Location = new System.Drawing.Point(163, 410);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(201, 41);
+            this.richTextBox1.TabIndex = 85;
+            this.richTextBox1.Text = "";
             // 
-            // combo_donnerRH
+            // label10
             // 
-            this.combo_donnerRH.BackColor = System.Drawing.Color.Silver;
-            this.combo_donnerRH.BorderColor = System.Drawing.Color.Black;
-            this.combo_donnerRH.BorderRadius = 3;
-            this.combo_donnerRH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_donnerRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_donnerRH.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_donnerRH.FocusedState.Parent = this.combo_donnerRH;
-            this.combo_donnerRH.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_donnerRH.ForeColor = System.Drawing.Color.Black;
-            this.combo_donnerRH.FormattingEnabled = true;
-            this.combo_donnerRH.HoverState.Parent = this.combo_donnerRH;
-            this.combo_donnerRH.ItemHeight = 20;
-            this.combo_donnerRH.Items.AddRange(new object[] {
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "AB+",
-            "AB-",
-            "O+",
-            "O-"});
-            this.combo_donnerRH.ItemsAppearance.Parent = this.combo_donnerRH;
-            this.combo_donnerRH.Location = new System.Drawing.Point(163, 274);
-            this.combo_donnerRH.Name = "combo_donnerRH";
-            this.combo_donnerRH.ShadowDecoration.Parent = this.combo_donnerRH;
-            this.combo_donnerRH.Size = new System.Drawing.Size(200, 26);
-            this.combo_donnerRH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_donnerRH.TabIndex = 69;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Black;
-            this.label3.Location = new System.Drawing.Point(31, 276);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(33, 19);
-            this.label3.TabIndex = 68;
-            this.label3.Text = "RH.";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(32, 421);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 19);
+            this.label10.TabIndex = 84;
+            this.label10.Text = "Address";
             // 
             // DonnerForm
             // 
@@ -697,5 +720,7 @@
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2ComboBox combo_donnerRH;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.Label label10;
     }
 }
