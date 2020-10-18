@@ -35,10 +35,10 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btn_blood = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_deleteReceiver = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_updateReceiver = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_deleteRequest = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_updateRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_addReceiver = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_receiver = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_request = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_deleteDonor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_updateDonor = new Guna.UI2.WinForms.Guna2Button();
@@ -52,16 +52,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panelAddForm = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.panelSideMenu.SuspendLayout();
             this.panelSideSubMenu2.SuspendLayout();
             this.panelSideSubMenu1.SuspendLayout();
@@ -89,7 +89,7 @@
             // 
             this.panelSideMenu.Controls.Add(this.btn_blood);
             this.panelSideMenu.Controls.Add(this.panelSideSubMenu2);
-            this.panelSideMenu.Controls.Add(this.btn_receiver);
+            this.panelSideMenu.Controls.Add(this.btn_request);
             this.panelSideMenu.Controls.Add(this.panelSideSubMenu1);
             this.panelSideMenu.Controls.Add(this.btn_Donor);
             this.panelSideMenu.Controls.Add(this.panel2);
@@ -124,8 +124,8 @@
             // panelSideSubMenu2
             // 
             this.panelSideSubMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panelSideSubMenu2.Controls.Add(this.btn_deleteReceiver);
-            this.panelSideSubMenu2.Controls.Add(this.btn_updateReceiver);
+            this.panelSideSubMenu2.Controls.Add(this.btn_deleteRequest);
+            this.panelSideSubMenu2.Controls.Add(this.btn_updateRequest);
             this.panelSideSubMenu2.Controls.Add(this.btn_addReceiver);
             this.panelSideSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 432);
@@ -134,54 +134,54 @@
             this.panelSideSubMenu2.Size = new System.Drawing.Size(200, 131);
             this.panelSideSubMenu2.TabIndex = 4;
             // 
-            // btn_deleteReceiver
+            // btn_deleteRequest
             // 
-            this.btn_deleteReceiver.BackColor = System.Drawing.Color.Transparent;
-            this.btn_deleteReceiver.CheckedState.Parent = this.btn_deleteReceiver;
-            this.btn_deleteReceiver.CustomImages.Parent = this.btn_deleteReceiver;
-            this.btn_deleteReceiver.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_deleteReceiver.FillColor = System.Drawing.Color.Transparent;
-            this.btn_deleteReceiver.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deleteReceiver.ForeColor = System.Drawing.Color.White;
-            this.btn_deleteReceiver.HoverState.Parent = this.btn_deleteReceiver;
-            this.btn_deleteReceiver.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteReceiver.Image")));
-            this.btn_deleteReceiver.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_deleteReceiver.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_deleteReceiver.Location = new System.Drawing.Point(0, 80);
-            this.btn_deleteReceiver.Name = "btn_deleteReceiver";
-            this.btn_deleteReceiver.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_deleteReceiver.ShadowDecoration.Parent = this.btn_deleteReceiver;
-            this.btn_deleteReceiver.Size = new System.Drawing.Size(200, 40);
-            this.btn_deleteReceiver.TabIndex = 2;
-            this.btn_deleteReceiver.Text = "Delete Receiver";
-            this.btn_deleteReceiver.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_deleteReceiver.TextOffset = new System.Drawing.Point(35, 0);
-            this.btn_deleteReceiver.UseTransparentBackground = true;
-            this.btn_deleteReceiver.Click += new System.EventHandler(this.guna2Button5_Click);
+            this.btn_deleteRequest.BackColor = System.Drawing.Color.Transparent;
+            this.btn_deleteRequest.CheckedState.Parent = this.btn_deleteRequest;
+            this.btn_deleteRequest.CustomImages.Parent = this.btn_deleteRequest;
+            this.btn_deleteRequest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_deleteRequest.FillColor = System.Drawing.Color.Transparent;
+            this.btn_deleteRequest.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_deleteRequest.ForeColor = System.Drawing.Color.White;
+            this.btn_deleteRequest.HoverState.Parent = this.btn_deleteRequest;
+            this.btn_deleteRequest.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteRequest.Image")));
+            this.btn_deleteRequest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_deleteRequest.ImageOffset = new System.Drawing.Point(30, 0);
+            this.btn_deleteRequest.Location = new System.Drawing.Point(0, 80);
+            this.btn_deleteRequest.Name = "btn_deleteRequest";
+            this.btn_deleteRequest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_deleteRequest.ShadowDecoration.Parent = this.btn_deleteRequest;
+            this.btn_deleteRequest.Size = new System.Drawing.Size(200, 40);
+            this.btn_deleteRequest.TabIndex = 2;
+            this.btn_deleteRequest.Text = "Delete Request";
+            this.btn_deleteRequest.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_deleteRequest.TextOffset = new System.Drawing.Point(36, 0);
+            this.btn_deleteRequest.UseTransparentBackground = true;
+            this.btn_deleteRequest.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
-            // btn_updateReceiver
+            // btn_updateRequest
             // 
-            this.btn_updateReceiver.BackColor = System.Drawing.Color.Transparent;
-            this.btn_updateReceiver.CheckedState.Parent = this.btn_updateReceiver;
-            this.btn_updateReceiver.CustomImages.Parent = this.btn_updateReceiver;
-            this.btn_updateReceiver.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_updateReceiver.FillColor = System.Drawing.Color.Transparent;
-            this.btn_updateReceiver.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_updateReceiver.ForeColor = System.Drawing.Color.White;
-            this.btn_updateReceiver.HoverState.Parent = this.btn_updateReceiver;
-            this.btn_updateReceiver.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateReceiver.Image")));
-            this.btn_updateReceiver.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_updateReceiver.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_updateReceiver.Location = new System.Drawing.Point(0, 40);
-            this.btn_updateReceiver.Name = "btn_updateReceiver";
-            this.btn_updateReceiver.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_updateReceiver.ShadowDecoration.Parent = this.btn_updateReceiver;
-            this.btn_updateReceiver.Size = new System.Drawing.Size(200, 40);
-            this.btn_updateReceiver.TabIndex = 1;
-            this.btn_updateReceiver.Text = "Update Receiver";
-            this.btn_updateReceiver.TextOffset = new System.Drawing.Point(34, 0);
-            this.btn_updateReceiver.UseTransparentBackground = true;
-            this.btn_updateReceiver.Click += new System.EventHandler(this.guna2Button6_Click);
+            this.btn_updateRequest.BackColor = System.Drawing.Color.Transparent;
+            this.btn_updateRequest.CheckedState.Parent = this.btn_updateRequest;
+            this.btn_updateRequest.CustomImages.Parent = this.btn_updateRequest;
+            this.btn_updateRequest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_updateRequest.FillColor = System.Drawing.Color.Transparent;
+            this.btn_updateRequest.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_updateRequest.ForeColor = System.Drawing.Color.White;
+            this.btn_updateRequest.HoverState.Parent = this.btn_updateRequest;
+            this.btn_updateRequest.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateRequest.Image")));
+            this.btn_updateRequest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_updateRequest.ImageOffset = new System.Drawing.Point(30, 0);
+            this.btn_updateRequest.Location = new System.Drawing.Point(0, 40);
+            this.btn_updateRequest.Name = "btn_updateRequest";
+            this.btn_updateRequest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_updateRequest.ShadowDecoration.Parent = this.btn_updateRequest;
+            this.btn_updateRequest.Size = new System.Drawing.Size(200, 40);
+            this.btn_updateRequest.TabIndex = 1;
+            this.btn_updateRequest.Text = "Update Request";
+            this.btn_updateRequest.TextOffset = new System.Drawing.Point(32, 0);
+            this.btn_updateRequest.UseTransparentBackground = true;
+            this.btn_updateRequest.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // btn_addReceiver
             // 
@@ -203,32 +203,32 @@
             this.btn_addReceiver.Size = new System.Drawing.Size(200, 40);
             this.btn_addReceiver.TabIndex = 0;
             this.btn_addReceiver.Text = "Add New";
-            this.btn_addReceiver.TextOffset = new System.Drawing.Point(5, 0);
+            this.btn_addReceiver.TextOffset = new System.Drawing.Point(7, 0);
             this.btn_addReceiver.UseTransparentBackground = true;
             this.btn_addReceiver.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
-            // btn_receiver
+            // btn_request
             // 
-            this.btn_receiver.BackColor = System.Drawing.Color.Transparent;
-            this.btn_receiver.CheckedState.Parent = this.btn_receiver;
-            this.btn_receiver.CustomImages.Parent = this.btn_receiver;
-            this.btn_receiver.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_receiver.FillColor = System.Drawing.Color.White;
-            this.btn_receiver.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_receiver.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btn_receiver.HoverState.Parent = this.btn_receiver;
-            this.btn_receiver.Image = ((System.Drawing.Image)(resources.GetObject("btn_receiver.Image")));
-            this.btn_receiver.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_receiver.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_receiver.Location = new System.Drawing.Point(0, 387);
-            this.btn_receiver.Name = "btn_receiver";
-            this.btn_receiver.ShadowDecoration.Parent = this.btn_receiver;
-            this.btn_receiver.Size = new System.Drawing.Size(200, 45);
-            this.btn_receiver.TabIndex = 3;
-            this.btn_receiver.Text = "Receiver";
-            this.btn_receiver.TextOffset = new System.Drawing.Point(-3, 0);
-            this.btn_receiver.UseTransparentBackground = true;
-            this.btn_receiver.Click += new System.EventHandler(this.btn_receiver_Click);
+            this.btn_request.BackColor = System.Drawing.Color.Transparent;
+            this.btn_request.CheckedState.Parent = this.btn_request;
+            this.btn_request.CustomImages.Parent = this.btn_request;
+            this.btn_request.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_request.FillColor = System.Drawing.Color.White;
+            this.btn_request.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_request.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_request.HoverState.Parent = this.btn_request;
+            this.btn_request.Image = ((System.Drawing.Image)(resources.GetObject("btn_request.Image")));
+            this.btn_request.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_request.ImageSize = new System.Drawing.Size(30, 30);
+            this.btn_request.Location = new System.Drawing.Point(0, 387);
+            this.btn_request.Name = "btn_request";
+            this.btn_request.ShadowDecoration.Parent = this.btn_request;
+            this.btn_request.Size = new System.Drawing.Size(200, 45);
+            this.btn_request.TabIndex = 3;
+            this.btn_request.Text = "Blood Request";
+            this.btn_request.TextOffset = new System.Drawing.Point(11, 0);
+            this.btn_request.UseTransparentBackground = true;
+            this.btn_request.Click += new System.EventHandler(this.btn_receiver_Click);
             // 
             // panelSideSubMenu1
             // 
@@ -263,7 +263,7 @@
             this.btn_deleteDonor.Size = new System.Drawing.Size(200, 40);
             this.btn_deleteDonor.TabIndex = 2;
             this.btn_deleteDonor.Text = "Delete Donor ";
-            this.btn_deleteDonor.TextOffset = new System.Drawing.Point(25, 0);
+            this.btn_deleteDonor.TextOffset = new System.Drawing.Point(23, 0);
             this.btn_deleteDonor.UseTransparentBackground = true;
             this.btn_deleteDonor.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
@@ -287,7 +287,7 @@
             this.btn_updateDonor.Size = new System.Drawing.Size(200, 40);
             this.btn_updateDonor.TabIndex = 1;
             this.btn_updateDonor.Text = "Update Donor ";
-            this.btn_updateDonor.TextOffset = new System.Drawing.Point(30, 0);
+            this.btn_updateDonor.TextOffset = new System.Drawing.Point(26, 0);
             this.btn_updateDonor.UseTransparentBackground = true;
             this.btn_updateDonor.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
@@ -333,8 +333,8 @@
             this.btn_Donor.ShadowDecoration.Parent = this.btn_Donor;
             this.btn_Donor.Size = new System.Drawing.Size(200, 45);
             this.btn_Donor.TabIndex = 1;
-            this.btn_Donor.Text = "Donor ";
-            this.btn_Donor.TextOffset = new System.Drawing.Point(-10, 0);
+            this.btn_Donor.Text = "Blood Donor ";
+            this.btn_Donor.TextOffset = new System.Drawing.Point(2, 0);
             this.btn_Donor.UseTransparentBackground = true;
             this.btn_Donor.Click += new System.EventHandler(this.btn_Donner_Click);
             // 
@@ -444,6 +444,58 @@
             this.panelAddForm.Size = new System.Drawing.Size(768, 532);
             this.panelAddForm.TabIndex = 6;
             // 
+            // richTextBox1
+            // 
+            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.richTextBox1.Location = new System.Drawing.Point(161, 425);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(469, 82);
+            this.richTextBox1.TabIndex = 6;
+            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.ForeColor = System.Drawing.Color.Gray;
+            this.label9.Location = new System.Drawing.Point(15, 425);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(0, 20);
+            this.label9.TabIndex = 5;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Wide Latin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label7.Location = new System.Drawing.Point(308, 395);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(200, 19);
+            this.label7.TabIndex = 4;
+            this.label7.Text = "Management ";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label8.Location = new System.Drawing.Point(362, 362);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 33);
+            this.label8.TabIndex = 3;
+            this.label8.Text = "2B";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(196, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(417, 351);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -505,58 +557,6 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(196, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(417, 351);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Wide Latin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label7.Location = new System.Drawing.Point(308, 395);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(200, 19);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Management ";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.label8.Location = new System.Drawing.Point(362, 362);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(86, 33);
-            this.label8.TabIndex = 3;
-            this.label8.Text = "2B";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Palatino Linotype", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.ForeColor = System.Drawing.Color.Gray;
-            this.label9.Location = new System.Drawing.Point(15, 425);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(0, 20);
-            this.label9.TabIndex = 5;
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Trebuchet MS", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.ForeColor = System.Drawing.SystemColors.WindowFrame;
-            this.richTextBox1.Location = new System.Drawing.Point(161, 425);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(469, 82);
-            this.richTextBox1.TabIndex = 6;
-            this.richTextBox1.Text = resources.GetString("richTextBox1.Text");
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -598,10 +598,10 @@
         private Guna.UI2.WinForms.Guna2Panel panelChildForm;
         private Guna.UI2.WinForms.Guna2Button btn_blood;
         private Guna.UI2.WinForms.Guna2Panel panelSideSubMenu2;
-        private Guna.UI2.WinForms.Guna2Button btn_deleteReceiver;
-        private Guna.UI2.WinForms.Guna2Button btn_updateReceiver;
+        private Guna.UI2.WinForms.Guna2Button btn_deleteRequest;
+        private Guna.UI2.WinForms.Guna2Button btn_updateRequest;
         private Guna.UI2.WinForms.Guna2Button btn_addReceiver;
-        private Guna.UI2.WinForms.Guna2Button btn_receiver;
+        private Guna.UI2.WinForms.Guna2Button btn_request;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label2;
