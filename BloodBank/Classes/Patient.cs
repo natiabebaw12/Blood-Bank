@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 namespace BloodBank.Classes
 {
     //patient class contains patient's attributes
+    //Patient class inherit all properties and method from Person class according to their visiblity
     class Patient : Person
     {
         string hospitalName, doctor, history, requiredBloodUnit, hospitalPhoneNo;

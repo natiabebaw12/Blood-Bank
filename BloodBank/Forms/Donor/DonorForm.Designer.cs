@@ -31,41 +31,42 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.textBox_donorAddress = new System.Windows.Forms.RichTextBox();
+            this.label10 = new System.Windows.Forms.Label();
             this.combo_donnerRH = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.lbl_donorId = new System.Windows.Forms.Label();
+            this.cal_donorLastTime = new System.Windows.Forms.MonthCalendar();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
-            this.checkBox9 = new System.Windows.Forms.CheckBox();
-            this.checkBox10 = new System.Windows.Forms.CheckBox();
+            this.checkBox_donorOccOther = new System.Windows.Forms.CheckBox();
+            this.checkBox_donorOccMonk = new System.Windows.Forms.CheckBox();
+            this.checkBox_donorOccEmp = new System.Windows.Forms.CheckBox();
+            this.checkBox_donorOccGov = new System.Windows.Forms.CheckBox();
+            this.checkBox_donorOccStudent = new System.Windows.Forms.CheckBox();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.radio_donorFemale = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radio_donorMale = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txt_donorPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_donorEmail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_donorWeight = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.combo_donnerABOGroup = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combo_donorAboGroup = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.date_donorDOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_donorLName = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_donorFName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -80,12 +81,12 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderThickness = 2;
-            this.guna2GroupBox1.Controls.Add(this.richTextBox1);
+            this.guna2GroupBox1.Controls.Add(this.textBox_donorAddress);
             this.guna2GroupBox1.Controls.Add(this.label10);
             this.guna2GroupBox1.Controls.Add(this.combo_donnerRH);
             this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.label2);
-            this.guna2GroupBox1.Controls.Add(this.monthCalendar1);
+            this.guna2GroupBox1.Controls.Add(this.lbl_donorId);
+            this.guna2GroupBox1.Controls.Add(this.cal_donorLastTime);
             this.guna2GroupBox1.Controls.Add(this.label1);
             this.guna2GroupBox1.Controls.Add(this.groupBox5);
             this.guna2GroupBox1.Controls.Add(this.label15);
@@ -93,17 +94,17 @@
             this.guna2GroupBox1.Controls.Add(this.label17);
             this.guna2GroupBox1.Controls.Add(this.label18);
             this.guna2GroupBox1.Controls.Add(this.groupBox4);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox3);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox4);
+            this.guna2GroupBox1.Controls.Add(this.txt_donorPhoneNo);
+            this.guna2GroupBox1.Controls.Add(this.txt_donorEmail);
             this.guna2GroupBox1.Controls.Add(this.label19);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox5);
+            this.guna2GroupBox1.Controls.Add(this.txt_donorWeight);
             this.guna2GroupBox1.Controls.Add(this.label20);
-            this.guna2GroupBox1.Controls.Add(this.combo_donnerABOGroup);
+            this.guna2GroupBox1.Controls.Add(this.combo_donorAboGroup);
             this.guna2GroupBox1.Controls.Add(this.label21);
-            this.guna2GroupBox1.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2GroupBox1.Controls.Add(this.date_donorDOB);
             this.guna2GroupBox1.Controls.Add(this.label22);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox1);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox2);
+            this.guna2GroupBox1.Controls.Add(this.txt_donorLName);
+            this.guna2GroupBox1.Controls.Add(this.txt_donorFName);
             this.guna2GroupBox1.Controls.Add(this.label12);
             this.guna2GroupBox1.Controls.Add(this.label13);
             this.guna2GroupBox1.Controls.Add(this.label14);
@@ -116,6 +117,25 @@
             this.guna2GroupBox1.Size = new System.Drawing.Size(744, 468);
             this.guna2GroupBox1.TabIndex = 45;
             this.guna2GroupBox1.Text = "Donor  Form";
+            // 
+            // textBox_donorAddress
+            // 
+            this.textBox_donorAddress.Location = new System.Drawing.Point(163, 410);
+            this.textBox_donorAddress.Name = "textBox_donorAddress";
+            this.textBox_donorAddress.Size = new System.Drawing.Size(201, 41);
+            this.textBox_donorAddress.TabIndex = 85;
+            this.textBox_donorAddress.Text = "";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Black;
+            this.label10.Location = new System.Drawing.Point(32, 421);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(70, 19);
+            this.label10.TabIndex = 84;
+            this.label10.Text = "Address";
             // 
             // combo_donnerRH
             // 
@@ -159,22 +179,22 @@
             this.label3.TabIndex = 68;
             this.label3.Text = "RH.";
             // 
-            // label2
+            // lbl_donorId
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(165, 63);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 19);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "0";
+            this.lbl_donorId.AutoSize = true;
+            this.lbl_donorId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_donorId.ForeColor = System.Drawing.Color.Black;
+            this.lbl_donorId.Location = new System.Drawing.Point(165, 63);
+            this.lbl_donorId.Name = "lbl_donorId";
+            this.lbl_donorId.Size = new System.Drawing.Size(16, 19);
+            this.lbl_donorId.TabIndex = 67;
+            this.lbl_donorId.Text = "-";
             // 
-            // monthCalendar1
+            // cal_donorLastTime
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(422, 289);
-            this.monthCalendar1.Name = "monthCalendar1";
-            this.monthCalendar1.TabIndex = 66;
+            this.cal_donorLastTime.Location = new System.Drawing.Point(422, 289);
+            this.cal_donorLastTime.Name = "cal_donorLastTime";
+            this.cal_donorLastTime.TabIndex = 66;
             // 
             // label1
             // 
@@ -189,11 +209,11 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.checkBox6);
-            this.groupBox5.Controls.Add(this.checkBox7);
-            this.groupBox5.Controls.Add(this.checkBox8);
-            this.groupBox5.Controls.Add(this.checkBox9);
-            this.groupBox5.Controls.Add(this.checkBox10);
+            this.groupBox5.Controls.Add(this.checkBox_donorOccOther);
+            this.groupBox5.Controls.Add(this.checkBox_donorOccMonk);
+            this.groupBox5.Controls.Add(this.checkBox_donorOccEmp);
+            this.groupBox5.Controls.Add(this.checkBox_donorOccGov);
+            this.groupBox5.Controls.Add(this.checkBox_donorOccStudent);
             this.groupBox5.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox5.ForeColor = System.Drawing.Color.Black;
             this.groupBox5.Location = new System.Drawing.Point(422, 87);
@@ -203,72 +223,72 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Occupation";
             // 
-            // checkBox6
+            // checkBox_donorOccOther
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.ForeColor = System.Drawing.Color.Black;
-            this.checkBox6.Location = new System.Drawing.Point(16, 133);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(56, 19);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "Other";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccOther.AutoSize = true;
+            this.checkBox_donorOccOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_donorOccOther.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_donorOccOther.Location = new System.Drawing.Point(16, 133);
+            this.checkBox_donorOccOther.Name = "checkBox_donorOccOther";
+            this.checkBox_donorOccOther.Size = new System.Drawing.Size(56, 19);
+            this.checkBox_donorOccOther.TabIndex = 4;
+            this.checkBox_donorOccOther.Text = "Other";
+            this.checkBox_donorOccOther.UseVisualStyleBackColor = true;
             // 
-            // checkBox7
+            // checkBox_donorOccMonk
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.ForeColor = System.Drawing.Color.Black;
-            this.checkBox7.Location = new System.Drawing.Point(15, 108);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(94, 19);
-            this.checkBox7.TabIndex = 3;
-            this.checkBox7.Text = "Priesi, Monk";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccMonk.AutoSize = true;
+            this.checkBox_donorOccMonk.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_donorOccMonk.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_donorOccMonk.Location = new System.Drawing.Point(15, 108);
+            this.checkBox_donorOccMonk.Name = "checkBox_donorOccMonk";
+            this.checkBox_donorOccMonk.Size = new System.Drawing.Size(94, 19);
+            this.checkBox_donorOccMonk.TabIndex = 3;
+            this.checkBox_donorOccMonk.Text = "Priesi, Monk";
+            this.checkBox_donorOccMonk.UseVisualStyleBackColor = true;
             // 
-            // checkBox8
+            // checkBox_donorOccEmp
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.ForeColor = System.Drawing.Color.Black;
-            this.checkBox8.Location = new System.Drawing.Point(15, 83);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(138, 19);
-            this.checkBox8.TabIndex = 2;
-            this.checkBox8.Text = "Company, employee";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccEmp.AutoSize = true;
+            this.checkBox_donorOccEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_donorOccEmp.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_donorOccEmp.Location = new System.Drawing.Point(15, 83);
+            this.checkBox_donorOccEmp.Name = "checkBox_donorOccEmp";
+            this.checkBox_donorOccEmp.Size = new System.Drawing.Size(138, 19);
+            this.checkBox_donorOccEmp.TabIndex = 2;
+            this.checkBox_donorOccEmp.Text = "Company, employee";
+            this.checkBox_donorOccEmp.UseVisualStyleBackColor = true;
             // 
-            // checkBox9
+            // checkBox_donorOccGov
             // 
-            this.checkBox9.AutoSize = true;
-            this.checkBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox9.ForeColor = System.Drawing.Color.Black;
-            this.checkBox9.Location = new System.Drawing.Point(15, 59);
-            this.checkBox9.Name = "checkBox9";
-            this.checkBox9.Size = new System.Drawing.Size(260, 19);
-            this.checkBox9.TabIndex = 1;
-            this.checkBox9.Text = "Gov. official, solider, police, state enterprise";
-            this.checkBox9.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccGov.AutoSize = true;
+            this.checkBox_donorOccGov.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_donorOccGov.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_donorOccGov.Location = new System.Drawing.Point(15, 59);
+            this.checkBox_donorOccGov.Name = "checkBox_donorOccGov";
+            this.checkBox_donorOccGov.Size = new System.Drawing.Size(260, 19);
+            this.checkBox_donorOccGov.TabIndex = 1;
+            this.checkBox_donorOccGov.Text = "Gov. official, solider, police, state enterprise";
+            this.checkBox_donorOccGov.UseVisualStyleBackColor = true;
             // 
-            // checkBox10
+            // checkBox_donorOccStudent
             // 
-            this.checkBox10.AutoSize = true;
-            this.checkBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox10.ForeColor = System.Drawing.Color.Black;
-            this.checkBox10.Location = new System.Drawing.Point(16, 34);
-            this.checkBox10.Name = "checkBox10";
-            this.checkBox10.Size = new System.Drawing.Size(68, 19);
-            this.checkBox10.TabIndex = 0;
-            this.checkBox10.Text = "Student";
-            this.checkBox10.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccStudent.AutoSize = true;
+            this.checkBox_donorOccStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBox_donorOccStudent.ForeColor = System.Drawing.Color.Black;
+            this.checkBox_donorOccStudent.Location = new System.Drawing.Point(16, 34);
+            this.checkBox_donorOccStudent.Name = "checkBox_donorOccStudent";
+            this.checkBox_donorOccStudent.Size = new System.Drawing.Size(68, 19);
+            this.checkBox_donorOccStudent.TabIndex = 0;
+            this.checkBox_donorOccStudent.Text = "Student";
+            this.checkBox_donorOccStudent.UseVisualStyleBackColor = true;
             // 
             // label15
             // 
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(31, 176);
+            this.label15.Location = new System.Drawing.Point(32, 171);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(36, 19);
             this.label15.TabIndex = 50;
@@ -309,111 +329,111 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.guna2RadioButton1);
-            this.groupBox4.Controls.Add(this.guna2RadioButton2);
+            this.groupBox4.Controls.Add(this.radio_donorFemale);
+            this.groupBox4.Controls.Add(this.radio_donorMale);
             this.groupBox4.Location = new System.Drawing.Point(163, 156);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(172, 39);
             this.groupBox4.TabIndex = 63;
             this.groupBox4.TabStop = false;
             // 
-            // guna2RadioButton1
+            // radio_donorFemale
             // 
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(72, 14);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(78, 20);
-            this.guna2RadioButton1.TabIndex = 21;
-            this.guna2RadioButton1.TabStop = true;
-            this.guna2RadioButton1.Text = "Female";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UseVisualStyleBackColor = true;
+            this.radio_donorFemale.AutoSize = true;
+            this.radio_donorFemale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_donorFemale.CheckedState.BorderThickness = 0;
+            this.radio_donorFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_donorFemale.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_donorFemale.CheckedState.InnerOffset = -4;
+            this.radio_donorFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_donorFemale.ForeColor = System.Drawing.Color.Black;
+            this.radio_donorFemale.Location = new System.Drawing.Point(72, 14);
+            this.radio_donorFemale.Name = "radio_donorFemale";
+            this.radio_donorFemale.Size = new System.Drawing.Size(78, 20);
+            this.radio_donorFemale.TabIndex = 21;
+            this.radio_donorFemale.TabStop = true;
+            this.radio_donorFemale.Text = "Female";
+            this.radio_donorFemale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_donorFemale.UncheckedState.BorderThickness = 2;
+            this.radio_donorFemale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_donorFemale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_donorFemale.UseVisualStyleBackColor = true;
             // 
-            // guna2RadioButton2
+            // radio_donorMale
             // 
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton2.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(6, 14);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(60, 20);
-            this.guna2RadioButton2.TabIndex = 20;
-            this.guna2RadioButton2.TabStop = true;
-            this.guna2RadioButton2.Text = "Male";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = true;
+            this.radio_donorMale.AutoSize = true;
+            this.radio_donorMale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_donorMale.CheckedState.BorderThickness = 0;
+            this.radio_donorMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_donorMale.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_donorMale.CheckedState.InnerOffset = -4;
+            this.radio_donorMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_donorMale.ForeColor = System.Drawing.Color.Black;
+            this.radio_donorMale.Location = new System.Drawing.Point(6, 14);
+            this.radio_donorMale.Name = "radio_donorMale";
+            this.radio_donorMale.Size = new System.Drawing.Size(60, 20);
+            this.radio_donorMale.TabIndex = 20;
+            this.radio_donorMale.TabStop = true;
+            this.radio_donorMale.Text = "Male";
+            this.radio_donorMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_donorMale.UncheckedState.BorderThickness = 2;
+            this.radio_donorMale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_donorMale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_donorMale.UseVisualStyleBackColor = true;
             // 
-            // guna2TextBox3
+            // txt_donorPhoneNo
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.BorderRadius = 3;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(163, 341);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox3.TabIndex = 58;
+            this.txt_donorPhoneNo.BorderColor = System.Drawing.Color.Black;
+            this.txt_donorPhoneNo.BorderRadius = 3;
+            this.txt_donorPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_donorPhoneNo.DefaultText = "";
+            this.txt_donorPhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_donorPhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_donorPhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorPhoneNo.DisabledState.Parent = this.txt_donorPhoneNo;
+            this.txt_donorPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorPhoneNo.FocusedState.Parent = this.txt_donorPhoneNo;
+            this.txt_donorPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_donorPhoneNo.ForeColor = System.Drawing.Color.Black;
+            this.txt_donorPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorPhoneNo.HoverState.Parent = this.txt_donorPhoneNo;
+            this.txt_donorPhoneNo.Location = new System.Drawing.Point(163, 341);
+            this.txt_donorPhoneNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_donorPhoneNo.Name = "txt_donorPhoneNo";
+            this.txt_donorPhoneNo.PasswordChar = '\0';
+            this.txt_donorPhoneNo.PlaceholderText = "";
+            this.txt_donorPhoneNo.SelectedText = "";
+            this.txt_donorPhoneNo.ShadowDecoration.Parent = this.txt_donorPhoneNo;
+            this.txt_donorPhoneNo.Size = new System.Drawing.Size(200, 28);
+            this.txt_donorPhoneNo.TabIndex = 58;
             // 
-            // guna2TextBox4
+            // txt_donorEmail
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.BorderRadius = 3;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(164, 375);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox4.TabIndex = 60;
+            this.txt_donorEmail.BorderColor = System.Drawing.Color.Black;
+            this.txt_donorEmail.BorderRadius = 3;
+            this.txt_donorEmail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_donorEmail.DefaultText = "";
+            this.txt_donorEmail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_donorEmail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_donorEmail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorEmail.DisabledState.Parent = this.txt_donorEmail;
+            this.txt_donorEmail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorEmail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorEmail.FocusedState.Parent = this.txt_donorEmail;
+            this.txt_donorEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_donorEmail.ForeColor = System.Drawing.Color.Black;
+            this.txt_donorEmail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorEmail.HoverState.Parent = this.txt_donorEmail;
+            this.txt_donorEmail.Location = new System.Drawing.Point(164, 375);
+            this.txt_donorEmail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_donorEmail.Name = "txt_donorEmail";
+            this.txt_donorEmail.PasswordChar = '\0';
+            this.txt_donorEmail.PlaceholderText = "";
+            this.txt_donorEmail.SelectedText = "";
+            this.txt_donorEmail.ShadowDecoration.Parent = this.txt_donorEmail;
+            this.txt_donorEmail.Size = new System.Drawing.Size(200, 28);
+            this.txt_donorEmail.TabIndex = 60;
             // 
             // label19
             // 
@@ -426,32 +446,32 @@
             this.label19.TabIndex = 57;
             this.label19.Text = ".Kg";
             // 
-            // guna2TextBox5
+            // txt_donorWeight
             // 
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.BorderRadius = 3;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(163, 307);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(84, 28);
-            this.guna2TextBox5.TabIndex = 56;
+            this.txt_donorWeight.BorderColor = System.Drawing.Color.Black;
+            this.txt_donorWeight.BorderRadius = 3;
+            this.txt_donorWeight.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_donorWeight.DefaultText = "";
+            this.txt_donorWeight.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_donorWeight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_donorWeight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorWeight.DisabledState.Parent = this.txt_donorWeight;
+            this.txt_donorWeight.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorWeight.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorWeight.FocusedState.Parent = this.txt_donorWeight;
+            this.txt_donorWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_donorWeight.ForeColor = System.Drawing.Color.Black;
+            this.txt_donorWeight.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorWeight.HoverState.Parent = this.txt_donorWeight;
+            this.txt_donorWeight.Location = new System.Drawing.Point(163, 307);
+            this.txt_donorWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_donorWeight.Name = "txt_donorWeight";
+            this.txt_donorWeight.PasswordChar = '\0';
+            this.txt_donorWeight.PlaceholderText = "";
+            this.txt_donorWeight.SelectedText = "";
+            this.txt_donorWeight.ShadowDecoration.Parent = this.txt_donorWeight;
+            this.txt_donorWeight.Size = new System.Drawing.Size(84, 28);
+            this.txt_donorWeight.TabIndex = 56;
             // 
             // label20
             // 
@@ -464,32 +484,32 @@
             this.label20.TabIndex = 55;
             this.label20.Text = "Weight";
             // 
-            // combo_donnerABOGroup
+            // combo_donorAboGroup
             // 
-            this.combo_donnerABOGroup.BackColor = System.Drawing.Color.Silver;
-            this.combo_donnerABOGroup.BorderColor = System.Drawing.Color.Black;
-            this.combo_donnerABOGroup.BorderRadius = 3;
-            this.combo_donnerABOGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_donnerABOGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_donnerABOGroup.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_donnerABOGroup.FocusedState.Parent = this.combo_donnerABOGroup;
-            this.combo_donnerABOGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.combo_donnerABOGroup.ForeColor = System.Drawing.Color.Black;
-            this.combo_donnerABOGroup.FormattingEnabled = true;
-            this.combo_donnerABOGroup.HoverState.Parent = this.combo_donnerABOGroup;
-            this.combo_donnerABOGroup.ItemHeight = 20;
-            this.combo_donnerABOGroup.Items.AddRange(new object[] {
+            this.combo_donorAboGroup.BackColor = System.Drawing.Color.Silver;
+            this.combo_donorAboGroup.BorderColor = System.Drawing.Color.Black;
+            this.combo_donorAboGroup.BorderRadius = 3;
+            this.combo_donorAboGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_donorAboGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_donorAboGroup.FocusedColor = System.Drawing.Color.Empty;
+            this.combo_donorAboGroup.FocusedState.Parent = this.combo_donorAboGroup;
+            this.combo_donorAboGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_donorAboGroup.ForeColor = System.Drawing.Color.Black;
+            this.combo_donorAboGroup.FormattingEnabled = true;
+            this.combo_donorAboGroup.HoverState.Parent = this.combo_donorAboGroup;
+            this.combo_donorAboGroup.ItemHeight = 20;
+            this.combo_donorAboGroup.Items.AddRange(new object[] {
             "A",
             "B",
             "AB",
             "O"});
-            this.combo_donnerABOGroup.ItemsAppearance.Parent = this.combo_donnerABOGroup;
-            this.combo_donnerABOGroup.Location = new System.Drawing.Point(163, 242);
-            this.combo_donnerABOGroup.Name = "combo_donnerABOGroup";
-            this.combo_donnerABOGroup.ShadowDecoration.Parent = this.combo_donnerABOGroup;
-            this.combo_donnerABOGroup.Size = new System.Drawing.Size(200, 26);
-            this.combo_donnerABOGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_donnerABOGroup.TabIndex = 54;
+            this.combo_donorAboGroup.ItemsAppearance.Parent = this.combo_donorAboGroup;
+            this.combo_donorAboGroup.Location = new System.Drawing.Point(163, 242);
+            this.combo_donorAboGroup.Name = "combo_donorAboGroup";
+            this.combo_donorAboGroup.ShadowDecoration.Parent = this.combo_donorAboGroup;
+            this.combo_donorAboGroup.Size = new System.Drawing.Size(200, 26);
+            this.combo_donorAboGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.combo_donorAboGroup.TabIndex = 54;
             // 
             // label21
             // 
@@ -502,24 +522,24 @@
             this.label21.TabIndex = 53;
             this.label21.Text = "ABO group";
             // 
-            // guna2DateTimePicker1
+            // date_donorDOB
             // 
-            this.guna2DateTimePicker1.BorderRadius = 3;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(163, 201);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 28);
-            this.guna2DateTimePicker1.TabIndex = 52;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
+            this.date_donorDOB.BorderRadius = 3;
+            this.date_donorDOB.BorderThickness = 1;
+            this.date_donorDOB.CheckedState.Parent = this.date_donorDOB;
+            this.date_donorDOB.FillColor = System.Drawing.Color.White;
+            this.date_donorDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_donorDOB.ForeColor = System.Drawing.Color.Black;
+            this.date_donorDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date_donorDOB.HoverState.Parent = this.date_donorDOB;
+            this.date_donorDOB.Location = new System.Drawing.Point(163, 201);
+            this.date_donorDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date_donorDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date_donorDOB.Name = "date_donorDOB";
+            this.date_donorDOB.ShadowDecoration.Parent = this.date_donorDOB;
+            this.date_donorDOB.Size = new System.Drawing.Size(200, 28);
+            this.date_donorDOB.TabIndex = 52;
+            this.date_donorDOB.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
             // 
             // label22
             // 
@@ -532,59 +552,59 @@
             this.label22.TabIndex = 51;
             this.label22.Text = "DOB";
             // 
-            // guna2TextBox1
+            // txt_donorLName
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.BorderRadius = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(163, 121);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox1.TabIndex = 49;
+            this.txt_donorLName.BorderColor = System.Drawing.Color.Black;
+            this.txt_donorLName.BorderRadius = 3;
+            this.txt_donorLName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_donorLName.DefaultText = "";
+            this.txt_donorLName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_donorLName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_donorLName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorLName.DisabledState.Parent = this.txt_donorLName;
+            this.txt_donorLName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorLName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorLName.FocusedState.Parent = this.txt_donorLName;
+            this.txt_donorLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_donorLName.ForeColor = System.Drawing.Color.Black;
+            this.txt_donorLName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorLName.HoverState.Parent = this.txt_donorLName;
+            this.txt_donorLName.Location = new System.Drawing.Point(163, 121);
+            this.txt_donorLName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_donorLName.Name = "txt_donorLName";
+            this.txt_donorLName.PasswordChar = '\0';
+            this.txt_donorLName.PlaceholderText = "";
+            this.txt_donorLName.SelectedText = "";
+            this.txt_donorLName.ShadowDecoration.Parent = this.txt_donorLName;
+            this.txt_donorLName.Size = new System.Drawing.Size(200, 28);
+            this.txt_donorLName.TabIndex = 49;
             // 
-            // guna2TextBox2
+            // txt_donorFName
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.BorderRadius = 3;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(163, 87);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox2.TabIndex = 48;
+            this.txt_donorFName.BorderColor = System.Drawing.Color.Black;
+            this.txt_donorFName.BorderRadius = 3;
+            this.txt_donorFName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_donorFName.DefaultText = "";
+            this.txt_donorFName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_donorFName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_donorFName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorFName.DisabledState.Parent = this.txt_donorFName;
+            this.txt_donorFName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_donorFName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorFName.FocusedState.Parent = this.txt_donorFName;
+            this.txt_donorFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_donorFName.ForeColor = System.Drawing.Color.Black;
+            this.txt_donorFName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_donorFName.HoverState.Parent = this.txt_donorFName;
+            this.txt_donorFName.Location = new System.Drawing.Point(163, 87);
+            this.txt_donorFName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_donorFName.Name = "txt_donorFName";
+            this.txt_donorFName.PasswordChar = '\0';
+            this.txt_donorFName.PlaceholderText = "";
+            this.txt_donorFName.SelectedText = "";
+            this.txt_donorFName.ShadowDecoration.Parent = this.txt_donorFName;
+            this.txt_donorFName.Size = new System.Drawing.Size(200, 28);
+            this.txt_donorFName.TabIndex = 48;
             // 
             // label12
             // 
@@ -642,24 +662,28 @@
             this.guna2Button1.Text = "Submit";
             this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // richTextBox1
+            // guna2Button2
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(163, 410);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(201, 41);
-            this.richTextBox1.TabIndex = 85;
-            this.richTextBox1.Text = "";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(32, 421);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 19);
-            this.label10.TabIndex = 84;
-            this.label10.Text = "Address";
+            this.guna2Button2.BorderColor = System.Drawing.Color.Lime;
+            this.guna2Button2.BorderRadius = 17;
+            this.guna2Button2.BorderThickness = 1;
+            this.guna2Button2.CheckedState.Parent = this.guna2Button2;
+            this.guna2Button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.guna2Button2.CustomImages.Parent = this.guna2Button2;
+            this.guna2Button2.FillColor = System.Drawing.Color.White;
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.guna2Button2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2Button2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2Button2.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2Button2.HoverState.Parent = this.guna2Button2;
+            this.guna2Button2.Location = new System.Drawing.Point(519, 486);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
+            this.guna2Button2.Size = new System.Drawing.Size(87, 33);
+            this.guna2Button2.TabIndex = 47;
+            this.guna2Button2.Text = "Reset";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // DonnerForm
             // 
@@ -667,6 +691,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 532);
+            this.Controls.Add(this.guna2Button2);
             this.Controls.Add(this.guna2Button1);
             this.Controls.Add(this.guna2GroupBox1);
             this.ForeColor = System.Drawing.Color.Black;
@@ -688,39 +713,40 @@
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
-        private System.Windows.Forms.CheckBox checkBox9;
-        private System.Windows.Forms.CheckBox checkBox10;
+        private System.Windows.Forms.CheckBox checkBox_donorOccOther;
+        private System.Windows.Forms.CheckBox checkBox_donorOccMonk;
+        private System.Windows.Forms.CheckBox checkBox_donorOccEmp;
+        private System.Windows.Forms.CheckBox checkBox_donorOccGov;
+        private System.Windows.Forms.CheckBox checkBox_donorOccStudent;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox4;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2RadioButton radio_donorFemale;
+        private Guna.UI2.WinForms.Guna2RadioButton radio_donorMale;
+        private Guna.UI2.WinForms.Guna2TextBox txt_donorPhoneNo;
+        private Guna.UI2.WinForms.Guna2TextBox txt_donorEmail;
         private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox txt_donorWeight;
         private System.Windows.Forms.Label label20;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_donnerABOGroup;
+        private Guna.UI2.WinForms.Guna2ComboBox combo_donorAboGroup;
         private System.Windows.Forms.Label label21;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker date_donorDOB;
         private System.Windows.Forms.Label label22;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_donorLName;
+        private Guna.UI2.WinForms.Guna2TextBox txt_donorFName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.MonthCalendar cal_donorLastTime;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_donorId;
         private Guna.UI2.WinForms.Guna2ComboBox combo_donnerRH;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox textBox_donorAddress;
         private System.Windows.Forms.Label label10;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
 }
