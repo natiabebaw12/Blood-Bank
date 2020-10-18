@@ -10,8 +10,8 @@ namespace BloodBank.Classes
     //Patient class inherit all properties and method from Person class according to their visiblity
     class Patient : Person
     {
-       private string hospitalName, doctor, history, requiredBloodUnit, hospitalPhoneNo;
-       private int patientRegdNo, noRequiredUnit;
+       protected string hospitalName, doctor, history, requiredBloodUnit, hospitalPhoneNo;
+       protected int patientRegdNo, noRequiredUnit;
         //set and get method to set values and to return the value of defind variables
         public string HospitalName { get => hospitalName; set => hospitalName = value; }
         public string Doctor { get => doctor; set => doctor = value; }
