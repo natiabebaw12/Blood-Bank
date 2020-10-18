@@ -30,53 +30,53 @@
         {
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
-            this.guna2TextBox9 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_patientLName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.date_patientDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label11 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.txt_address = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.guna2TextBox8 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2NumericUpDown1 = new Guna.UI2.WinForms.Guna2NumericUpDown();
+            this.txt_hospitalPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.num_requiredUnit = new Guna.UI2.WinForms.Guna2NumericUpDown();
             this.label9 = new System.Windows.Forms.Label();
             this.combo_bloodRequired = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.guna2RadioButton3 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton4 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.radio_patientNo = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radio_patientYes = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txt_doctor = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_patientRegdNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_hospitalName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.combo_receiverRH = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combo_patientRh = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lbl_patientId = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.guna2RadioButton1 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2RadioButton2 = new Guna.UI2.WinForms.Guna2RadioButton();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.radio_patientFemale = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.radio_patientMale = new Guna.UI2.WinForms.Guna2RadioButton();
+            this.txt_patientPhoneNo = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_patientemail = new Guna.UI2.WinForms.Guna2TextBox();
             this.label19 = new System.Windows.Forms.Label();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_patientWeight = new Guna.UI2.WinForms.Guna2TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.combo_receiverABOGroup = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.combo_patientAboGroup = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.date_patientDOB = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.label22 = new System.Windows.Forms.Label();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_patientFName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_requiredUnit)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
@@ -107,44 +107,44 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderThickness = 2;
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox9);
+            this.guna2GroupBox1.Controls.Add(this.txt_patientLName);
             this.guna2GroupBox1.Controls.Add(this.label13);
-            this.guna2GroupBox1.Controls.Add(this.guna2DateTimePicker2);
+            this.guna2GroupBox1.Controls.Add(this.date_patientDate);
             this.guna2GroupBox1.Controls.Add(this.label11);
-            this.guna2GroupBox1.Controls.Add(this.richTextBox1);
+            this.guna2GroupBox1.Controls.Add(this.txt_address);
             this.guna2GroupBox1.Controls.Add(this.label10);
             this.guna2GroupBox1.Controls.Add(this.label1);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox8);
-            this.guna2GroupBox1.Controls.Add(this.guna2NumericUpDown1);
+            this.guna2GroupBox1.Controls.Add(this.txt_hospitalPhoneNo);
+            this.guna2GroupBox1.Controls.Add(this.num_requiredUnit);
             this.guna2GroupBox1.Controls.Add(this.label9);
             this.guna2GroupBox1.Controls.Add(this.combo_bloodRequired);
             this.guna2GroupBox1.Controls.Add(this.label8);
             this.guna2GroupBox1.Controls.Add(this.label7);
             this.guna2GroupBox1.Controls.Add(this.groupBox1);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox7);
+            this.guna2GroupBox1.Controls.Add(this.txt_doctor);
             this.guna2GroupBox1.Controls.Add(this.label6);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox6);
+            this.guna2GroupBox1.Controls.Add(this.txt_patientRegdNo);
             this.guna2GroupBox1.Controls.Add(this.label5);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox1);
+            this.guna2GroupBox1.Controls.Add(this.txt_hospitalName);
             this.guna2GroupBox1.Controls.Add(this.label4);
-            this.guna2GroupBox1.Controls.Add(this.combo_receiverRH);
+            this.guna2GroupBox1.Controls.Add(this.combo_patientRh);
             this.guna2GroupBox1.Controls.Add(this.label3);
-            this.guna2GroupBox1.Controls.Add(this.label2);
+            this.guna2GroupBox1.Controls.Add(this.lbl_patientId);
             this.guna2GroupBox1.Controls.Add(this.label15);
             this.guna2GroupBox1.Controls.Add(this.label16);
             this.guna2GroupBox1.Controls.Add(this.label17);
             this.guna2GroupBox1.Controls.Add(this.label18);
             this.guna2GroupBox1.Controls.Add(this.groupBox4);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox3);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox4);
+            this.guna2GroupBox1.Controls.Add(this.txt_patientPhoneNo);
+            this.guna2GroupBox1.Controls.Add(this.txt_patientemail);
             this.guna2GroupBox1.Controls.Add(this.label19);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox5);
+            this.guna2GroupBox1.Controls.Add(this.txt_patientWeight);
             this.guna2GroupBox1.Controls.Add(this.label20);
-            this.guna2GroupBox1.Controls.Add(this.combo_receiverABOGroup);
+            this.guna2GroupBox1.Controls.Add(this.combo_patientAboGroup);
             this.guna2GroupBox1.Controls.Add(this.label21);
-            this.guna2GroupBox1.Controls.Add(this.guna2DateTimePicker1);
+            this.guna2GroupBox1.Controls.Add(this.date_patientDOB);
             this.guna2GroupBox1.Controls.Add(this.label22);
-            this.guna2GroupBox1.Controls.Add(this.guna2TextBox2);
+            this.guna2GroupBox1.Controls.Add(this.txt_patientFName);
             this.guna2GroupBox1.Controls.Add(this.label12);
             this.guna2GroupBox1.Controls.Add(this.label14);
             this.guna2GroupBox1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -157,32 +157,32 @@
             this.guna2GroupBox1.TabIndex = 47;
             this.guna2GroupBox1.Text = "Patient Form";
             // 
-            // guna2TextBox9
+            // txt_patientLName
             // 
-            this.guna2TextBox9.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox9.BorderRadius = 3;
-            this.guna2TextBox9.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox9.DefaultText = "";
-            this.guna2TextBox9.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox9.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.DisabledState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox9.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.FocusedState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox9.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Location = new System.Drawing.Point(181, 125);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox9.Name = "guna2TextBox9";
-            this.guna2TextBox9.PasswordChar = '\0';
-            this.guna2TextBox9.PlaceholderText = "";
-            this.guna2TextBox9.SelectedText = "";
-            this.guna2TextBox9.ShadowDecoration.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox9.TabIndex = 87;
+            this.txt_patientLName.BorderColor = System.Drawing.Color.Black;
+            this.txt_patientLName.BorderRadius = 3;
+            this.txt_patientLName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_patientLName.DefaultText = "";
+            this.txt_patientLName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_patientLName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_patientLName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientLName.DisabledState.Parent = this.txt_patientLName;
+            this.txt_patientLName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientLName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientLName.FocusedState.Parent = this.txt_patientLName;
+            this.txt_patientLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientLName.ForeColor = System.Drawing.Color.Black;
+            this.txt_patientLName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientLName.HoverState.Parent = this.txt_patientLName;
+            this.txt_patientLName.Location = new System.Drawing.Point(181, 125);
+            this.txt_patientLName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_patientLName.Name = "txt_patientLName";
+            this.txt_patientLName.PasswordChar = '\0';
+            this.txt_patientLName.PlaceholderText = "";
+            this.txt_patientLName.SelectedText = "";
+            this.txt_patientLName.ShadowDecoration.Parent = this.txt_patientLName;
+            this.txt_patientLName.Size = new System.Drawing.Size(200, 28);
+            this.txt_patientLName.TabIndex = 87;
             // 
             // label13
             // 
@@ -195,24 +195,24 @@
             this.label13.TabIndex = 86;
             this.label13.Text = "Last Name";
             // 
-            // guna2DateTimePicker2
+            // date_patientDate
             // 
-            this.guna2DateTimePicker2.BorderRadius = 3;
-            this.guna2DateTimePicker2.BorderThickness = 1;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(538, 435);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(189, 28);
-            this.guna2DateTimePicker2.TabIndex = 85;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
+            this.date_patientDate.BorderRadius = 3;
+            this.date_patientDate.BorderThickness = 1;
+            this.date_patientDate.CheckedState.Parent = this.date_patientDate;
+            this.date_patientDate.FillColor = System.Drawing.Color.White;
+            this.date_patientDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_patientDate.ForeColor = System.Drawing.Color.Black;
+            this.date_patientDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date_patientDate.HoverState.Parent = this.date_patientDate;
+            this.date_patientDate.Location = new System.Drawing.Point(538, 435);
+            this.date_patientDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date_patientDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date_patientDate.Name = "date_patientDate";
+            this.date_patientDate.ShadowDecoration.Parent = this.date_patientDate;
+            this.date_patientDate.Size = new System.Drawing.Size(189, 28);
+            this.date_patientDate.TabIndex = 85;
+            this.date_patientDate.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
             // 
             // label11
             // 
@@ -225,13 +225,13 @@
             this.label11.TabIndex = 84;
             this.label11.Text = "Date";
             // 
-            // richTextBox1
+            // txt_address
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(538, 372);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(189, 55);
-            this.richTextBox1.TabIndex = 83;
-            this.richTextBox1.Text = "";
+            this.txt_address.Location = new System.Drawing.Point(538, 372);
+            this.txt_address.Name = "txt_address";
+            this.txt_address.Size = new System.Drawing.Size(189, 55);
+            this.txt_address.TabIndex = 83;
+            this.txt_address.Text = "";
             // 
             // label10
             // 
@@ -255,54 +255,54 @@
             this.label1.TabIndex = 81;
             this.label1.Text = "Hospital P.No.";
             // 
-            // guna2TextBox8
+            // txt_hospitalPhoneNo
             // 
-            this.guna2TextBox8.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox8.BorderRadius = 3;
-            this.guna2TextBox8.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox8.DefaultText = "";
-            this.guna2TextBox8.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.DisabledState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox8.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.FocusedState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox8.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Location = new System.Drawing.Point(538, 336);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox8.Name = "guna2TextBox8";
-            this.guna2TextBox8.PasswordChar = '\0';
-            this.guna2TextBox8.PlaceholderText = "";
-            this.guna2TextBox8.SelectedText = "";
-            this.guna2TextBox8.ShadowDecoration.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Size = new System.Drawing.Size(189, 28);
-            this.guna2TextBox8.TabIndex = 80;
+            this.txt_hospitalPhoneNo.BorderColor = System.Drawing.Color.Black;
+            this.txt_hospitalPhoneNo.BorderRadius = 3;
+            this.txt_hospitalPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_hospitalPhoneNo.DefaultText = "";
+            this.txt_hospitalPhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_hospitalPhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_hospitalPhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hospitalPhoneNo.DisabledState.Parent = this.txt_hospitalPhoneNo;
+            this.txt_hospitalPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hospitalPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hospitalPhoneNo.FocusedState.Parent = this.txt_hospitalPhoneNo;
+            this.txt_hospitalPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hospitalPhoneNo.ForeColor = System.Drawing.Color.Black;
+            this.txt_hospitalPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hospitalPhoneNo.HoverState.Parent = this.txt_hospitalPhoneNo;
+            this.txt_hospitalPhoneNo.Location = new System.Drawing.Point(538, 336);
+            this.txt_hospitalPhoneNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hospitalPhoneNo.Name = "txt_hospitalPhoneNo";
+            this.txt_hospitalPhoneNo.PasswordChar = '\0';
+            this.txt_hospitalPhoneNo.PlaceholderText = "";
+            this.txt_hospitalPhoneNo.SelectedText = "";
+            this.txt_hospitalPhoneNo.ShadowDecoration.Parent = this.txt_hospitalPhoneNo;
+            this.txt_hospitalPhoneNo.Size = new System.Drawing.Size(189, 28);
+            this.txt_hospitalPhoneNo.TabIndex = 80;
             // 
-            // guna2NumericUpDown1
+            // num_requiredUnit
             // 
-            this.guna2NumericUpDown1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2NumericUpDown1.BorderColor = System.Drawing.Color.Black;
-            this.guna2NumericUpDown1.BorderRadius = 3;
-            this.guna2NumericUpDown1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2NumericUpDown1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2NumericUpDown1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2NumericUpDown1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2NumericUpDown1.DisabledState.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
-            this.guna2NumericUpDown1.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
-            this.guna2NumericUpDown1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2NumericUpDown1.FocusedState.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2NumericUpDown1.ForeColor = System.Drawing.Color.Black;
-            this.guna2NumericUpDown1.Location = new System.Drawing.Point(419, 218);
-            this.guna2NumericUpDown1.Name = "guna2NumericUpDown1";
-            this.guna2NumericUpDown1.ShadowDecoration.Parent = this.guna2NumericUpDown1;
-            this.guna2NumericUpDown1.Size = new System.Drawing.Size(164, 28);
-            this.guna2NumericUpDown1.TabIndex = 79;
+            this.num_requiredUnit.BackColor = System.Drawing.Color.Transparent;
+            this.num_requiredUnit.BorderColor = System.Drawing.Color.Black;
+            this.num_requiredUnit.BorderRadius = 3;
+            this.num_requiredUnit.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.num_requiredUnit.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.num_requiredUnit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.num_requiredUnit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.num_requiredUnit.DisabledState.Parent = this.num_requiredUnit;
+            this.num_requiredUnit.DisabledState.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(177)))), ((int)(((byte)(177)))), ((int)(((byte)(177)))));
+            this.num_requiredUnit.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
+            this.num_requiredUnit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.num_requiredUnit.FocusedState.Parent = this.num_requiredUnit;
+            this.num_requiredUnit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_requiredUnit.ForeColor = System.Drawing.Color.Black;
+            this.num_requiredUnit.Location = new System.Drawing.Point(419, 218);
+            this.num_requiredUnit.Name = "num_requiredUnit";
+            this.num_requiredUnit.ShadowDecoration.Parent = this.num_requiredUnit;
+            this.num_requiredUnit.Size = new System.Drawing.Size(164, 28);
+            this.num_requiredUnit.TabIndex = 79;
             // 
             // label9
             // 
@@ -367,84 +367,84 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.guna2RadioButton3);
-            this.groupBox1.Controls.Add(this.guna2RadioButton4);
+            this.groupBox1.Controls.Add(this.radio_patientNo);
+            this.groupBox1.Controls.Add(this.radio_patientYes);
             this.groupBox1.Location = new System.Drawing.Point(455, 75);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(128, 39);
             this.groupBox1.TabIndex = 65;
             this.groupBox1.TabStop = false;
             // 
-            // guna2RadioButton3
+            // radio_patientNo
             // 
-            this.guna2RadioButton3.AutoSize = true;
-            this.guna2RadioButton3.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton3.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton3.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton3.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton3.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton3.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton3.Location = new System.Drawing.Point(72, 14);
-            this.guna2RadioButton3.Name = "guna2RadioButton3";
-            this.guna2RadioButton3.Size = new System.Drawing.Size(46, 20);
-            this.guna2RadioButton3.TabIndex = 21;
-            this.guna2RadioButton3.TabStop = true;
-            this.guna2RadioButton3.Text = "No";
-            this.guna2RadioButton3.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton3.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton3.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton3.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton3.UseVisualStyleBackColor = true;
+            this.radio_patientNo.AutoSize = true;
+            this.radio_patientNo.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientNo.CheckedState.BorderThickness = 0;
+            this.radio_patientNo.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientNo.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_patientNo.CheckedState.InnerOffset = -4;
+            this.radio_patientNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_patientNo.ForeColor = System.Drawing.Color.Black;
+            this.radio_patientNo.Location = new System.Drawing.Point(72, 14);
+            this.radio_patientNo.Name = "radio_patientNo";
+            this.radio_patientNo.Size = new System.Drawing.Size(46, 20);
+            this.radio_patientNo.TabIndex = 21;
+            this.radio_patientNo.TabStop = true;
+            this.radio_patientNo.Text = "No";
+            this.radio_patientNo.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_patientNo.UncheckedState.BorderThickness = 2;
+            this.radio_patientNo.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_patientNo.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_patientNo.UseVisualStyleBackColor = true;
             // 
-            // guna2RadioButton4
+            // radio_patientYes
             // 
-            this.guna2RadioButton4.AutoSize = true;
-            this.guna2RadioButton4.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton4.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton4.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton4.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton4.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton4.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton4.Location = new System.Drawing.Point(6, 14);
-            this.guna2RadioButton4.Name = "guna2RadioButton4";
-            this.guna2RadioButton4.Size = new System.Drawing.Size(53, 20);
-            this.guna2RadioButton4.TabIndex = 20;
-            this.guna2RadioButton4.TabStop = true;
-            this.guna2RadioButton4.Text = "Yes";
-            this.guna2RadioButton4.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton4.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton4.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton4.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton4.UseVisualStyleBackColor = true;
+            this.radio_patientYes.AutoSize = true;
+            this.radio_patientYes.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientYes.CheckedState.BorderThickness = 0;
+            this.radio_patientYes.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientYes.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_patientYes.CheckedState.InnerOffset = -4;
+            this.radio_patientYes.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_patientYes.ForeColor = System.Drawing.Color.Black;
+            this.radio_patientYes.Location = new System.Drawing.Point(6, 14);
+            this.radio_patientYes.Name = "radio_patientYes";
+            this.radio_patientYes.Size = new System.Drawing.Size(53, 20);
+            this.radio_patientYes.TabIndex = 20;
+            this.radio_patientYes.TabStop = true;
+            this.radio_patientYes.Text = "Yes";
+            this.radio_patientYes.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_patientYes.UncheckedState.BorderThickness = 2;
+            this.radio_patientYes.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_patientYes.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_patientYes.UseVisualStyleBackColor = true;
             // 
-            // guna2TextBox7
+            // txt_doctor
             // 
-            this.guna2TextBox7.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.BorderRadius = 3;
-            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox7.DefaultText = "";
-            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.DisabledState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.FocusedState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox7.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox7.HoverState.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Location = new System.Drawing.Point(182, 426);
-            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox7.Name = "guna2TextBox7";
-            this.guna2TextBox7.PasswordChar = '\0';
-            this.guna2TextBox7.PlaceholderText = "";
-            this.guna2TextBox7.SelectedText = "";
-            this.guna2TextBox7.ShadowDecoration.Parent = this.guna2TextBox7;
-            this.guna2TextBox7.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox7.TabIndex = 75;
+            this.txt_doctor.BorderColor = System.Drawing.Color.Black;
+            this.txt_doctor.BorderRadius = 3;
+            this.txt_doctor.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_doctor.DefaultText = "";
+            this.txt_doctor.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_doctor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_doctor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_doctor.DisabledState.Parent = this.txt_doctor;
+            this.txt_doctor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_doctor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_doctor.FocusedState.Parent = this.txt_doctor;
+            this.txt_doctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_doctor.ForeColor = System.Drawing.Color.Black;
+            this.txt_doctor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_doctor.HoverState.Parent = this.txt_doctor;
+            this.txt_doctor.Location = new System.Drawing.Point(182, 426);
+            this.txt_doctor.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_doctor.Name = "txt_doctor";
+            this.txt_doctor.PasswordChar = '\0';
+            this.txt_doctor.PlaceholderText = "";
+            this.txt_doctor.SelectedText = "";
+            this.txt_doctor.ShadowDecoration.Parent = this.txt_doctor;
+            this.txt_doctor.Size = new System.Drawing.Size(200, 28);
+            this.txt_doctor.TabIndex = 75;
             // 
             // label6
             // 
@@ -457,32 +457,32 @@
             this.label6.TabIndex = 74;
             this.label6.Text = "Doctor Incharge";
             // 
-            // guna2TextBox6
+            // txt_patientRegdNo
             // 
-            this.guna2TextBox6.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.BorderRadius = 3;
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(181, 383);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox6.TabIndex = 73;
+            this.txt_patientRegdNo.BorderColor = System.Drawing.Color.Black;
+            this.txt_patientRegdNo.BorderRadius = 3;
+            this.txt_patientRegdNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_patientRegdNo.DefaultText = "";
+            this.txt_patientRegdNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_patientRegdNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_patientRegdNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientRegdNo.DisabledState.Parent = this.txt_patientRegdNo;
+            this.txt_patientRegdNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientRegdNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientRegdNo.FocusedState.Parent = this.txt_patientRegdNo;
+            this.txt_patientRegdNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientRegdNo.ForeColor = System.Drawing.Color.Black;
+            this.txt_patientRegdNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientRegdNo.HoverState.Parent = this.txt_patientRegdNo;
+            this.txt_patientRegdNo.Location = new System.Drawing.Point(181, 383);
+            this.txt_patientRegdNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_patientRegdNo.Name = "txt_patientRegdNo";
+            this.txt_patientRegdNo.PasswordChar = '\0';
+            this.txt_patientRegdNo.PlaceholderText = "";
+            this.txt_patientRegdNo.SelectedText = "";
+            this.txt_patientRegdNo.ShadowDecoration.Parent = this.txt_patientRegdNo;
+            this.txt_patientRegdNo.Size = new System.Drawing.Size(200, 28);
+            this.txt_patientRegdNo.TabIndex = 73;
             // 
             // label5
             // 
@@ -495,32 +495,32 @@
             this.label5.TabIndex = 72;
             this.label5.Text = "Patient Regd. No.";
             // 
-            // guna2TextBox1
+            // txt_hospitalName
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.BorderRadius = 3;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(181, 343);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox1.TabIndex = 71;
+            this.txt_hospitalName.BorderColor = System.Drawing.Color.Black;
+            this.txt_hospitalName.BorderRadius = 3;
+            this.txt_hospitalName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_hospitalName.DefaultText = "";
+            this.txt_hospitalName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_hospitalName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_hospitalName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hospitalName.DisabledState.Parent = this.txt_hospitalName;
+            this.txt_hospitalName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_hospitalName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hospitalName.FocusedState.Parent = this.txt_hospitalName;
+            this.txt_hospitalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hospitalName.ForeColor = System.Drawing.Color.Black;
+            this.txt_hospitalName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_hospitalName.HoverState.Parent = this.txt_hospitalName;
+            this.txt_hospitalName.Location = new System.Drawing.Point(181, 343);
+            this.txt_hospitalName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_hospitalName.Name = "txt_hospitalName";
+            this.txt_hospitalName.PasswordChar = '\0';
+            this.txt_hospitalName.PlaceholderText = "";
+            this.txt_hospitalName.SelectedText = "";
+            this.txt_hospitalName.ShadowDecoration.Parent = this.txt_hospitalName;
+            this.txt_hospitalName.Size = new System.Drawing.Size(200, 28);
+            this.txt_hospitalName.TabIndex = 71;
             // 
             // label4
             // 
@@ -533,21 +533,21 @@
             this.label4.TabIndex = 70;
             this.label4.Text = "Hospital Name";
             // 
-            // combo_receiverRH
+            // combo_patientRh
             // 
-            this.combo_receiverRH.BackColor = System.Drawing.Color.Silver;
-            this.combo_receiverRH.BorderColor = System.Drawing.Color.Black;
-            this.combo_receiverRH.BorderRadius = 3;
-            this.combo_receiverRH.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_receiverRH.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_receiverRH.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_receiverRH.FocusedState.Parent = this.combo_receiverRH;
-            this.combo_receiverRH.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.combo_receiverRH.ForeColor = System.Drawing.Color.Black;
-            this.combo_receiverRH.FormattingEnabled = true;
-            this.combo_receiverRH.HoverState.Parent = this.combo_receiverRH;
-            this.combo_receiverRH.ItemHeight = 20;
-            this.combo_receiverRH.Items.AddRange(new object[] {
+            this.combo_patientRh.BackColor = System.Drawing.Color.Silver;
+            this.combo_patientRh.BorderColor = System.Drawing.Color.Black;
+            this.combo_patientRh.BorderRadius = 3;
+            this.combo_patientRh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_patientRh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_patientRh.FocusedColor = System.Drawing.Color.Empty;
+            this.combo_patientRh.FocusedState.Parent = this.combo_patientRh;
+            this.combo_patientRh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.combo_patientRh.ForeColor = System.Drawing.Color.Black;
+            this.combo_patientRh.FormattingEnabled = true;
+            this.combo_patientRh.HoverState.Parent = this.combo_patientRh;
+            this.combo_patientRh.ItemHeight = 20;
+            this.combo_patientRh.Items.AddRange(new object[] {
             "A+",
             "A-",
             "B+",
@@ -556,13 +556,13 @@
             "AB-",
             "O+",
             "O-"});
-            this.combo_receiverRH.ItemsAppearance.Parent = this.combo_receiverRH;
-            this.combo_receiverRH.Location = new System.Drawing.Point(180, 301);
-            this.combo_receiverRH.Name = "combo_receiverRH";
-            this.combo_receiverRH.ShadowDecoration.Parent = this.combo_receiverRH;
-            this.combo_receiverRH.Size = new System.Drawing.Size(200, 26);
-            this.combo_receiverRH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_receiverRH.TabIndex = 69;
+            this.combo_patientRh.ItemsAppearance.Parent = this.combo_patientRh;
+            this.combo_patientRh.Location = new System.Drawing.Point(180, 301);
+            this.combo_patientRh.Name = "combo_patientRh";
+            this.combo_patientRh.ShadowDecoration.Parent = this.combo_patientRh;
+            this.combo_patientRh.Size = new System.Drawing.Size(200, 26);
+            this.combo_patientRh.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.combo_patientRh.TabIndex = 69;
             // 
             // label3
             // 
@@ -575,16 +575,16 @@
             this.label3.TabIndex = 68;
             this.label3.Text = "RH.";
             // 
-            // label2
+            // lbl_patientId
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(184, 65);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(18, 19);
-            this.label2.TabIndex = 67;
-            this.label2.Text = "0";
+            this.lbl_patientId.AutoSize = true;
+            this.lbl_patientId.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_patientId.ForeColor = System.Drawing.Color.Black;
+            this.lbl_patientId.Location = new System.Drawing.Point(184, 65);
+            this.lbl_patientId.Name = "lbl_patientId";
+            this.lbl_patientId.Size = new System.Drawing.Size(16, 19);
+            this.lbl_patientId.TabIndex = 67;
+            this.lbl_patientId.Text = "-";
             // 
             // label15
             // 
@@ -632,111 +632,111 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.guna2RadioButton1);
-            this.groupBox4.Controls.Add(this.guna2RadioButton2);
+            this.groupBox4.Controls.Add(this.radio_patientFemale);
+            this.groupBox4.Controls.Add(this.radio_patientMale);
             this.groupBox4.Location = new System.Drawing.Point(181, 154);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(172, 39);
             this.groupBox4.TabIndex = 63;
             this.groupBox4.TabStop = false;
             // 
-            // guna2RadioButton1
+            // radio_patientFemale
             // 
-            this.guna2RadioButton1.AutoSize = true;
-            this.guna2RadioButton1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton1.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton1.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton1.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton1.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton1.Location = new System.Drawing.Point(72, 14);
-            this.guna2RadioButton1.Name = "guna2RadioButton1";
-            this.guna2RadioButton1.Size = new System.Drawing.Size(78, 20);
-            this.guna2RadioButton1.TabIndex = 21;
-            this.guna2RadioButton1.TabStop = true;
-            this.guna2RadioButton1.Text = "Female";
-            this.guna2RadioButton1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton1.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton1.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton1.UseVisualStyleBackColor = true;
+            this.radio_patientFemale.AutoSize = true;
+            this.radio_patientFemale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientFemale.CheckedState.BorderThickness = 0;
+            this.radio_patientFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientFemale.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_patientFemale.CheckedState.InnerOffset = -4;
+            this.radio_patientFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_patientFemale.ForeColor = System.Drawing.Color.Black;
+            this.radio_patientFemale.Location = new System.Drawing.Point(72, 14);
+            this.radio_patientFemale.Name = "radio_patientFemale";
+            this.radio_patientFemale.Size = new System.Drawing.Size(78, 20);
+            this.radio_patientFemale.TabIndex = 21;
+            this.radio_patientFemale.TabStop = true;
+            this.radio_patientFemale.Text = "Female";
+            this.radio_patientFemale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_patientFemale.UncheckedState.BorderThickness = 2;
+            this.radio_patientFemale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_patientFemale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_patientFemale.UseVisualStyleBackColor = true;
             // 
-            // guna2RadioButton2
+            // radio_patientMale
             // 
-            this.guna2RadioButton2.AutoSize = true;
-            this.guna2RadioButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.BorderThickness = 0;
-            this.guna2RadioButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2RadioButton2.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.guna2RadioButton2.CheckedState.InnerOffset = -4;
-            this.guna2RadioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2RadioButton2.ForeColor = System.Drawing.Color.Black;
-            this.guna2RadioButton2.Location = new System.Drawing.Point(6, 14);
-            this.guna2RadioButton2.Name = "guna2RadioButton2";
-            this.guna2RadioButton2.Size = new System.Drawing.Size(60, 20);
-            this.guna2RadioButton2.TabIndex = 20;
-            this.guna2RadioButton2.TabStop = true;
-            this.guna2RadioButton2.Text = "Male";
-            this.guna2RadioButton2.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.guna2RadioButton2.UncheckedState.BorderThickness = 2;
-            this.guna2RadioButton2.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.guna2RadioButton2.UseVisualStyleBackColor = true;
+            this.radio_patientMale.AutoSize = true;
+            this.radio_patientMale.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientMale.CheckedState.BorderThickness = 0;
+            this.radio_patientMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.radio_patientMale.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.radio_patientMale.CheckedState.InnerOffset = -4;
+            this.radio_patientMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_patientMale.ForeColor = System.Drawing.Color.Black;
+            this.radio_patientMale.Location = new System.Drawing.Point(6, 14);
+            this.radio_patientMale.Name = "radio_patientMale";
+            this.radio_patientMale.Size = new System.Drawing.Size(60, 20);
+            this.radio_patientMale.TabIndex = 20;
+            this.radio_patientMale.TabStop = true;
+            this.radio_patientMale.Text = "Male";
+            this.radio_patientMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.radio_patientMale.UncheckedState.BorderThickness = 2;
+            this.radio_patientMale.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.radio_patientMale.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.radio_patientMale.UseVisualStyleBackColor = true;
             // 
-            // guna2TextBox3
+            // txt_patientPhoneNo
             // 
-            this.guna2TextBox3.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.BorderRadius = 3;
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(538, 263);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(189, 28);
-            this.guna2TextBox3.TabIndex = 58;
+            this.txt_patientPhoneNo.BorderColor = System.Drawing.Color.Black;
+            this.txt_patientPhoneNo.BorderRadius = 3;
+            this.txt_patientPhoneNo.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_patientPhoneNo.DefaultText = "";
+            this.txt_patientPhoneNo.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_patientPhoneNo.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_patientPhoneNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientPhoneNo.DisabledState.Parent = this.txt_patientPhoneNo;
+            this.txt_patientPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientPhoneNo.FocusedState.Parent = this.txt_patientPhoneNo;
+            this.txt_patientPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientPhoneNo.ForeColor = System.Drawing.Color.Black;
+            this.txt_patientPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientPhoneNo.HoverState.Parent = this.txt_patientPhoneNo;
+            this.txt_patientPhoneNo.Location = new System.Drawing.Point(538, 263);
+            this.txt_patientPhoneNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_patientPhoneNo.Name = "txt_patientPhoneNo";
+            this.txt_patientPhoneNo.PasswordChar = '\0';
+            this.txt_patientPhoneNo.PlaceholderText = "";
+            this.txt_patientPhoneNo.SelectedText = "";
+            this.txt_patientPhoneNo.ShadowDecoration.Parent = this.txt_patientPhoneNo;
+            this.txt_patientPhoneNo.Size = new System.Drawing.Size(189, 28);
+            this.txt_patientPhoneNo.TabIndex = 58;
             // 
-            // guna2TextBox4
+            // txt_patientemail
             // 
-            this.guna2TextBox4.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.BorderRadius = 3;
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(538, 300);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(189, 28);
-            this.guna2TextBox4.TabIndex = 60;
+            this.txt_patientemail.BorderColor = System.Drawing.Color.Black;
+            this.txt_patientemail.BorderRadius = 3;
+            this.txt_patientemail.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_patientemail.DefaultText = "";
+            this.txt_patientemail.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_patientemail.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_patientemail.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientemail.DisabledState.Parent = this.txt_patientemail;
+            this.txt_patientemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientemail.FocusedState.Parent = this.txt_patientemail;
+            this.txt_patientemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientemail.ForeColor = System.Drawing.Color.Black;
+            this.txt_patientemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientemail.HoverState.Parent = this.txt_patientemail;
+            this.txt_patientemail.Location = new System.Drawing.Point(538, 300);
+            this.txt_patientemail.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_patientemail.Name = "txt_patientemail";
+            this.txt_patientemail.PasswordChar = '\0';
+            this.txt_patientemail.PlaceholderText = "";
+            this.txt_patientemail.SelectedText = "";
+            this.txt_patientemail.ShadowDecoration.Parent = this.txt_patientemail;
+            this.txt_patientemail.Size = new System.Drawing.Size(189, 28);
+            this.txt_patientemail.TabIndex = 60;
             // 
             // label19
             // 
@@ -749,32 +749,32 @@
             this.label19.TabIndex = 57;
             this.label19.Text = ".Kg";
             // 
-            // guna2TextBox5
+            // txt_patientWeight
             // 
-            this.guna2TextBox5.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.BorderRadius = 3;
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(182, 234);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(84, 28);
-            this.guna2TextBox5.TabIndex = 56;
+            this.txt_patientWeight.BorderColor = System.Drawing.Color.Black;
+            this.txt_patientWeight.BorderRadius = 3;
+            this.txt_patientWeight.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_patientWeight.DefaultText = "";
+            this.txt_patientWeight.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_patientWeight.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_patientWeight.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientWeight.DisabledState.Parent = this.txt_patientWeight;
+            this.txt_patientWeight.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientWeight.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientWeight.FocusedState.Parent = this.txt_patientWeight;
+            this.txt_patientWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientWeight.ForeColor = System.Drawing.Color.Black;
+            this.txt_patientWeight.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientWeight.HoverState.Parent = this.txt_patientWeight;
+            this.txt_patientWeight.Location = new System.Drawing.Point(182, 234);
+            this.txt_patientWeight.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_patientWeight.Name = "txt_patientWeight";
+            this.txt_patientWeight.PasswordChar = '\0';
+            this.txt_patientWeight.PlaceholderText = "";
+            this.txt_patientWeight.SelectedText = "";
+            this.txt_patientWeight.ShadowDecoration.Parent = this.txt_patientWeight;
+            this.txt_patientWeight.Size = new System.Drawing.Size(84, 28);
+            this.txt_patientWeight.TabIndex = 56;
             // 
             // label20
             // 
@@ -787,32 +787,32 @@
             this.label20.TabIndex = 55;
             this.label20.Text = "Weight";
             // 
-            // combo_receiverABOGroup
+            // combo_patientAboGroup
             // 
-            this.combo_receiverABOGroup.BackColor = System.Drawing.Color.Silver;
-            this.combo_receiverABOGroup.BorderColor = System.Drawing.Color.Black;
-            this.combo_receiverABOGroup.BorderRadius = 3;
-            this.combo_receiverABOGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.combo_receiverABOGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.combo_receiverABOGroup.FocusedColor = System.Drawing.Color.Empty;
-            this.combo_receiverABOGroup.FocusedState.Parent = this.combo_receiverABOGroup;
-            this.combo_receiverABOGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.combo_receiverABOGroup.ForeColor = System.Drawing.Color.Black;
-            this.combo_receiverABOGroup.FormattingEnabled = true;
-            this.combo_receiverABOGroup.HoverState.Parent = this.combo_receiverABOGroup;
-            this.combo_receiverABOGroup.ItemHeight = 20;
-            this.combo_receiverABOGroup.Items.AddRange(new object[] {
+            this.combo_patientAboGroup.BackColor = System.Drawing.Color.Silver;
+            this.combo_patientAboGroup.BorderColor = System.Drawing.Color.Black;
+            this.combo_patientAboGroup.BorderRadius = 3;
+            this.combo_patientAboGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.combo_patientAboGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.combo_patientAboGroup.FocusedColor = System.Drawing.Color.Empty;
+            this.combo_patientAboGroup.FocusedState.Parent = this.combo_patientAboGroup;
+            this.combo_patientAboGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.combo_patientAboGroup.ForeColor = System.Drawing.Color.Black;
+            this.combo_patientAboGroup.FormattingEnabled = true;
+            this.combo_patientAboGroup.HoverState.Parent = this.combo_patientAboGroup;
+            this.combo_patientAboGroup.ItemHeight = 20;
+            this.combo_patientAboGroup.Items.AddRange(new object[] {
             "A",
             "B",
             "AB",
             "O"});
-            this.combo_receiverABOGroup.ItemsAppearance.Parent = this.combo_receiverABOGroup;
-            this.combo_receiverABOGroup.Location = new System.Drawing.Point(180, 269);
-            this.combo_receiverABOGroup.Name = "combo_receiverABOGroup";
-            this.combo_receiverABOGroup.ShadowDecoration.Parent = this.combo_receiverABOGroup;
-            this.combo_receiverABOGroup.Size = new System.Drawing.Size(200, 26);
-            this.combo_receiverABOGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_receiverABOGroup.TabIndex = 54;
+            this.combo_patientAboGroup.ItemsAppearance.Parent = this.combo_patientAboGroup;
+            this.combo_patientAboGroup.Location = new System.Drawing.Point(180, 269);
+            this.combo_patientAboGroup.Name = "combo_patientAboGroup";
+            this.combo_patientAboGroup.ShadowDecoration.Parent = this.combo_patientAboGroup;
+            this.combo_patientAboGroup.Size = new System.Drawing.Size(200, 26);
+            this.combo_patientAboGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.combo_patientAboGroup.TabIndex = 54;
             // 
             // label21
             // 
@@ -825,24 +825,24 @@
             this.label21.TabIndex = 53;
             this.label21.Text = "ABO group";
             // 
-            // guna2DateTimePicker1
+            // date_patientDOB
             // 
-            this.guna2DateTimePicker1.BorderRadius = 3;
-            this.guna2DateTimePicker1.BorderThickness = 1;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(181, 199);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(200, 28);
-            this.guna2DateTimePicker1.TabIndex = 52;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
+            this.date_patientDOB.BorderRadius = 3;
+            this.date_patientDOB.BorderThickness = 1;
+            this.date_patientDOB.CheckedState.Parent = this.date_patientDOB;
+            this.date_patientDOB.FillColor = System.Drawing.Color.White;
+            this.date_patientDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_patientDOB.ForeColor = System.Drawing.Color.Black;
+            this.date_patientDOB.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date_patientDOB.HoverState.Parent = this.date_patientDOB;
+            this.date_patientDOB.Location = new System.Drawing.Point(181, 199);
+            this.date_patientDOB.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date_patientDOB.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date_patientDOB.Name = "date_patientDOB";
+            this.date_patientDOB.ShadowDecoration.Parent = this.date_patientDOB;
+            this.date_patientDOB.Size = new System.Drawing.Size(200, 28);
+            this.date_patientDOB.TabIndex = 52;
+            this.date_patientDOB.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
             // 
             // label22
             // 
@@ -855,32 +855,32 @@
             this.label22.TabIndex = 51;
             this.label22.Text = "DOB";
             // 
-            // guna2TextBox2
+            // txt_patientFName
             // 
-            this.guna2TextBox2.BorderColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.BorderRadius = 3;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(182, 89);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(200, 28);
-            this.guna2TextBox2.TabIndex = 48;
+            this.txt_patientFName.BorderColor = System.Drawing.Color.Black;
+            this.txt_patientFName.BorderRadius = 3;
+            this.txt_patientFName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_patientFName.DefaultText = "";
+            this.txt_patientFName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_patientFName.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_patientFName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientFName.DisabledState.Parent = this.txt_patientFName;
+            this.txt_patientFName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_patientFName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientFName.FocusedState.Parent = this.txt_patientFName;
+            this.txt_patientFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientFName.ForeColor = System.Drawing.Color.Black;
+            this.txt_patientFName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_patientFName.HoverState.Parent = this.txt_patientFName;
+            this.txt_patientFName.Location = new System.Drawing.Point(182, 89);
+            this.txt_patientFName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_patientFName.Name = "txt_patientFName";
+            this.txt_patientFName.PasswordChar = '\0';
+            this.txt_patientFName.PlaceholderText = "";
+            this.txt_patientFName.SelectedText = "";
+            this.txt_patientFName.ShadowDecoration.Parent = this.txt_patientFName;
+            this.txt_patientFName.Size = new System.Drawing.Size(200, 28);
+            this.txt_patientFName.TabIndex = 48;
             // 
             // label12
             // 
@@ -925,6 +925,7 @@
             this.guna2Button2.Size = new System.Drawing.Size(87, 33);
             this.guna2Button2.TabIndex = 49;
             this.guna2Button2.Text = "Reset";
+            this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
             // ReceiverForm
             // 
@@ -940,7 +941,7 @@
             this.Text = "ReceiverForm";
             this.guna2GroupBox1.ResumeLayout(false);
             this.guna2GroupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2NumericUpDown1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.num_requiredUnit)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox4.ResumeLayout(false);
@@ -953,49 +954,49 @@
 
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_receiverRH;
+        private Guna.UI2.WinForms.Guna2ComboBox combo_patientRh;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lbl_patientId;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.GroupBox groupBox4;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
+        private Guna.UI2.WinForms.Guna2RadioButton radio_patientFemale;
+        private Guna.UI2.WinForms.Guna2RadioButton radio_patientMale;
+        private Guna.UI2.WinForms.Guna2TextBox txt_patientPhoneNo;
+        private Guna.UI2.WinForms.Guna2TextBox txt_patientemail;
         private System.Windows.Forms.Label label19;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox txt_patientWeight;
         private System.Windows.Forms.Label label20;
-        private Guna.UI2.WinForms.Guna2ComboBox combo_receiverABOGroup;
+        private Guna.UI2.WinForms.Guna2ComboBox combo_patientAboGroup;
         private System.Windows.Forms.Label label21;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
+        private Guna.UI2.WinForms.Guna2DateTimePicker date_patientDOB;
         private System.Windows.Forms.Label label22;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
+        private Guna.UI2.WinForms.Guna2TextBox txt_patientFName;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label14;
         private Guna.UI2.WinForms.Guna2ComboBox combo_bloodRequired;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.GroupBox groupBox1;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton3;
-        private Guna.UI2.WinForms.Guna2RadioButton guna2RadioButton4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2RadioButton radio_patientNo;
+        private Guna.UI2.WinForms.Guna2RadioButton radio_patientYes;
+        private Guna.UI2.WinForms.Guna2TextBox txt_doctor;
         private System.Windows.Forms.Label label6;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox txt_patientRegdNo;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_hospitalName;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox8;
-        private Guna.UI2.WinForms.Guna2NumericUpDown guna2NumericUpDown1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_hospitalPhoneNo;
+        private Guna.UI2.WinForms.Guna2NumericUpDown num_requiredUnit;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
+        private Guna.UI2.WinForms.Guna2DateTimePicker date_patientDate;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox9;
+        private System.Windows.Forms.RichTextBox txt_address;
+        private Guna.UI2.WinForms.Guna2TextBox txt_patientLName;
         private System.Windows.Forms.Label label13;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
     }
