@@ -170,7 +170,7 @@
             this.txt_patientLName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_patientLName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientLName.FocusedState.Parent = this.txt_patientLName;
-            this.txt_patientLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientLName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_patientLName.ForeColor = System.Drawing.Color.Black;
             this.txt_patientLName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientLName.HoverState.Parent = this.txt_patientLName;
@@ -227,6 +227,7 @@
             // 
             // txt_address
             // 
+            this.txt_address.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_address.Location = new System.Drawing.Point(538, 372);
             this.txt_address.Name = "txt_address";
             this.txt_address.Size = new System.Drawing.Size(189, 55);
@@ -268,7 +269,7 @@
             this.txt_hospitalPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_hospitalPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hospitalPhoneNo.FocusedState.Parent = this.txt_hospitalPhoneNo;
-            this.txt_hospitalPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hospitalPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_hospitalPhoneNo.ForeColor = System.Drawing.Color.Black;
             this.txt_hospitalPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hospitalPhoneNo.HoverState.Parent = this.txt_hospitalPhoneNo;
@@ -296,7 +297,7 @@
             this.num_requiredUnit.DisabledState.UpDownButtonForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(203)))), ((int)(((byte)(203)))), ((int)(((byte)(203)))));
             this.num_requiredUnit.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.num_requiredUnit.FocusedState.Parent = this.num_requiredUnit;
-            this.num_requiredUnit.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.num_requiredUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.num_requiredUnit.ForeColor = System.Drawing.Color.Black;
             this.num_requiredUnit.Location = new System.Drawing.Point(419, 218);
             this.num_requiredUnit.Name = "num_requiredUnit";
@@ -324,7 +325,7 @@
             this.combo_bloodRequired.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_bloodRequired.FocusedColor = System.Drawing.Color.Empty;
             this.combo_bloodRequired.FocusedState.Parent = this.combo_bloodRequired;
-            this.combo_bloodRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.combo_bloodRequired.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.combo_bloodRequired.ForeColor = System.Drawing.Color.Black;
             this.combo_bloodRequired.FormattingEnabled = true;
             this.combo_bloodRequired.HoverState.Parent = this.combo_bloodRequired;
@@ -432,7 +433,7 @@
             this.txt_doctor.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_doctor.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_doctor.FocusedState.Parent = this.txt_doctor;
-            this.txt_doctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_doctor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_doctor.ForeColor = System.Drawing.Color.Black;
             this.txt_doctor.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_doctor.HoverState.Parent = this.txt_doctor;
@@ -470,7 +471,7 @@
             this.txt_patientRegdNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_patientRegdNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientRegdNo.FocusedState.Parent = this.txt_patientRegdNo;
-            this.txt_patientRegdNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientRegdNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_patientRegdNo.ForeColor = System.Drawing.Color.Black;
             this.txt_patientRegdNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientRegdNo.HoverState.Parent = this.txt_patientRegdNo;
@@ -508,7 +509,7 @@
             this.txt_hospitalName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_hospitalName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hospitalName.FocusedState.Parent = this.txt_hospitalName;
-            this.txt_hospitalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_hospitalName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_hospitalName.ForeColor = System.Drawing.Color.Black;
             this.txt_hospitalName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_hospitalName.HoverState.Parent = this.txt_hospitalName;
@@ -542,7 +543,7 @@
             this.combo_patientRh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_patientRh.FocusedColor = System.Drawing.Color.Empty;
             this.combo_patientRh.FocusedState.Parent = this.combo_patientRh;
-            this.combo_patientRh.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.combo_patientRh.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.combo_patientRh.ForeColor = System.Drawing.Color.Black;
             this.combo_patientRh.FormattingEnabled = true;
             this.combo_patientRh.HoverState.Parent = this.combo_patientRh;
@@ -697,7 +698,7 @@
             this.txt_patientPhoneNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_patientPhoneNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientPhoneNo.FocusedState.Parent = this.txt_patientPhoneNo;
-            this.txt_patientPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientPhoneNo.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_patientPhoneNo.ForeColor = System.Drawing.Color.Black;
             this.txt_patientPhoneNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientPhoneNo.HoverState.Parent = this.txt_patientPhoneNo;
@@ -724,7 +725,7 @@
             this.txt_patientemail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_patientemail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientemail.FocusedState.Parent = this.txt_patientemail;
-            this.txt_patientemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientemail.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_patientemail.ForeColor = System.Drawing.Color.Black;
             this.txt_patientemail.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientemail.HoverState.Parent = this.txt_patientemail;
@@ -762,7 +763,7 @@
             this.txt_patientWeight.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_patientWeight.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientWeight.FocusedState.Parent = this.txt_patientWeight;
-            this.txt_patientWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientWeight.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_patientWeight.ForeColor = System.Drawing.Color.Black;
             this.txt_patientWeight.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientWeight.HoverState.Parent = this.txt_patientWeight;
@@ -796,7 +797,7 @@
             this.combo_patientAboGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.combo_patientAboGroup.FocusedColor = System.Drawing.Color.Empty;
             this.combo_patientAboGroup.FocusedState.Parent = this.combo_patientAboGroup;
-            this.combo_patientAboGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+            this.combo_patientAboGroup.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.combo_patientAboGroup.ForeColor = System.Drawing.Color.Black;
             this.combo_patientAboGroup.FormattingEnabled = true;
             this.combo_patientAboGroup.HoverState.Parent = this.combo_patientAboGroup;
@@ -868,7 +869,7 @@
             this.txt_patientFName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_patientFName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientFName.FocusedState.Parent = this.txt_patientFName;
-            this.txt_patientFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_patientFName.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.txt_patientFName.ForeColor = System.Drawing.Color.Black;
             this.txt_patientFName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_patientFName.HoverState.Parent = this.txt_patientFName;

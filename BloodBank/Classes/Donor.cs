@@ -11,15 +11,10 @@ namespace BloodBank.Classes
     class Donor : Person 
     {
         private string occupation;
-
-        public void setDonnor(string occupation)
-        {
-            this.occupation = occupation;
-        }
-
-        public string getOccupation()
-        {
-            return occupation;
+        //set and get method to set values and to return the value of defind variables
+        public string Occupation { 
+            get => occupation; 
+            set => occupation = value; 
         }
     }
 }

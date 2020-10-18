@@ -66,11 +66,11 @@
     <Compile Include="Forms\Donor\DonorForm.Designer.cs">
       <DependentUpon>DonorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\Receiver\ReceiverForm.cs">
+    <Compile Include="Forms\Request\RequestForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\Receiver\ReceiverForm.Designer.cs">
-      <DependentUpon>ReceiverForm.cs</DependentUpon>
+    <Compile Include="Forms\Request\RequestForm.Designer.cs">
+      <DependentUpon>RequestForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -86,8 +86,8 @@
     <EmbeddedResource Include="Forms\Donor\DonorForm.resx">
       <DependentUpon>DonorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\Receiver\ReceiverForm.resx">
-      <DependentUpon>ReceiverForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\Request\RequestForm.resx">
+      <DependentUpon>RequestForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

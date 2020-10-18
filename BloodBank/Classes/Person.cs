@@ -13,67 +13,20 @@ namespace BloodBank.Classes
 
         private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date;
         float weight;
+        //set and get method to set values and to return the value of defind variables
+        public string FName { get => fName; set => fName = value; }
+        public string LName { get => lName; set => lName = value; }
+        public string Sex { get => sex; set => sex = value; }
+        public string DOB1 { get => DOB; set => DOB = value; }
+        public string AboGroup { get => aboGroup; set => aboGroup = value; }
+        public string RH1 { get => RH; set => RH = value; }
+        public string PhoneNo { get => phoneNo; set => phoneNo = value; }
+        public string Email { get => email; set => email = value; }
+        public string Address { get => address; set => address = value; }
+        public string Date { get => date; set => date = value; }
+        public float Weight { get => weight; set => weight = value; }
 
-        //a set method to set values for defind variables
-        public void setPersonInfo(string fName, string lName, string sex, string DOB, string aboGroup, string RH, string phoneNo, string address, string date, float weight, string email = "Don't have")
-        {
-            this.fName = fName;
-            this.lName = lName;
-            this.sex = sex;
-            this.DOB = DOB;
-            this.aboGroup = aboGroup;
-            this.RH = RH;
-            this.phoneNo = phoneNo;
-            this.email = email;
-            this.address = address;
-            this.date = date;
-            this.weight = weight;
-        }
+        
 
-        //a get method for each attribute
-        public string getFName()
-        {
-            return fName;
-        }
-        public string getLName()
-        {
-            return lName;
-        }
-        public string getSex()
-        {
-            return sex;
-        }
-        public string getDOB()
-        {
-            return DOB;
-        }
-        public string getABOGroup()
-        {
-            return aboGroup;
-        }
-        public string getRH()
-        {
-            return RH;
-        }
-        public string getPhoneNo()
-        {
-            return phoneNo;
-        }
-        public string getEmail()
-        {
-            return email;
-        }
-        public string getAddress()
-        {
-            return address;
-        }
-        public string getDate()
-        {
-            return date;
-        }
-        public float getWeight()
-        {
-            return weight;
-        }
     }
 }

@@ -37,7 +37,7 @@
             this.panelSideSubMenu2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_deleteRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_updateRequest = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_addReceiver = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_addRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_request = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_deleteDonor = new Guna.UI2.WinForms.Guna2Button();
@@ -62,6 +62,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.panelSideMenu.SuspendLayout();
             this.panelSideSubMenu2.SuspendLayout();
             this.panelSideSubMenu1.SuspendLayout();
@@ -126,7 +127,7 @@
             this.panelSideSubMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panelSideSubMenu2.Controls.Add(this.btn_deleteRequest);
             this.panelSideSubMenu2.Controls.Add(this.btn_updateRequest);
-            this.panelSideSubMenu2.Controls.Add(this.btn_addReceiver);
+            this.panelSideSubMenu2.Controls.Add(this.btn_addRequest);
             this.panelSideSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 432);
             this.panelSideSubMenu2.Name = "panelSideSubMenu2";
@@ -183,29 +184,29 @@
             this.btn_updateRequest.UseTransparentBackground = true;
             this.btn_updateRequest.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
-            // btn_addReceiver
+            // btn_addRequest
             // 
-            this.btn_addReceiver.BackColor = System.Drawing.Color.Transparent;
-            this.btn_addReceiver.CheckedState.Parent = this.btn_addReceiver;
-            this.btn_addReceiver.CustomImages.Parent = this.btn_addReceiver;
-            this.btn_addReceiver.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_addReceiver.FillColor = System.Drawing.Color.Transparent;
-            this.btn_addReceiver.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_addReceiver.ForeColor = System.Drawing.Color.White;
-            this.btn_addReceiver.HoverState.Parent = this.btn_addReceiver;
-            this.btn_addReceiver.Image = ((System.Drawing.Image)(resources.GetObject("btn_addReceiver.Image")));
-            this.btn_addReceiver.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_addReceiver.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_addReceiver.Location = new System.Drawing.Point(0, 0);
-            this.btn_addReceiver.Name = "btn_addReceiver";
-            this.btn_addReceiver.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_addReceiver.ShadowDecoration.Parent = this.btn_addReceiver;
-            this.btn_addReceiver.Size = new System.Drawing.Size(200, 40);
-            this.btn_addReceiver.TabIndex = 0;
-            this.btn_addReceiver.Text = "Add New";
-            this.btn_addReceiver.TextOffset = new System.Drawing.Point(7, 0);
-            this.btn_addReceiver.UseTransparentBackground = true;
-            this.btn_addReceiver.Click += new System.EventHandler(this.guna2Button7_Click);
+            this.btn_addRequest.BackColor = System.Drawing.Color.Transparent;
+            this.btn_addRequest.CheckedState.Parent = this.btn_addRequest;
+            this.btn_addRequest.CustomImages.Parent = this.btn_addRequest;
+            this.btn_addRequest.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_addRequest.FillColor = System.Drawing.Color.Transparent;
+            this.btn_addRequest.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_addRequest.ForeColor = System.Drawing.Color.White;
+            this.btn_addRequest.HoverState.Parent = this.btn_addRequest;
+            this.btn_addRequest.Image = ((System.Drawing.Image)(resources.GetObject("btn_addRequest.Image")));
+            this.btn_addRequest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_addRequest.ImageOffset = new System.Drawing.Point(30, 0);
+            this.btn_addRequest.Location = new System.Drawing.Point(0, 0);
+            this.btn_addRequest.Name = "btn_addRequest";
+            this.btn_addRequest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_addRequest.ShadowDecoration.Parent = this.btn_addRequest;
+            this.btn_addRequest.Size = new System.Drawing.Size(200, 40);
+            this.btn_addRequest.TabIndex = 0;
+            this.btn_addRequest.Text = "Add New";
+            this.btn_addRequest.TextOffset = new System.Drawing.Point(7, 0);
+            this.btn_addRequest.UseTransparentBackground = true;
+            this.btn_addRequest.Click += new System.EventHandler(this.guna2Button7_Click);
             // 
             // btn_request
             // 
@@ -388,6 +389,7 @@
             // panelChildForm
             // 
             this.panelChildForm.BorderRadius = 15;
+            this.panelChildForm.Controls.Add(this.guna2HtmlLabel1);
             this.panelChildForm.Controls.Add(this.label6);
             this.panelChildForm.Controls.Add(this.guna2DateTimePicker1);
             this.panelChildForm.Controls.Add(this.panelAddForm);
@@ -409,7 +411,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(647, 35);
+            this.label6.Location = new System.Drawing.Point(647, 27);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 15);
             this.label6.TabIndex = 7;
@@ -422,7 +424,7 @@
             this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gray;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(642, 5);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(642, -3);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -501,7 +503,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(684, 48);
+            this.label5.Location = new System.Drawing.Point(684, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 5;
@@ -512,7 +514,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(684, 33);
+            this.label4.Location = new System.Drawing.Point(684, 25);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 15);
             this.label4.TabIndex = 4;
@@ -523,7 +525,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(722, 35);
+            this.label3.Location = new System.Drawing.Point(722, 27);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 15);
             this.label3.TabIndex = 3;
@@ -536,7 +538,7 @@
             this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(687, 14);
+            this.button2.Location = new System.Drawing.Point(687, 6);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(20, 49);
             this.button2.TabIndex = 2;
@@ -550,12 +552,21 @@
             this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button1.FlatAppearance.BorderSize = 0;
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(725, 16);
+            this.button1.Location = new System.Drawing.Point(725, 8);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(22, 34);
             this.button1.TabIndex = 1;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(-9, 56);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(783, 2);
+            this.guna2HtmlLabel1.TabIndex = 8;
             // 
             // Dashboard
             // 
@@ -600,7 +611,7 @@
         private Guna.UI2.WinForms.Guna2Panel panelSideSubMenu2;
         private Guna.UI2.WinForms.Guna2Button btn_deleteRequest;
         private Guna.UI2.WinForms.Guna2Button btn_updateRequest;
-        private Guna.UI2.WinForms.Guna2Button btn_addReceiver;
+        private Guna.UI2.WinForms.Guna2Button btn_addRequest;
         private Guna.UI2.WinForms.Guna2Button btn_request;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
@@ -619,6 +630,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox richTextBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
     }
 }
 
