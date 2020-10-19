@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BloodBank.Classes
+namespace BloodBank
 {
     //patient class contains patient's attributes
     //Patient class inherit all properties and method from Person class according to their visiblity

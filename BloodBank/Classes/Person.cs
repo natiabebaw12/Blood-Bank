@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BloodBank.Classes
+namespace BloodBank
 {
     //class defination for person - 
     //which is contain common properties(attributes) for every human entity 

@@ -1,4 +1,4 @@
-﻿namespace BloodBank.Forms.Donner
+﻿namespace BloodBank
 {
     partial class DonnerForm
     {
@@ -67,6 +67,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_checkBoxReset = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -81,6 +82,7 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderThickness = 2;
+            this.guna2GroupBox1.Controls.Add(this.btn_checkBoxReset);
             this.guna2GroupBox1.Controls.Add(this.textBox_donorAddress);
             this.guna2GroupBox1.Controls.Add(this.label10);
             this.guna2GroupBox1.Controls.Add(this.combo_donnerRH);
@@ -222,6 +224,7 @@
             this.groupBox5.TabIndex = 64;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Occupation";
+            this.groupBox5.Enter += new System.EventHandler(this.groupBox5_Enter);
             // 
             // checkBox_donorOccOther
             // 
@@ -234,6 +237,7 @@
             this.checkBox_donorOccOther.TabIndex = 4;
             this.checkBox_donorOccOther.Text = "Other";
             this.checkBox_donorOccOther.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccOther.CheckedChanged += new System.EventHandler(this.checkBox_donorOccOther_CheckedChanged);
             // 
             // checkBox_donorOccMonk
             // 
@@ -246,6 +250,7 @@
             this.checkBox_donorOccMonk.TabIndex = 3;
             this.checkBox_donorOccMonk.Text = "Priesi, Monk";
             this.checkBox_donorOccMonk.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccMonk.CheckedChanged += new System.EventHandler(this.checkBox_donorOccMonk_CheckedChanged);
             // 
             // checkBox_donorOccEmp
             // 
@@ -258,6 +263,7 @@
             this.checkBox_donorOccEmp.TabIndex = 2;
             this.checkBox_donorOccEmp.Text = "Company, employee";
             this.checkBox_donorOccEmp.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccEmp.CheckedChanged += new System.EventHandler(this.checkBox_donorOccEmp_CheckedChanged);
             // 
             // checkBox_donorOccGov
             // 
@@ -270,6 +276,7 @@
             this.checkBox_donorOccGov.TabIndex = 1;
             this.checkBox_donorOccGov.Text = "Gov. official, solider, police, state enterprise";
             this.checkBox_donorOccGov.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccGov.CheckedChanged += new System.EventHandler(this.checkBox_donorOccGov_CheckedChanged);
             // 
             // checkBox_donorOccStudent
             // 
@@ -282,6 +289,7 @@
             this.checkBox_donorOccStudent.TabIndex = 0;
             this.checkBox_donorOccStudent.Text = "Student";
             this.checkBox_donorOccStudent.UseVisualStyleBackColor = true;
+            this.checkBox_donorOccStudent.CheckedChanged += new System.EventHandler(this.checkBox_donorOccStudent_CheckedChanged);
             // 
             // label15
             // 
@@ -685,6 +693,21 @@
             this.guna2Button2.Text = "Reset";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // btn_checkBoxReset
+            // 
+            this.btn_checkBoxReset.CheckedState.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.CustomImages.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_checkBoxReset.ForeColor = System.Drawing.Color.White;
+            this.btn_checkBoxReset.HoverState.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.Location = new System.Drawing.Point(703, 222);
+            this.btn_checkBoxReset.Name = "btn_checkBoxReset";
+            this.btn_checkBoxReset.ShadowDecoration.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.Size = new System.Drawing.Size(38, 29);
+            this.btn_checkBoxReset.TabIndex = 5;
+            this.btn_checkBoxReset.Text = "guna2Button3";
+            this.btn_checkBoxReset.Click += new System.EventHandler(this.btn_checkBoxReset_Click);
+            // 
             // DonnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -748,5 +771,6 @@
         private System.Windows.Forms.RichTextBox textBox_donorAddress;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button btn_checkBoxReset;
     }
 }

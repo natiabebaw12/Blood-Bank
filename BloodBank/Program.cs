@@ -1,4 +1,4 @@
-﻿using BloodBank.Classes;
+﻿using BloodBank;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,8 +17,10 @@ namespace BloodBank
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
             DBConnection.Conn();
+            //Application.Run(new Login());
+            Application.Run(new Dashboard());
+            
         }
     }
 }

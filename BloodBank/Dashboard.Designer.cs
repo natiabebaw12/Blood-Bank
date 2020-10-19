@@ -49,6 +49,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.panelAddForm = new System.Windows.Forms.Panel();
@@ -62,7 +63,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideMenu.SuspendLayout();
             this.panelSideSubMenu2.SuspendLayout();
             this.panelSideSubMenu1.SuspendLayout();
@@ -112,7 +113,7 @@
             this.btn_blood.HoverState.Parent = this.btn_blood;
             this.btn_blood.Image = ((System.Drawing.Image)(resources.GetObject("btn_blood.Image")));
             this.btn_blood.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_blood.Location = new System.Drawing.Point(0, 563);
+            this.btn_blood.Location = new System.Drawing.Point(0, 597);
             this.btn_blood.Name = "btn_blood";
             this.btn_blood.ShadowDecoration.Parent = this.btn_blood;
             this.btn_blood.Size = new System.Drawing.Size(200, 45);
@@ -129,7 +130,7 @@
             this.panelSideSubMenu2.Controls.Add(this.btn_updateRequest);
             this.panelSideSubMenu2.Controls.Add(this.btn_addRequest);
             this.panelSideSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 432);
+            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 466);
             this.panelSideSubMenu2.Name = "panelSideSubMenu2";
             this.panelSideSubMenu2.ShadowDecoration.Parent = this.panelSideSubMenu2;
             this.panelSideSubMenu2.Size = new System.Drawing.Size(200, 131);
@@ -221,7 +222,7 @@
             this.btn_request.Image = ((System.Drawing.Image)(resources.GetObject("btn_request.Image")));
             this.btn_request.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_request.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_request.Location = new System.Drawing.Point(0, 387);
+            this.btn_request.Location = new System.Drawing.Point(0, 421);
             this.btn_request.Name = "btn_request";
             this.btn_request.ShadowDecoration.Parent = this.btn_request;
             this.btn_request.Size = new System.Drawing.Size(200, 45);
@@ -234,6 +235,7 @@
             // panelSideSubMenu1
             // 
             this.panelSideSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.panelSideSubMenu1.Controls.Add(this.guna2Button1);
             this.panelSideSubMenu1.Controls.Add(this.btn_deleteDonor);
             this.panelSideSubMenu1.Controls.Add(this.btn_updateDonor);
             this.panelSideSubMenu1.Controls.Add(this.btn_addDonor);
@@ -241,7 +243,7 @@
             this.panelSideSubMenu1.Location = new System.Drawing.Point(0, 256);
             this.panelSideSubMenu1.Name = "panelSideSubMenu1";
             this.panelSideSubMenu1.ShadowDecoration.Parent = this.panelSideSubMenu1;
-            this.panelSideSubMenu1.Size = new System.Drawing.Size(200, 131);
+            this.panelSideSubMenu1.Size = new System.Drawing.Size(200, 165);
             this.panelSideSubMenu1.TabIndex = 2;
             // 
             // btn_deleteDonor
@@ -249,7 +251,7 @@
             this.btn_deleteDonor.BackColor = System.Drawing.Color.Transparent;
             this.btn_deleteDonor.CheckedState.Parent = this.btn_deleteDonor;
             this.btn_deleteDonor.CustomImages.Parent = this.btn_deleteDonor;
-            this.btn_deleteDonor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_deleteDonor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_deleteDonor.FillColor = System.Drawing.Color.Transparent;
             this.btn_deleteDonor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_deleteDonor.ForeColor = System.Drawing.Color.White;
@@ -257,7 +259,7 @@
             this.btn_deleteDonor.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteDonor.Image")));
             this.btn_deleteDonor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_deleteDonor.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_deleteDonor.Location = new System.Drawing.Point(0, 80);
+            this.btn_deleteDonor.Location = new System.Drawing.Point(0, 85);
             this.btn_deleteDonor.Name = "btn_deleteDonor";
             this.btn_deleteDonor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_deleteDonor.ShadowDecoration.Parent = this.btn_deleteDonor;
@@ -273,7 +275,7 @@
             this.btn_updateDonor.BackColor = System.Drawing.Color.Transparent;
             this.btn_updateDonor.CheckedState.Parent = this.btn_updateDonor;
             this.btn_updateDonor.CustomImages.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_updateDonor.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.btn_updateDonor.FillColor = System.Drawing.Color.Transparent;
             this.btn_updateDonor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_updateDonor.ForeColor = System.Drawing.Color.White;
@@ -281,7 +283,7 @@
             this.btn_updateDonor.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateDonor.Image")));
             this.btn_updateDonor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_updateDonor.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_updateDonor.Location = new System.Drawing.Point(0, 40);
+            this.btn_updateDonor.Location = new System.Drawing.Point(0, 125);
             this.btn_updateDonor.Name = "btn_updateDonor";
             this.btn_updateDonor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_updateDonor.ShadowDecoration.Parent = this.btn_updateDonor;
@@ -405,6 +407,16 @@
             this.panelChildForm.Size = new System.Drawing.Size(774, 602);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(-9, 56);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(783, 2);
+            this.guna2HtmlLabel1.TabIndex = 8;
+            this.guna2HtmlLabel1.Text = null;
             // 
             // label6
             // 
@@ -559,14 +571,29 @@
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // guna2HtmlLabel1
+            // guna2Button1
             // 
-            this.guna2HtmlLabel1.AutoSize = false;
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(-9, 56);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(783, 2);
-            this.guna2HtmlLabel1.TabIndex = 8;
+            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
+            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.HoverState.Parent = this.guna2Button1;
+            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageOffset = new System.Drawing.Point(30, 0);
+            this.guna2Button1.Location = new System.Drawing.Point(0, 40);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
+            this.guna2Button1.Size = new System.Drawing.Size(200, 40);
+            this.guna2Button1.TabIndex = 3;
+            this.guna2Button1.Text = "View Table";
+            this.guna2Button1.TextOffset = new System.Drawing.Point(14, 0);
+            this.guna2Button1.UseTransparentBackground = true;
+            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // Dashboard
             // 
@@ -631,6 +658,7 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 

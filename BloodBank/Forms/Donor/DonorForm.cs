@@ -7,11 +7,58 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BloodBank;
 
-namespace BloodBank.Forms.Donner
+namespace BloodBank
 {
+    
     public partial class DonnerForm : Form
     {
+        private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date, occupation;
+        private float weight;
+        //pass the values to donor set method
+        Donor donorOb = new Donor();
+
+        private void checkBox_donorOccOther_CheckedChanged(object sender, EventArgs e)
+        {
+            occupation = "Other";
+            groupBox5.Enabled = false;
+        }
+
+        private void btn_checkBoxReset_Click(object sender, EventArgs e)
+        {
+            groupBox5.Enabled = true;
+        }
+
+        private void checkBox_donorOccMonk_CheckedChanged(object sender, EventArgs e)
+        {
+            occupation = "Priesi, Monk";
+            groupBox5.Enabled = false;
+        }
+
+        private void checkBox_donorOccEmp_CheckedChanged(object sender, EventArgs e)
+        {
+            occupation = "Company, employee";
+            groupBox5.Enabled = false;
+        }
+
+        private void checkBox_donorOccGov_CheckedChanged(object sender, EventArgs e)
+        {
+            occupation = "Gov. official, solider, police, state enterprise";
+            groupBox5.Enabled = false;
+        }
+
+        private void checkBox_donorOccStudent_CheckedChanged(object sender, EventArgs e)
+        {
+            occupation = "Student";
+            groupBox5.Enabled = false;
+        }
+
+        private void groupBox5_Enter(object sender, EventArgs e)
+        {
+            
+        }
+
         public DonnerForm()
         {
             InitializeComponent();
@@ -43,10 +90,47 @@ namespace BloodBank.Forms.Donner
             cal_donorLastTime.SetDate(DateTime.Now);
         }
         #endregion
+
+        
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            fName = txt_donorFName.Text;
+            lName = txt_donorLName.Text;
+            //check which radio is selected
+            if(radio_donorMale.Checked == true)
+            {
+                sex = "Male";
+            }else if(radio_donorFemale.Checked == true)
+            {
+                sex = "Female";
+            }
 
-        }
+            DOB = date_donorDOB.Value.ToString("dd MMM yyyy");
+            aboGroup = combo_donorAboGroup.Text;
+            RH = combo_donnerRH.Text;
+            phoneNo = txt_donorPhoneNo.Text;
+            email = txt_donorEmail.Text;
+            address = textBox_donorAddress.Text;
+            date = cal_donorLastTime.SelectionStart.ToString("dd MMM yyyy");
+           
+            weight = float.Parse(txt_donorWeight.Text);
+
+            donorOb.FName = fName;
+            donorOb.LName = lName;
+            donorOb.Sex = sex;
+            donorOb.DOB1 = DOB;
+            donorOb.AboGroup = aboGroup;
+            donorOb.RH1 = RH;
+            donorOb.PhoneNo = phoneNo;
+            donorOb.Email = email;
+            donorOb.Address = address;
+            donorOb.Date = date;
+            donorOb.Occupation = occupation;
+            donorOb.Weight = weight;
+
+            //invok this method to add to db
+            donorOb.addDonner(donorOb);
+    }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {

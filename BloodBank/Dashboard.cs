@@ -1,4 +1,5 @@
-﻿using BloodBank.Forms.Donner;
+﻿
+using BloodBank;
 using BloodBank.Forms.Receiver;
 using System;
 using System.Collections.Generic;
@@ -200,5 +201,14 @@ namespace BloodBank
             Login log = new Login();
             log.Show();
         }
+
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            Donor don = new Donor();
+            don.retrieve();
+            OpenChildForm(new DonorTable());//pass donor_table to display it on dashboard
+        }
+
+
     }
 }
