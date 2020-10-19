@@ -40,10 +40,10 @@
             this.btn_addRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_request = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_donorView = new Guna.UI2.WinForms.Guna2Button();
             this.btn_deleteDonor = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_updateDonor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_addDonor = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_updateDonor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Donor = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -235,7 +235,7 @@
             // panelSideSubMenu1
             // 
             this.panelSideSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panelSideSubMenu1.Controls.Add(this.guna2Button1);
+            this.panelSideSubMenu1.Controls.Add(this.btn_donorView);
             this.panelSideSubMenu1.Controls.Add(this.btn_deleteDonor);
             this.panelSideSubMenu1.Controls.Add(this.btn_addDonor);
             this.panelSideSubMenu1.Controls.Add(this.btn_updateDonor);
@@ -246,29 +246,29 @@
             this.panelSideSubMenu1.Size = new System.Drawing.Size(200, 165);
             this.panelSideSubMenu1.TabIndex = 2;
             // 
-            // guna2Button1
+            // btn_donorView
             // 
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Image = ((System.Drawing.Image)(resources.GetObject("guna2Button1.Image")));
-            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.guna2Button1.ImageOffset = new System.Drawing.Point(30, 0);
-            this.guna2Button1.Location = new System.Drawing.Point(0, 40);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(200, 40);
-            this.guna2Button1.TabIndex = 3;
-            this.guna2Button1.Text = "View Table";
-            this.guna2Button1.TextOffset = new System.Drawing.Point(14, 0);
-            this.guna2Button1.UseTransparentBackground = true;
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_donorView.BackColor = System.Drawing.Color.Transparent;
+            this.btn_donorView.CheckedState.Parent = this.btn_donorView;
+            this.btn_donorView.CustomImages.Parent = this.btn_donorView;
+            this.btn_donorView.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btn_donorView.FillColor = System.Drawing.Color.Transparent;
+            this.btn_donorView.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_donorView.ForeColor = System.Drawing.Color.White;
+            this.btn_donorView.HoverState.Parent = this.btn_donorView;
+            this.btn_donorView.Image = ((System.Drawing.Image)(resources.GetObject("btn_donorView.Image")));
+            this.btn_donorView.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_donorView.ImageOffset = new System.Drawing.Point(30, 0);
+            this.btn_donorView.Location = new System.Drawing.Point(0, 40);
+            this.btn_donorView.Name = "btn_donorView";
+            this.btn_donorView.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_donorView.ShadowDecoration.Parent = this.btn_donorView;
+            this.btn_donorView.Size = new System.Drawing.Size(200, 40);
+            this.btn_donorView.TabIndex = 3;
+            this.btn_donorView.Text = "View Table";
+            this.btn_donorView.TextOffset = new System.Drawing.Point(14, 0);
+            this.btn_donorView.UseTransparentBackground = true;
+            this.btn_donorView.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // btn_deleteDonor
             // 
@@ -294,30 +294,6 @@
             this.btn_deleteDonor.UseTransparentBackground = true;
             this.btn_deleteDonor.Click += new System.EventHandler(this.guna2Button4_Click);
             // 
-            // btn_updateDonor
-            // 
-            this.btn_updateDonor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_updateDonor.CheckedState.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.CustomImages.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_updateDonor.FillColor = System.Drawing.Color.Transparent;
-            this.btn_updateDonor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_updateDonor.ForeColor = System.Drawing.Color.White;
-            this.btn_updateDonor.HoverState.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateDonor.Image")));
-            this.btn_updateDonor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_updateDonor.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_updateDonor.Location = new System.Drawing.Point(0, 125);
-            this.btn_updateDonor.Name = "btn_updateDonor";
-            this.btn_updateDonor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_updateDonor.ShadowDecoration.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Size = new System.Drawing.Size(200, 40);
-            this.btn_updateDonor.TabIndex = 1;
-            this.btn_updateDonor.Text = "Update Donor ";
-            this.btn_updateDonor.TextOffset = new System.Drawing.Point(26, 0);
-            this.btn_updateDonor.UseTransparentBackground = true;
-            this.btn_updateDonor.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
             // btn_addDonor
             // 
             this.btn_addDonor.BackColor = System.Drawing.Color.Transparent;
@@ -341,6 +317,30 @@
             this.btn_addDonor.TextOffset = new System.Drawing.Point(8, 0);
             this.btn_addDonor.UseTransparentBackground = true;
             this.btn_addDonor.Click += new System.EventHandler(this.guna2Button2_Click);
+            // 
+            // btn_updateDonor
+            // 
+            this.btn_updateDonor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_updateDonor.CheckedState.Parent = this.btn_updateDonor;
+            this.btn_updateDonor.CustomImages.Parent = this.btn_updateDonor;
+            this.btn_updateDonor.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btn_updateDonor.FillColor = System.Drawing.Color.Transparent;
+            this.btn_updateDonor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_updateDonor.ForeColor = System.Drawing.Color.White;
+            this.btn_updateDonor.HoverState.Parent = this.btn_updateDonor;
+            this.btn_updateDonor.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateDonor.Image")));
+            this.btn_updateDonor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.btn_updateDonor.ImageOffset = new System.Drawing.Point(30, 0);
+            this.btn_updateDonor.Location = new System.Drawing.Point(0, 125);
+            this.btn_updateDonor.Name = "btn_updateDonor";
+            this.btn_updateDonor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btn_updateDonor.ShadowDecoration.Parent = this.btn_updateDonor;
+            this.btn_updateDonor.Size = new System.Drawing.Size(200, 40);
+            this.btn_updateDonor.TabIndex = 1;
+            this.btn_updateDonor.Text = "Update Donor ";
+            this.btn_updateDonor.TextOffset = new System.Drawing.Point(26, 0);
+            this.btn_updateDonor.UseTransparentBackground = true;
+            this.btn_updateDonor.Click += new System.EventHandler(this.guna2Button3_Click);
             // 
             // btn_Donor
             // 
@@ -645,7 +645,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private static System.Windows.Forms.Panel panelAddForm;
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
         private System.Windows.Forms.Label label5;
@@ -658,7 +657,8 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private static System.Windows.Forms.Panel panelAddForm;
+        public Guna.UI2.WinForms.Guna2Button btn_donorView;
     }
 }
 

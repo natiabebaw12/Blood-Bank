@@ -13,6 +13,8 @@ namespace BloodBank
 
     public partial class DonorTable : Form
     {
+
+        Donor dn = new Donor();
         public DonorTable()
         {
             InitializeComponent();
@@ -25,8 +27,7 @@ namespace BloodBank
 
         private void DonorTable_Load(object sender, EventArgs e)
         {
-            Donor d = new Donor();
-            dataGrid_donor.DataSource =  d.retrieve().Tables[0];
+            dataGrid_donor.DataSource = dn.retrieve().Tables[0];
         }
 
         private void btn_updateDonor_Click(object sender, EventArgs e)
@@ -57,5 +58,17 @@ namespace BloodBank
 
         }
         #endregion
+
+        private void btn_deleteDonor_Click(object sender, EventArgs e)
+        {
+            int donor_id = Convert.ToInt32(dataGrid_donor.SelectedRows[0].Cells[0].Value);
+            dn.delete(donor_id);
+            dataGrid_donor.DataSource = dn.retrieve().Tables[0];
+        }
+
+        public void afterUpdate()
+        {   
+            dataGrid_donor.DataSource = dn.retrieve().Tables[0];
+        }
     }
 }

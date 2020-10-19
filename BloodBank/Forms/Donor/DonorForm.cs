@@ -201,7 +201,6 @@ namespace BloodBank
             btn_submit.Text = "Update";
             //pass this form to display on the panel with their data set
             Dashboard.OpenChildForm(this);
-            
         }
         #endregion
     }
