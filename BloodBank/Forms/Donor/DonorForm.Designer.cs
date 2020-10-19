@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
+            this.btn_checkBoxReset = new Guna.UI2.WinForms.Guna2Button();
             this.textBox_donorAddress = new System.Windows.Forms.RichTextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.combo_donnerRH = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -65,9 +66,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_checkBoxReset = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -120,8 +120,24 @@
             this.guna2GroupBox1.TabIndex = 45;
             this.guna2GroupBox1.Text = "Donor  Form";
             // 
+            // btn_checkBoxReset
+            // 
+            this.btn_checkBoxReset.CheckedState.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.CustomImages.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btn_checkBoxReset.ForeColor = System.Drawing.Color.White;
+            this.btn_checkBoxReset.HoverState.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.Location = new System.Drawing.Point(703, 222);
+            this.btn_checkBoxReset.Name = "btn_checkBoxReset";
+            this.btn_checkBoxReset.ShadowDecoration.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.Size = new System.Drawing.Size(38, 29);
+            this.btn_checkBoxReset.TabIndex = 5;
+            this.btn_checkBoxReset.Text = "guna2Button3";
+            this.btn_checkBoxReset.Click += new System.EventHandler(this.btn_checkBoxReset_Click);
+            // 
             // textBox_donorAddress
             // 
+            this.textBox_donorAddress.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.textBox_donorAddress.Location = new System.Drawing.Point(163, 410);
             this.textBox_donorAddress.Name = "textBox_donorAddress";
             this.textBox_donorAddress.Size = new System.Drawing.Size(201, 41);
@@ -357,7 +373,7 @@
             this.radio_donorFemale.ForeColor = System.Drawing.Color.Black;
             this.radio_donorFemale.Location = new System.Drawing.Point(72, 14);
             this.radio_donorFemale.Name = "radio_donorFemale";
-            this.radio_donorFemale.Size = new System.Drawing.Size(78, 20);
+            this.radio_donorFemale.Size = new System.Drawing.Size(79, 20);
             this.radio_donorFemale.TabIndex = 21;
             this.radio_donorFemale.TabStop = true;
             this.radio_donorFemale.Text = "Female";
@@ -379,7 +395,7 @@
             this.radio_donorMale.ForeColor = System.Drawing.Color.Black;
             this.radio_donorMale.Location = new System.Drawing.Point(6, 14);
             this.radio_donorMale.Name = "radio_donorMale";
-            this.radio_donorMale.Size = new System.Drawing.Size(60, 20);
+            this.radio_donorMale.Size = new System.Drawing.Size(61, 20);
             this.radio_donorMale.TabIndex = 20;
             this.radio_donorMale.TabStop = true;
             this.radio_donorMale.Text = "Male";
@@ -647,28 +663,28 @@
             this.label14.TabIndex = 45;
             this.label14.Text = "First Name";
             // 
-            // guna2Button1
+            // btn_submit
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.BorderRadius = 17;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(349, 487);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(130, 33);
-            this.guna2Button1.TabIndex = 46;
-            this.guna2Button1.Text = "Submit";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btn_submit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.BorderRadius = 17;
+            this.btn_submit.BorderThickness = 1;
+            this.btn_submit.CheckedState.Parent = this.btn_submit;
+            this.btn_submit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_submit.CustomImages.Parent = this.btn_submit;
+            this.btn_submit.FillColor = System.Drawing.Color.White;
+            this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_submit.HoverState.Parent = this.btn_submit;
+            this.btn_submit.Location = new System.Drawing.Point(349, 487);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.ShadowDecoration.Parent = this.btn_submit;
+            this.btn_submit.Size = new System.Drawing.Size(130, 33);
+            this.btn_submit.TabIndex = 46;
+            this.btn_submit.Text = "Submit";
+            this.btn_submit.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2Button2
             // 
@@ -693,21 +709,6 @@
             this.guna2Button2.Text = "Reset";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // btn_checkBoxReset
-            // 
-            this.btn_checkBoxReset.CheckedState.Parent = this.btn_checkBoxReset;
-            this.btn_checkBoxReset.CustomImages.Parent = this.btn_checkBoxReset;
-            this.btn_checkBoxReset.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_checkBoxReset.ForeColor = System.Drawing.Color.White;
-            this.btn_checkBoxReset.HoverState.Parent = this.btn_checkBoxReset;
-            this.btn_checkBoxReset.Location = new System.Drawing.Point(703, 222);
-            this.btn_checkBoxReset.Name = "btn_checkBoxReset";
-            this.btn_checkBoxReset.ShadowDecoration.Parent = this.btn_checkBoxReset;
-            this.btn_checkBoxReset.Size = new System.Drawing.Size(38, 29);
-            this.btn_checkBoxReset.TabIndex = 5;
-            this.btn_checkBoxReset.Text = "guna2Button3";
-            this.btn_checkBoxReset.Click += new System.EventHandler(this.btn_checkBoxReset_Click);
-            // 
             // DonnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -715,7 +716,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 532);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.guna2GroupBox1);
             this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -764,7 +765,7 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.MonthCalendar cal_donorLastTime;
         private System.Windows.Forms.Label label1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_submit;
         private System.Windows.Forms.Label lbl_donorId;
         private Guna.UI2.WinForms.Guna2ComboBox combo_donnerRH;
         private System.Windows.Forms.Label label3;

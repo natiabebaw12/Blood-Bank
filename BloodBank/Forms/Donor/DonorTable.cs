@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace BloodBank
 {
+
     public partial class DonorTable : Form
     {
         public DonorTable()
@@ -27,5 +28,34 @@ namespace BloodBank
             Donor d = new Donor();
             dataGrid_donor.DataSource =  d.retrieve().Tables[0];
         }
+
+        private void btn_updateDonor_Click(object sender, EventArgs e)
+        {
+            getFromGrid();
+
+        }
+        #region
+        public void getFromGrid()
+        {
+            int donor_id = Convert.ToInt32(dataGrid_donor.SelectedRows[0].Cells[0].Value);
+            string fName = dataGrid_donor.SelectedRows[0].Cells[1].Value.ToString();
+            string lName = dataGrid_donor.SelectedRows[0].Cells[2].Value.ToString();
+            string sex = dataGrid_donor.SelectedRows[0].Cells[3].Value.ToString();
+            string DOB = dataGrid_donor.SelectedRows[0].Cells[4].Value.ToString();
+            string aboGroup = dataGrid_donor.SelectedRows[0].Cells[5].Value.ToString();
+            string RH = dataGrid_donor.SelectedRows[0].Cells[6].Value.ToString();
+            float weight = float.Parse(dataGrid_donor.SelectedRows[0].Cells[7].Value.ToString());
+            string phoneNo = dataGrid_donor.SelectedRows[0].Cells[8].Value.ToString();
+            string email = dataGrid_donor.SelectedRows[0].Cells[9].Value.ToString();
+            string address = dataGrid_donor.SelectedRows[0].Cells[10].Value.ToString();
+            string occupation = dataGrid_donor.SelectedRows[0].Cells[11].Value.ToString();
+            string date = dataGrid_donor.SelectedRows[0].Cells[12].Value.ToString();
+
+            DonnerForm df = new DonnerForm();
+            df.setForm(donor_id, fName, lName, sex, DOB, aboGroup, RH,
+                     weight, phoneNo, email, address, occupation, date);
+
+        }
+        #endregion
     }
 }

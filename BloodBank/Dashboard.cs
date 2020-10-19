@@ -75,6 +75,8 @@ namespace BloodBank
 
         private void guna2Button3_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new DonorTable());
+
             //...
             //Hide when clicked
             //...
@@ -89,10 +91,10 @@ namespace BloodBank
             HideMenu();
         }
 
-        private Form activeForm = null;
-        private Form copyForm = null;
+        private static Form activeForm = null;
+        private static Form copyForm = null;
         #region OpenChildForm
-        private void OpenChildForm(Form childForm)
+        public static void OpenChildForm(Form childForm)
         {
             if (activeForm != null)
             {
@@ -203,11 +205,12 @@ namespace BloodBank
         }
 
         private void guna2Button1_Click(object sender, EventArgs e)
-        {
-
-            Donor dn = new Donor();
-            dn.retrieve();
+        {   
             OpenChildForm(new DonorTable());//pass donor_table to display it on dashboard
+            //...
+            //Hide when clicked
+            //...
+            HideMenu();
         }
 
 

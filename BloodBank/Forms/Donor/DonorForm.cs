@@ -91,16 +91,17 @@ namespace BloodBank
         }
         #endregion
 
-        
-        private void guna2Button1_Click(object sender, EventArgs e)
+        public void getFromForm()
         {
+
             fName = txt_donorFName.Text;
             lName = txt_donorLName.Text;
             //check which radio is selected
-            if(radio_donorMale.Checked == true)
+            if (radio_donorMale.Checked == true)
             {
                 sex = "Male";
-            }else if(radio_donorFemale.Checked == true)
+            }
+            else if (radio_donorFemale.Checked == true)
             {
                 sex = "Female";
             }
@@ -112,7 +113,7 @@ namespace BloodBank
             email = txt_donorEmail.Text;
             address = textBox_donorAddress.Text;
             date = cal_donorLastTime.SelectionStart.ToString("dd MMM yyyy");
-           
+
             weight = float.Parse(txt_donorWeight.Text);
 
             donorOb.FName = fName;
@@ -127,14 +128,81 @@ namespace BloodBank
             donorOb.Date = date;
             donorOb.Occupation = occupation;
             donorOb.Weight = weight;
-
-            //invok this method to add to db
-            donorOb.addDonner(donorOb);
-    }
+        }
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            getFromForm();
+            if (btn_submit.Text == "Submit")
+            {
+                //invok this method to add to db
+                donorOb.addDonner(donorOb);
+            }
+            if (btn_submit.Text == "Update")
+            {
+                //invok this method to add to db
+                donorOb.update(donorOb, int.Parse(lbl_donorId.Text));
+            }
+        }
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             reset();
         }
+
+        #region SETTHEFORM
+        public void setForm(int donor_id, string fName, string lName, string sex, string DOB, string aboGroup, string RH,
+            float weight, string phoneNo, string email, string address, string occupation, string date)
+        {
+            lbl_donorId.Text = donor_id.ToString();
+            txt_donorFName.Text = fName;
+            txt_donorLName.Text = lName;
+            if(sex == "Male")
+            {
+                radio_donorMale.Checked = true;
+            }
+            if (sex == "Female")
+            {
+                radio_donorFemale.Checked = true;
+            }
+            date_donorDOB.Text = DOB;
+            combo_donorAboGroup.Text = aboGroup;
+            combo_donnerRH.Text = RH;
+            txt_donorWeight.Text = weight.ToString();
+            txt_donorPhoneNo.Text = phoneNo;
+            txt_donorEmail.Text = email;
+            textBox_donorAddress.Text = address;
+            if(checkBox_donorOccEmp.Text == occupation)
+            {
+                checkBox_donorOccEmp.Checked = true;
+            }
+            if (checkBox_donorOccGov.Text == occupation)
+            {
+                checkBox_donorOccGov.Checked = true;
+            }
+            if (checkBox_donorOccMonk.Text == occupation)
+            {
+                checkBox_donorOccMonk.Checked = true;
+            }
+            if (checkBox_donorOccOther.Text == occupation)
+            {
+                checkBox_donorOccOther.Checked = true;
+            }
+            if (checkBox_donorOccMonk.Text == occupation)
+            {
+                checkBox_donorOccMonk.Checked = true;
+            }
+                if (checkBox_donorOccStudent.Text == occupation)
+            {
+                checkBox_donorOccStudent.Checked = true;
+            }
+            cal_donorLastTime.SetDate(DateTime.Parse(date));
+
+            //change the button text from 'submit' to 'update'
+            btn_submit.Text = "Update";
+            //pass this form to display on the panel with their data set
+            Dashboard.OpenChildForm(this);
+            
+        }
+        #endregion
     }
 }
