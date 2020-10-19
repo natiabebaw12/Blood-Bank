@@ -21,5 +21,11 @@ namespace BloodBank
         {
 
         }
+
+        private void DonorTable_Load(object sender, EventArgs e)
+        {
+            Donor d = new Donor();
+            dataGrid_donor.DataSource =  d.retrieve().Tables[0];
+        }
     }
 }

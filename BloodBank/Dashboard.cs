@@ -204,8 +204,9 @@ namespace BloodBank
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
-            Donor don = new Donor();
-            don.retrieve();
+
+            Donor dn = new Donor();
+            dn.retrieve();
             OpenChildForm(new DonorTable());//pass donor_table to display it on dashboard
         }
 

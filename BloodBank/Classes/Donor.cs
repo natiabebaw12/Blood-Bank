@@ -16,9 +16,9 @@ namespace BloodBank
     {
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
-        private DataTable dt = new DataTable();
+        private DataSet table;
         private string occupation;
-        DonorTable tb = new DonorTable();
+        DonorTable grid = new DonorTable();
         //set and get method to set values and to return the value of defind variables
         public string Occupation { 
             get => occupation; 
@@ -53,32 +53,18 @@ namespace BloodBank
         }
         #endregion
 
-        //add to gridview
-        private void populate(string id)
+        
+        public DataSet retrieve()
         {
-            tb.dataGrid_donor.Rows.Add(id);
-        }
-        //retrieve from database
-        public void retrieve()
-        {
-            tb.dataGrid_donor.Rows.Clear();
-            //SqlDbType stmt
-            string sql = "SELECT * FROM blood_bank.donor";
-            cmd = new MySqlCommand(sql, DBConnection.get_conn());
-
-            //open dbconnection and fill grid
-           
-                adapter = new MySqlDataAdapter(cmd);
-                adapter.Fill(dt);
-                tb.dataGrid_donor.DataSource = dt;
-                //loop through dt
-                //foreach(DataRow row in dt.Rows)
-                //{
-                //    populate(row[0].ToString());
-                //}
-                DBConnection.get_conn().Close();
-                //clear DT
-                dt.Clear();
+            //string connectionString = ""; //Set your MySQL connection string here.
+            string sql = "SELECT * FROM blood_bank.donor;"; // set query to fetch data "Select * from  tabelname"; 
+            
+            adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
+                
+                    DataSet ds = new DataSet();
+                    adapter.Fill(ds);
+                    return ds;
+                
             
         }
 
