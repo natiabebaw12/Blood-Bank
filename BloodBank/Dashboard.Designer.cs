@@ -35,15 +35,12 @@
             this.panelSideMenu = new System.Windows.Forms.Panel();
             this.btn_blood = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btn_deleteRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_updateRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_addRequest = new Guna.UI2.WinForms.Guna2Button();
             this.btn_request = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu1 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_donorView = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_deleteDonor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_addDonor = new Guna.UI2.WinForms.Guna2Button();
-            this.btn_updateDonor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Donor = new Guna.UI2.WinForms.Guna2Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
@@ -104,16 +101,20 @@
             // btn_blood
             // 
             this.btn_blood.BackColor = System.Drawing.Color.Transparent;
+            this.btn_blood.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_blood.BorderThickness = 1;
             this.btn_blood.CheckedState.Parent = this.btn_blood;
             this.btn_blood.CustomImages.Parent = this.btn_blood;
             this.btn_blood.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_blood.FillColor = System.Drawing.Color.White;
             this.btn_blood.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_blood.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_blood.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_blood.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_blood.HoverState.Parent = this.btn_blood;
             this.btn_blood.Image = ((System.Drawing.Image)(resources.GetObject("btn_blood.Image")));
             this.btn_blood.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_blood.Location = new System.Drawing.Point(0, 597);
+            this.btn_blood.Location = new System.Drawing.Point(0, 470);
             this.btn_blood.Name = "btn_blood";
             this.btn_blood.ShadowDecoration.Parent = this.btn_blood;
             this.btn_blood.Size = new System.Drawing.Size(200, 45);
@@ -126,44 +127,19 @@
             // panelSideSubMenu2
             // 
             this.panelSideSubMenu2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panelSideSubMenu2.Controls.Add(this.btn_deleteRequest);
             this.panelSideSubMenu2.Controls.Add(this.btn_updateRequest);
             this.panelSideSubMenu2.Controls.Add(this.btn_addRequest);
             this.panelSideSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 466);
+            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 385);
             this.panelSideSubMenu2.Name = "panelSideSubMenu2";
             this.panelSideSubMenu2.ShadowDecoration.Parent = this.panelSideSubMenu2;
-            this.panelSideSubMenu2.Size = new System.Drawing.Size(200, 131);
+            this.panelSideSubMenu2.Size = new System.Drawing.Size(200, 85);
             this.panelSideSubMenu2.TabIndex = 4;
-            // 
-            // btn_deleteRequest
-            // 
-            this.btn_deleteRequest.BackColor = System.Drawing.Color.Transparent;
-            this.btn_deleteRequest.CheckedState.Parent = this.btn_deleteRequest;
-            this.btn_deleteRequest.CustomImages.Parent = this.btn_deleteRequest;
-            this.btn_deleteRequest.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btn_deleteRequest.FillColor = System.Drawing.Color.Transparent;
-            this.btn_deleteRequest.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deleteRequest.ForeColor = System.Drawing.Color.White;
-            this.btn_deleteRequest.HoverState.Parent = this.btn_deleteRequest;
-            this.btn_deleteRequest.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteRequest.Image")));
-            this.btn_deleteRequest.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_deleteRequest.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_deleteRequest.Location = new System.Drawing.Point(0, 80);
-            this.btn_deleteRequest.Name = "btn_deleteRequest";
-            this.btn_deleteRequest.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_deleteRequest.ShadowDecoration.Parent = this.btn_deleteRequest;
-            this.btn_deleteRequest.Size = new System.Drawing.Size(200, 40);
-            this.btn_deleteRequest.TabIndex = 2;
-            this.btn_deleteRequest.Text = "Delete Request";
-            this.btn_deleteRequest.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_deleteRequest.TextOffset = new System.Drawing.Point(36, 0);
-            this.btn_deleteRequest.UseTransparentBackground = true;
-            this.btn_deleteRequest.Click += new System.EventHandler(this.guna2Button5_Click);
             // 
             // btn_updateRequest
             // 
             this.btn_updateRequest.BackColor = System.Drawing.Color.Transparent;
+            this.btn_updateRequest.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_updateRequest.CheckedState.Parent = this.btn_updateRequest;
             this.btn_updateRequest.CustomImages.Parent = this.btn_updateRequest;
             this.btn_updateRequest.Dock = System.Windows.Forms.DockStyle.Top;
@@ -180,14 +156,15 @@
             this.btn_updateRequest.ShadowDecoration.Parent = this.btn_updateRequest;
             this.btn_updateRequest.Size = new System.Drawing.Size(200, 40);
             this.btn_updateRequest.TabIndex = 1;
-            this.btn_updateRequest.Text = "Update Request";
-            this.btn_updateRequest.TextOffset = new System.Drawing.Point(32, 0);
+            this.btn_updateRequest.Text = "View Table";
+            this.btn_updateRequest.TextOffset = new System.Drawing.Point(14, 0);
             this.btn_updateRequest.UseTransparentBackground = true;
             this.btn_updateRequest.Click += new System.EventHandler(this.guna2Button6_Click);
             // 
             // btn_addRequest
             // 
             this.btn_addRequest.BackColor = System.Drawing.Color.Transparent;
+            this.btn_addRequest.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_addRequest.CheckedState.Parent = this.btn_addRequest;
             this.btn_addRequest.CustomImages.Parent = this.btn_addRequest;
             this.btn_addRequest.Dock = System.Windows.Forms.DockStyle.Top;
@@ -212,17 +189,21 @@
             // btn_request
             // 
             this.btn_request.BackColor = System.Drawing.Color.Transparent;
+            this.btn_request.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_request.BorderThickness = 1;
             this.btn_request.CheckedState.Parent = this.btn_request;
             this.btn_request.CustomImages.Parent = this.btn_request;
             this.btn_request.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_request.FillColor = System.Drawing.Color.White;
             this.btn_request.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_request.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_request.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_request.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_request.HoverState.Parent = this.btn_request;
             this.btn_request.Image = ((System.Drawing.Image)(resources.GetObject("btn_request.Image")));
             this.btn_request.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_request.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_request.Location = new System.Drawing.Point(0, 421);
+            this.btn_request.Location = new System.Drawing.Point(0, 340);
             this.btn_request.Name = "btn_request";
             this.btn_request.ShadowDecoration.Parent = this.btn_request;
             this.btn_request.Size = new System.Drawing.Size(200, 45);
@@ -236,19 +217,18 @@
             // 
             this.panelSideSubMenu1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(147)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.panelSideSubMenu1.Controls.Add(this.btn_donorView);
-            this.panelSideSubMenu1.Controls.Add(this.btn_deleteDonor);
             this.panelSideSubMenu1.Controls.Add(this.btn_addDonor);
-            this.panelSideSubMenu1.Controls.Add(this.btn_updateDonor);
             this.panelSideSubMenu1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelSideSubMenu1.Location = new System.Drawing.Point(0, 256);
             this.panelSideSubMenu1.Name = "panelSideSubMenu1";
             this.panelSideSubMenu1.ShadowDecoration.Parent = this.panelSideSubMenu1;
-            this.panelSideSubMenu1.Size = new System.Drawing.Size(200, 165);
+            this.panelSideSubMenu1.Size = new System.Drawing.Size(200, 84);
             this.panelSideSubMenu1.TabIndex = 2;
             // 
             // btn_donorView
             // 
             this.btn_donorView.BackColor = System.Drawing.Color.Transparent;
+            this.btn_donorView.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_donorView.CheckedState.Parent = this.btn_donorView;
             this.btn_donorView.CustomImages.Parent = this.btn_donorView;
             this.btn_donorView.Dock = System.Windows.Forms.DockStyle.Top;
@@ -263,40 +243,17 @@
             this.btn_donorView.Name = "btn_donorView";
             this.btn_donorView.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
             this.btn_donorView.ShadowDecoration.Parent = this.btn_donorView;
-            this.btn_donorView.Size = new System.Drawing.Size(200, 40);
+            this.btn_donorView.Size = new System.Drawing.Size(200, 38);
             this.btn_donorView.TabIndex = 3;
             this.btn_donorView.Text = "View Table";
             this.btn_donorView.TextOffset = new System.Drawing.Point(14, 0);
             this.btn_donorView.UseTransparentBackground = true;
             this.btn_donorView.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
-            // btn_deleteDonor
-            // 
-            this.btn_deleteDonor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_deleteDonor.CheckedState.Parent = this.btn_deleteDonor;
-            this.btn_deleteDonor.CustomImages.Parent = this.btn_deleteDonor;
-            this.btn_deleteDonor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_deleteDonor.FillColor = System.Drawing.Color.Transparent;
-            this.btn_deleteDonor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_deleteDonor.ForeColor = System.Drawing.Color.White;
-            this.btn_deleteDonor.HoverState.Parent = this.btn_deleteDonor;
-            this.btn_deleteDonor.Image = ((System.Drawing.Image)(resources.GetObject("btn_deleteDonor.Image")));
-            this.btn_deleteDonor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_deleteDonor.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_deleteDonor.Location = new System.Drawing.Point(0, 85);
-            this.btn_deleteDonor.Name = "btn_deleteDonor";
-            this.btn_deleteDonor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_deleteDonor.ShadowDecoration.Parent = this.btn_deleteDonor;
-            this.btn_deleteDonor.Size = new System.Drawing.Size(200, 40);
-            this.btn_deleteDonor.TabIndex = 2;
-            this.btn_deleteDonor.Text = "Delete Donor ";
-            this.btn_deleteDonor.TextOffset = new System.Drawing.Point(23, 0);
-            this.btn_deleteDonor.UseTransparentBackground = true;
-            this.btn_deleteDonor.Click += new System.EventHandler(this.guna2Button4_Click);
-            // 
             // btn_addDonor
             // 
             this.btn_addDonor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_addDonor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_addDonor.CheckedState.Parent = this.btn_addDonor;
             this.btn_addDonor.CustomImages.Parent = this.btn_addDonor;
             this.btn_addDonor.Dock = System.Windows.Forms.DockStyle.Top;
@@ -318,39 +275,19 @@
             this.btn_addDonor.UseTransparentBackground = true;
             this.btn_addDonor.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
-            // btn_updateDonor
-            // 
-            this.btn_updateDonor.BackColor = System.Drawing.Color.Transparent;
-            this.btn_updateDonor.CheckedState.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.CustomImages.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btn_updateDonor.FillColor = System.Drawing.Color.Transparent;
-            this.btn_updateDonor.Font = new System.Drawing.Font("Century Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_updateDonor.ForeColor = System.Drawing.Color.White;
-            this.btn_updateDonor.HoverState.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Image = ((System.Drawing.Image)(resources.GetObject("btn_updateDonor.Image")));
-            this.btn_updateDonor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_updateDonor.ImageOffset = new System.Drawing.Point(30, 0);
-            this.btn_updateDonor.Location = new System.Drawing.Point(0, 125);
-            this.btn_updateDonor.Name = "btn_updateDonor";
-            this.btn_updateDonor.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btn_updateDonor.ShadowDecoration.Parent = this.btn_updateDonor;
-            this.btn_updateDonor.Size = new System.Drawing.Size(200, 40);
-            this.btn_updateDonor.TabIndex = 1;
-            this.btn_updateDonor.Text = "Update Donor ";
-            this.btn_updateDonor.TextOffset = new System.Drawing.Point(26, 0);
-            this.btn_updateDonor.UseTransparentBackground = true;
-            this.btn_updateDonor.Click += new System.EventHandler(this.guna2Button3_Click);
-            // 
             // btn_Donor
             // 
             this.btn_Donor.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Donor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_Donor.BorderThickness = 1;
             this.btn_Donor.CheckedState.Parent = this.btn_Donor;
             this.btn_Donor.CustomImages.Parent = this.btn_Donor;
             this.btn_Donor.Dock = System.Windows.Forms.DockStyle.Top;
             this.btn_Donor.FillColor = System.Drawing.Color.White;
             this.btn_Donor.Font = new System.Drawing.Font("Century Gothic", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Donor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_Donor.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.btn_Donor.HoverState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.btn_Donor.HoverState.Parent = this.btn_Donor;
             this.btn_Donor.Image = ((System.Drawing.Image)(resources.GetObject("btn_Donor.Image")));
             this.btn_Donor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -460,12 +397,12 @@
             this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gray;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(642, -3);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(642, 1);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
             this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(30, 41);
+            this.guna2DateTimePicker1.Size = new System.Drawing.Size(30, 33);
             this.guna2DateTimePicker1.TabIndex = 0;
             this.guna2DateTimePicker1.Value = new System.DateTime(2020, 10, 15, 18, 43, 33, 450);
             // 
@@ -473,7 +410,7 @@
             // 
             panelAddForm.BackColor = System.Drawing.Color.White;
             panelAddForm.Controls.Add(this.richTextBox1);
-            panelAddForm.Controls.Add(this.label9);
+           panelAddForm.Controls.Add(this.label9);
             panelAddForm.Controls.Add(this.label7);
             panelAddForm.Controls.Add(this.label8);
             panelAddForm.Controls.Add(this.pictureBox1);
@@ -630,13 +567,10 @@
         private System.Windows.Forms.Panel panelSideMenu;
         private Guna.UI2.WinForms.Guna2Button btn_Donor;
         private Guna.UI2.WinForms.Guna2Panel panelSideSubMenu1;
-        private Guna.UI2.WinForms.Guna2Button btn_deleteDonor;
-        private Guna.UI2.WinForms.Guna2Button btn_updateDonor;
         private Guna.UI2.WinForms.Guna2Button btn_addDonor;
         private Guna.UI2.WinForms.Guna2Panel panelChildForm;
         private Guna.UI2.WinForms.Guna2Button btn_blood;
         private Guna.UI2.WinForms.Guna2Panel panelSideSubMenu2;
-        private Guna.UI2.WinForms.Guna2Button btn_deleteRequest;
         private Guna.UI2.WinForms.Guna2Button btn_updateRequest;
         private Guna.UI2.WinForms.Guna2Button btn_addRequest;
         private Guna.UI2.WinForms.Guna2Button btn_request;
@@ -657,8 +591,9 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private static System.Windows.Forms.Panel panelAddForm;
         public Guna.UI2.WinForms.Guna2Button btn_donorView;
+
+        public  static System.Windows.Forms.Panel panelAddForm;
     }
 }
 

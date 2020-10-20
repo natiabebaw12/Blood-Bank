@@ -25,6 +25,7 @@ namespace BloodBank
             }
         }
 
+        //return the connection
         public static MySqlConnection get_conn()
         {
             return MyConn;

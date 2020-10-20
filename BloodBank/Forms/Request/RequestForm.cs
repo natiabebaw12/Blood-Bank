@@ -12,6 +12,7 @@ namespace BloodBank.Forms.Receiver
 {
     public partial class ReceiverForm : Form
     {
+        #region RESET THE FORM
         private void reset()
         {
             lbl_patientId.Text = "-";
@@ -36,6 +37,7 @@ namespace BloodBank.Forms.Receiver
             txt_address.Clear();
             date_patientDate.ResetText();
         }
+        #endregion
         public ReceiverForm()
         {
             InitializeComponent();
@@ -50,6 +52,37 @@ namespace BloodBank.Forms.Receiver
         private void guna2Button2_Click(object sender, EventArgs e)
         {
             reset();
+        }
+
+        private void combo_patientAboGroup_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string aboGroupSelected = combo_patientAboGroup.Text;
+            //check the selected value and then change CheckBox_RH value dynamically
+            if (aboGroupSelected == "A")
+            {
+                combo_patientRh.Items.Clear();
+                combo_patientRh.Items.Add("A+");
+                combo_patientRh.Items.Add("A-");
+            }
+            if (aboGroupSelected == "B")
+            {
+                combo_patientRh.Items.Clear();
+                combo_patientRh.Items.Add("B+");
+                combo_patientRh.Items.Add("B-");
+            }
+            if (aboGroupSelected == "AB")
+            {
+                combo_patientRh.Items.Clear();
+                combo_patientRh.Items.Add("AB+");
+                combo_patientRh.Items.Add("AB-");
+            }
+            if (aboGroupSelected == "O")
+            {
+                combo_patientRh.Items.Clear();
+                combo_patientRh.Items.Add("O+");
+                combo_patientRh.Items.Add("O-");
+            }
+            combo_patientRh.SelectedIndex = 0;
         }
     }
 }

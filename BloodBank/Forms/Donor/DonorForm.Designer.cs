@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DonnerForm));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.btn_checkBoxReset = new Guna.UI2.WinForms.Guna2Button();
@@ -122,17 +123,21 @@
             // 
             // btn_checkBoxReset
             // 
+            this.btn_checkBoxReset.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_checkBoxReset.BorderRadius = 15;
+            this.btn_checkBoxReset.BorderThickness = 1;
             this.btn_checkBoxReset.CheckedState.Parent = this.btn_checkBoxReset;
             this.btn_checkBoxReset.CustomImages.Parent = this.btn_checkBoxReset;
+            this.btn_checkBoxReset.FillColor = System.Drawing.Color.White;
             this.btn_checkBoxReset.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btn_checkBoxReset.ForeColor = System.Drawing.Color.White;
             this.btn_checkBoxReset.HoverState.Parent = this.btn_checkBoxReset;
-            this.btn_checkBoxReset.Location = new System.Drawing.Point(703, 222);
+            this.btn_checkBoxReset.Image = ((System.Drawing.Image)(resources.GetObject("btn_checkBoxReset.Image")));
+            this.btn_checkBoxReset.Location = new System.Drawing.Point(707, 221);
             this.btn_checkBoxReset.Name = "btn_checkBoxReset";
             this.btn_checkBoxReset.ShadowDecoration.Parent = this.btn_checkBoxReset;
-            this.btn_checkBoxReset.Size = new System.Drawing.Size(38, 29);
+            this.btn_checkBoxReset.Size = new System.Drawing.Size(31, 29);
             this.btn_checkBoxReset.TabIndex = 5;
-            this.btn_checkBoxReset.Text = "guna2Button3";
             this.btn_checkBoxReset.Click += new System.EventHandler(this.btn_checkBoxReset_Click);
             // 
             // textBox_donorAddress
@@ -169,15 +174,6 @@
             this.combo_donnerRH.FormattingEnabled = true;
             this.combo_donnerRH.HoverState.Parent = this.combo_donnerRH;
             this.combo_donnerRH.ItemHeight = 20;
-            this.combo_donnerRH.Items.AddRange(new object[] {
-            "A+",
-            "A-",
-            "B+",
-            "B-",
-            "AB+",
-            "AB-",
-            "O+",
-            "O-"});
             this.combo_donnerRH.ItemsAppearance.Parent = this.combo_donnerRH;
             this.combo_donnerRH.Location = new System.Drawing.Point(163, 274);
             this.combo_donnerRH.Name = "combo_donnerRH";
@@ -185,6 +181,7 @@
             this.combo_donnerRH.Size = new System.Drawing.Size(200, 26);
             this.combo_donnerRH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.combo_donnerRH.TabIndex = 69;
+            this.combo_donnerRH.SelectedIndexChanged += new System.EventHandler(this.combo_donnerRH_SelectedIndexChanged);
             // 
             // label3
             // 
@@ -369,11 +366,11 @@
             this.radio_donorFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radio_donorFemale.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radio_donorFemale.CheckedState.InnerOffset = -4;
-            this.radio_donorFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_donorFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_donorFemale.ForeColor = System.Drawing.Color.Black;
             this.radio_donorFemale.Location = new System.Drawing.Point(72, 14);
             this.radio_donorFemale.Name = "radio_donorFemale";
-            this.radio_donorFemale.Size = new System.Drawing.Size(79, 20);
+            this.radio_donorFemale.Size = new System.Drawing.Size(72, 20);
             this.radio_donorFemale.TabIndex = 21;
             this.radio_donorFemale.TabStop = true;
             this.radio_donorFemale.Text = "Female";
@@ -391,11 +388,11 @@
             this.radio_donorMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radio_donorMale.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radio_donorMale.CheckedState.InnerOffset = -4;
-            this.radio_donorMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_donorMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_donorMale.ForeColor = System.Drawing.Color.Black;
             this.radio_donorMale.Location = new System.Drawing.Point(6, 14);
             this.radio_donorMale.Name = "radio_donorMale";
-            this.radio_donorMale.Size = new System.Drawing.Size(61, 20);
+            this.radio_donorMale.Size = new System.Drawing.Size(56, 20);
             this.radio_donorMale.TabIndex = 20;
             this.radio_donorMale.TabStop = true;
             this.radio_donorMale.Text = "Male";
@@ -534,6 +531,7 @@
             this.combo_donorAboGroup.Size = new System.Drawing.Size(200, 26);
             this.combo_donorAboGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.combo_donorAboGroup.TabIndex = 54;
+            this.combo_donorAboGroup.SelectedIndexChanged += new System.EventHandler(this.combo_donorAboGroup_SelectedIndexChanged);
             // 
             // label21
             // 

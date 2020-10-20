@@ -300,10 +300,13 @@
             this.num_requiredUnit.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
             this.num_requiredUnit.ForeColor = System.Drawing.Color.Black;
             this.num_requiredUnit.Location = new System.Drawing.Point(419, 218);
+            this.num_requiredUnit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.num_requiredUnit.Name = "num_requiredUnit";
             this.num_requiredUnit.ShadowDecoration.Parent = this.num_requiredUnit;
             this.num_requiredUnit.Size = new System.Drawing.Size(164, 28);
             this.num_requiredUnit.TabIndex = 79;
+            this.num_requiredUnit.UpDownButtonFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.num_requiredUnit.UpDownButtonForeColor = System.Drawing.Color.White;
             // 
             // label9
             // 
@@ -649,11 +652,11 @@
             this.radio_patientFemale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radio_patientFemale.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radio_patientFemale.CheckedState.InnerOffset = -4;
-            this.radio_patientFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_patientFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_patientFemale.ForeColor = System.Drawing.Color.Black;
             this.radio_patientFemale.Location = new System.Drawing.Point(72, 14);
             this.radio_patientFemale.Name = "radio_patientFemale";
-            this.radio_patientFemale.Size = new System.Drawing.Size(78, 20);
+            this.radio_patientFemale.Size = new System.Drawing.Size(72, 20);
             this.radio_patientFemale.TabIndex = 21;
             this.radio_patientFemale.TabStop = true;
             this.radio_patientFemale.Text = "Female";
@@ -671,11 +674,11 @@
             this.radio_patientMale.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.radio_patientMale.CheckedState.InnerColor = System.Drawing.Color.White;
             this.radio_patientMale.CheckedState.InnerOffset = -4;
-            this.radio_patientMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radio_patientMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.radio_patientMale.ForeColor = System.Drawing.Color.Black;
             this.radio_patientMale.Location = new System.Drawing.Point(6, 14);
             this.radio_patientMale.Name = "radio_patientMale";
-            this.radio_patientMale.Size = new System.Drawing.Size(60, 20);
+            this.radio_patientMale.Size = new System.Drawing.Size(56, 20);
             this.radio_patientMale.TabIndex = 20;
             this.radio_patientMale.TabStop = true;
             this.radio_patientMale.Text = "Male";
@@ -814,6 +817,7 @@
             this.combo_patientAboGroup.Size = new System.Drawing.Size(200, 26);
             this.combo_patientAboGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
             this.combo_patientAboGroup.TabIndex = 54;
+            this.combo_patientAboGroup.SelectedIndexChanged += new System.EventHandler(this.combo_patientAboGroup_SelectedIndexChanged);
             // 
             // label21
             // 

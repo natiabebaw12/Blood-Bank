@@ -62,7 +62,7 @@ namespace BloodBank
                     DataSet ds = new DataSet();
                     adapter.Fill(ds);
                     return ds;
-         }
+        }
         #endregion
 
         #region UPDATE THE DATABASE
@@ -83,8 +83,8 @@ namespace BloodBank
                 {
                     if(MessageBox.Show("Successfully Updated!" )== DialogResult.OK)
                     {
-                        //Dashboard db = new Dashboard();
-                       // db.btn_donorView.Click;
+                         //Dashboard db = new Dashboard();
+                        // db.btn_donorView.Click;
                     }
                 }
                 DBConnection.get_conn().Close();

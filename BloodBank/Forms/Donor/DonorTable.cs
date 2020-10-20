@@ -35,7 +35,7 @@ namespace BloodBank
             getFromGrid();
 
         }
-        #region
+        #region GET DATA FROM GRID
         public void getFromGrid()
         {
             int donor_id = Convert.ToInt32(dataGrid_donor.SelectedRows[0].Cells[0].Value);

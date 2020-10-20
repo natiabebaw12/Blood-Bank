@@ -1,6 +1,7 @@
 ﻿
 using BloodBank;
 using BloodBank.Forms.Receiver;
+using BloodBank.Forms.Request;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -144,6 +145,7 @@ namespace BloodBank
 
         private void guna2Button6_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new RequestTable());
             //...
             //Hide when clicked
             //...
