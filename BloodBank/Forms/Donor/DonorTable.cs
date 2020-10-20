@@ -70,5 +70,10 @@ namespace BloodBank
         {   
             dataGrid_donor.DataSource = dn.retrieve().Tables[0];
         }
+
+        private void dataGrid_donor_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -101,6 +101,7 @@
             this.dataGrid_donor.ThemeStyle.RowsStyle.Height = 22;
             this.dataGrid_donor.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dataGrid_donor.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dataGrid_donor.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGrid_donor_CellContentClick_1);
             // 
             // btn_deleteDonor
             // 

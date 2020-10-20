@@ -12,9 +12,15 @@ namespace BloodBank.Forms.Request
 {
     public partial class RequestTable : Form
     {
+        Patient patient = new Patient();
         public RequestTable()
         {
             InitializeComponent();
+        }
+
+        private void RequestTable_Load(object sender, EventArgs e)
+        {
+            grid_patient.DataSource = patient.retrieve().Tables[0];
         }
     }
 }
