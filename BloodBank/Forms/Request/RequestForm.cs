@@ -12,6 +12,90 @@ namespace BloodBank.Forms.Receiver
 {
     public partial class ReceiverForm : Form
     {
+        private string hospitalName, doctor, history, requiredBloodUnit, hospitalPhoneNo, patientRegdNo;
+        private int noRequiredUnit;
+        private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date;
+        float weight;
+
+        Patient patient = new Patient();
+        private void guna2Button1_Click(object sender, EventArgs e)
+        {
+            getFromForm();
+            if (btn_submit.Text == "Submit")
+            {
+                //invok this method to add to db
+                patient.addPatient(patient);
+            }
+            if (btn_submit.Text == "Update")
+            {
+                //invok this method to add to db
+               // patient.update(patient, int.Parse(lbl_donorId.Text));
+            }
+        }
+
+        
+
+        #region GET VALUE FROM THE FORM
+        public void getFromForm()
+        {
+
+            fName = txt_patientFName.Text;
+            lName = txt_patientLName.Text;
+            //check which radio is selected
+            if (radio_patientMale.Checked == true)
+            {
+                sex = "Male";
+            }
+            else if (radio_patientFemale.Checked == true)
+            {
+                sex = "Female";
+            }
+
+            DOB = date_patientDOB.Value.ToString("dd MMM yyyy");
+            aboGroup = combo_patientAboGroup.Text;
+            RH = combo_patientRh.Text;
+            phoneNo = txt_patientPhoneNo.Text;
+            email = txt_patientemail.Text;
+            address = txt_address.Text;
+            date = date_patientDate.Value.ToString("dd MMM yyyy");
+
+            weight = float.Parse(txt_patientWeight.Text);
+            hospitalName = txt_hospitalName.Text;
+            patientRegdNo = txt_patientRegdNo.Text;
+            doctor = txt_doctor.Text;
+            //check which radio is selected
+            if (radio_patientYes.Checked == true)
+            {
+                history = "Yes";
+            }
+            else if (radio_patientNo.Checked == true)
+            {
+                history = "No";
+            }
+            requiredBloodUnit = combo_bloodRequired.Text;
+            noRequiredUnit = Convert.ToInt32(num_requiredUnit.Value);
+            hospitalPhoneNo = txt_hospitalPhoneNo.Text;
+
+            patient.FName = fName;
+            patient.LName = lName;
+            patient.Sex = sex;
+            patient.DOB1 = DOB;
+            patient.AboGroup = aboGroup;
+            patient.RH1 = RH;
+            patient.PhoneNo = phoneNo;
+            patient.Email = email;
+            patient.Address = address;
+            patient.Date = date;
+            patient.Weight = weight;
+            patient.HospitalName = hospitalName;
+            patient.PatientRegdNo = patientRegdNo;
+            patient.Doctor = doctor;
+            patient.History = history;
+            patient.RequiredBloodUnit = requiredBloodUnit;
+            patient.NoRequiredUnit = noRequiredUnit;
+            patient.HospitalPhoneNo = hospitalPhoneNo;
+        }
+        #endregion
         #region RESET THE FORM
         private void reset()
         {

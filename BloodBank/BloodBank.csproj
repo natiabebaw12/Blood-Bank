@@ -125,6 +125,12 @@
     <Compile Include="Forms\Request\RequestForm.Designer.cs">
       <DependentUpon>RequestForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\Request\RequestTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Request\RequestTable.Designer.cs">
+      <DependentUpon>RequestTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Request\RequestForm.resx">
       <DependentUpon>RequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Request\RequestTable.resx">
+      <DependentUpon>RequestTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

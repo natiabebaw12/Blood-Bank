@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2GroupBox1 = new Guna.UI2.WinForms.Guna2GroupBox();
             this.txt_patientLName = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -81,27 +81,28 @@
             this.groupBox4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // guna2Button1
+            // btn_submit
             // 
-            this.guna2Button1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.BorderRadius = 17;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.CheckedState.Parent = this.guna2Button1;
-            this.guna2Button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.guna2Button1.CustomImages.Parent = this.guna2Button1;
-            this.guna2Button1.FillColor = System.Drawing.Color.White;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2Button1.HoverState.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.HoverState.Parent = this.guna2Button1;
-            this.guna2Button1.Location = new System.Drawing.Point(346, 498);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.ShadowDecoration.Parent = this.guna2Button1;
-            this.guna2Button1.Size = new System.Drawing.Size(130, 33);
-            this.guna2Button1.TabIndex = 48;
-            this.guna2Button1.Text = "Submit";
+            this.btn_submit.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.BorderRadius = 17;
+            this.btn_submit.BorderThickness = 1;
+            this.btn_submit.CheckedState.Parent = this.btn_submit;
+            this.btn_submit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btn_submit.CustomImages.Parent = this.btn_submit;
+            this.btn_submit.FillColor = System.Drawing.Color.White;
+            this.btn_submit.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_submit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btn_submit.HoverState.ForeColor = System.Drawing.Color.White;
+            this.btn_submit.HoverState.Parent = this.btn_submit;
+            this.btn_submit.Location = new System.Drawing.Point(346, 498);
+            this.btn_submit.Name = "btn_submit";
+            this.btn_submit.ShadowDecoration.Parent = this.btn_submit;
+            this.btn_submit.Size = new System.Drawing.Size(130, 33);
+            this.btn_submit.TabIndex = 48;
+            this.btn_submit.Text = "Submit";
+            this.btn_submit.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
             // guna2GroupBox1
             // 
@@ -241,9 +242,9 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(415, 372);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(70, 19);
+            this.label10.Size = new System.Drawing.Size(126, 19);
             this.label10.TabIndex = 82;
-            this.label10.Text = "Address";
+            this.label10.Text = "Patient Address";
             // 
             // label1
             // 
@@ -939,7 +940,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 532);
             this.Controls.Add(this.guna2Button2);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.btn_submit);
             this.Controls.Add(this.guna2GroupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ReceiverForm";
@@ -957,7 +958,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button btn_submit;
         private Guna.UI2.WinForms.Guna2GroupBox guna2GroupBox1;
         private Guna.UI2.WinForms.Guna2ComboBox combo_patientRh;
         private System.Windows.Forms.Label label3;
