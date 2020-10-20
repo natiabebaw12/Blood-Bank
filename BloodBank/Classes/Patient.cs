@@ -100,12 +100,12 @@ namespace BloodBank
            }
        }
        #endregion
-
-       #region DELETE FROM DATABASE
-       public void delete(int id)
+    */
+        #region DELETE FROM DATABASE
+        public void delete(int id)
        {
 
-           string sql = "DELETE FROM blood_bank.patient WHERE donor_id = '" + id + "';";
+           string sql = "DELETE FROM blood_bank.patient WHERE patient_id = '" + id + "';";
            cmd = new MySqlCommand(sql, DBConnection.get_conn());
 
            try
@@ -130,10 +130,9 @@ namespace BloodBank
                MessageBox.Show(ex.Message);
                DBConnection.get_conn().Close();
            }
-           retrieve();
        }
        #endregion
-   */
+   
 
     }
 }

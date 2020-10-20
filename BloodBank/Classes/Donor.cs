@@ -125,7 +125,6 @@ namespace BloodBank
                 MessageBox.Show(ex.Message);
                 DBConnection.get_conn().Close();
             }
-            retrieve();
         }
         #endregion
 

@@ -22,5 +22,12 @@ namespace BloodBank.Forms.Request
         {
             grid_patient.DataSource = patient.retrieve().Tables[0];
         }
+
+        private void btn_deleteDonor_Click(object sender, EventArgs e)
+        {
+            int patient_id = Convert.ToInt32(grid_patient.SelectedRows[0].Cells[0].Value);
+            patient.delete(patient_id);
+            grid_patient.DataSource = patient.retrieve().Tables[0];
+        }
     }
 }
