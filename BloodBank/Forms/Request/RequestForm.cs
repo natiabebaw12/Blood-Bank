@@ -29,7 +29,7 @@ namespace BloodBank.Forms.Receiver
             if (btn_submit.Text == "Update")
             {
                 //invok this method to add to db
-               // patient.update(patient, int.Parse(lbl_donorId.Text));
+               patient.update(patient, int.Parse(lbl_patientId.Text));
             }
         }
 
@@ -94,6 +94,67 @@ namespace BloodBank.Forms.Receiver
             patient.RequiredBloodUnit = requiredBloodUnit;
             patient.NoRequiredUnit = noRequiredUnit;
             patient.HospitalPhoneNo = hospitalPhoneNo;
+        }
+        #endregion
+        #region SET THE FORM
+        public void setForm(int patient_id, string fName,string lName,string sex,string DOB,float weight,
+string aboGroup,string RH,string hospitalName,string hospitalPhone,string patientRegdNo,string doctor,
+string history,string reqBlood,int noReqBlood,string phoneNo,string email,string address,string date
+)
+        {
+            lbl_patientId.Text = patient_id.ToString();
+            txt_patientFName.Text = fName;
+            txt_patientLName.Text = lName;
+            if (sex == "Male")
+            {
+                radio_patientMale.Checked = true;
+            }
+            if (sex == "Female")
+            {
+                radio_patientFemale.Checked = true;
+            }
+            date_patientDOB.Text = DOB;
+            combo_patientAboGroup.Text = aboGroup;
+            combo_patientRh.Text = RH;
+            txt_patientWeight.Text = weight.ToString();
+            txt_patientPhoneNo.Text = phoneNo;
+            txt_patientemail.Text = email;
+            txt_address.Text = address;
+            txt_hospitalName.Text = hospitalName;
+            txt_patientRegdNo.Text = patientRegdNo;
+            txt_doctor.Text = doctor;
+            if (history == "Yes")
+            {
+                radio_patientYes.Checked = true;
+            }
+            if (history == "No")
+            {
+                radio_patientNo.Checked = true;
+            }
+            txt_hospitalPhoneNo.Text = hospitalPhone;
+            combo_bloodRequired.Text = reqBlood;
+            num_requiredUnit.Value = noReqBlood;
+            date_patientDate.Text = date;
+            //change the button text from 'submit' to 'update'
+            btn_submit.Text = "Update";
+            //pass this form to display on the panel with their data set
+            /* Form activeForm = null;
+            Form copyForm = null;
+           
+            if (activeForm != null)
+            {
+                activeForm.Close();
+            }
+            activeForm = this;
+            this.TopLevel = false;
+            this.FormBorderStyle = FormBorderStyle.None;
+            this.Dock = DockStyle.Fill;
+            dash.get_panelAddForm().Controls.Add(this);
+            dash.get_panelAddForm().Tag = this;
+            this.BringToFront();
+            this.Show();
+            copyForm = this; */
+            Dashboard.OpenChildForm(this);
         }
         #endregion
         #region RESET THE FORM

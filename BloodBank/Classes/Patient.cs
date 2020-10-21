@@ -68,11 +68,12 @@ namespace BloodBank
             return ds;
         }
         #endregion
-        /*
+        
        #region UPDATE THE DATABASE
-       public void update(Donor ob, int id)
+       public void update(Patient ob, int id)
        {
-           string sql = "UPDATE blood_bank.patient SET first_name='" + ob.FName + "',last_name='" + ob.LName + "',sex='" + ob.Sex + "',dob='" + ob.DOB1 + "',abo_group='" + ob.AboGroup + "',rh='" + ob.RH1 + "',weight='" + ob.Weight + "',phone_no='" + ob.PhoneNo + "',email='" + ob.Email + "',address='" + ob.Address + "',occupation='" + ob.occupation + "',last_time_donation='" + ob.Date + "' WHERE donor_id = '" + id + "';";
+            
+           string sql = "UPDATE blood_bank.patient SET first_name='" + ob.FName + "',last_name='" + ob.LName + "',sex='" + ob.Sex + "',dob='" + ob.DOB1+"', weight = '" + ob.Weight + "',abo_group='" + ob.AboGroup + "',rh='" + ob.RH1 + "',hospital_name='"+ob.HospitalName+ "',hospital_phone_no='"+ob.HospitalPhoneNo+ "',patient_regd='"+ob.PatientRegdNo+ "',doctor_incharge='"+ob.Doctor+ "',previous_transfusion='"+ob.history+ "',blood_unit='"+ob.RequiredBloodUnit+ "',no_of_unit='"+ob.NoRequiredUnit+"',phone_no='" + ob.PhoneNo + "',email='" + ob.Email + "',patient_address='" + ob.Address + "',date='" + ob.Date + "' WHERE patient_id = '" + id + "';";
            cmd = new MySqlCommand(sql, DBConnection.get_conn());
 
            try
@@ -100,7 +101,7 @@ namespace BloodBank
            }
        }
        #endregion
-    */
+   
         #region DELETE FROM DATABASE
         public void delete(int id)
        {
