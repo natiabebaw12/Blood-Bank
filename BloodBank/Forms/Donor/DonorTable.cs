@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -73,7 +74,47 @@ namespace BloodBank
 
         private void dataGrid_donor_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
         {
+        }
 
+        private void txt_searchDonor_TextChanged(object sender, EventArgs e)
+        {
+            MySqlDataAdapter adapter;
+            
+            if (txt_searchDonor.Text != "")
+            {
+                
+                string search_value = txt_searchDonor.Text;//get user entered text
+                if (search_value.All(char.IsDigit)){
+                    foreach (DataGridViewRow a in dataGrid_donor.Rows)//loop through row 
+                    {
+                        if (Convert.ToInt32(a.Cells[0].Value) == Convert.ToInt32(search_value))//check if the first coloum or id is equal
+                        {
+                            //string connectionString = ""; //Set your MySQL connection string here.
+                            string sql = "SELECT * FROM `blood_bank`.`donor` WHERE donor_id = '" + search_value + "';"; // set query to fetch data "Select * from  tabelname"; 
+
+                            adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
+
+                            DataSet ds = new DataSet();
+                            adapter.Fill(ds);
+                            dataGrid_donor.DataSource = ds.Tables[0];//show only the searched id
+                        }
+                    }
+                }
+                else
+                {
+                    /*foreach (DataGridViewRow a in dataGrid_donor.Rows)//loop through row 
+                    {   string b = a.Cells[1].Value.ToString();
+                        if ( b.ToString().Equals(search_value, StringComparison.OrdinalIgnoreCase))//check if the second coloum or first_name is equal
+                        {
+                            
+                        }
+                    }*/
+                }
+            }
+            else//if the search box is empty show all data
+            {
+                dataGrid_donor.DataSource = dn.retrieve().Tables[0];
+            }
         }
     }
 }

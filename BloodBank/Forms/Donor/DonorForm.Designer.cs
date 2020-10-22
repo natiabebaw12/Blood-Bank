@@ -146,7 +146,7 @@
             this.textBox_donorAddress.Location = new System.Drawing.Point(163, 410);
             this.textBox_donorAddress.Name = "textBox_donorAddress";
             this.textBox_donorAddress.Size = new System.Drawing.Size(201, 41);
-            this.textBox_donorAddress.TabIndex = 85;
+            this.textBox_donorAddress.TabIndex = 8;
             this.textBox_donorAddress.Text = "";
             // 
             // label10
@@ -180,7 +180,7 @@
             this.combo_donnerRH.ShadowDecoration.Parent = this.combo_donnerRH;
             this.combo_donnerRH.Size = new System.Drawing.Size(200, 26);
             this.combo_donnerRH.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_donnerRH.TabIndex = 69;
+            this.combo_donnerRH.TabIndex = 4;
             this.combo_donnerRH.SelectedIndexChanged += new System.EventHandler(this.combo_donnerRH_SelectedIndexChanged);
             // 
             // label3
@@ -209,7 +209,7 @@
             // 
             this.cal_donorLastTime.Location = new System.Drawing.Point(422, 289);
             this.cal_donorLastTime.Name = "cal_donorLastTime";
-            this.cal_donorLastTime.TabIndex = 66;
+            this.cal_donorLastTime.TabIndex = 9;
             // 
             // label1
             // 
@@ -371,7 +371,7 @@
             this.radio_donorFemale.Location = new System.Drawing.Point(72, 14);
             this.radio_donorFemale.Name = "radio_donorFemale";
             this.radio_donorFemale.Size = new System.Drawing.Size(72, 20);
-            this.radio_donorFemale.TabIndex = 21;
+            this.radio_donorFemale.TabIndex = 1;
             this.radio_donorFemale.TabStop = true;
             this.radio_donorFemale.Text = "Female";
             this.radio_donorFemale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -393,7 +393,7 @@
             this.radio_donorMale.Location = new System.Drawing.Point(6, 14);
             this.radio_donorMale.Name = "radio_donorMale";
             this.radio_donorMale.Size = new System.Drawing.Size(56, 20);
-            this.radio_donorMale.TabIndex = 20;
+            this.radio_donorMale.TabIndex = 0;
             this.radio_donorMale.TabStop = true;
             this.radio_donorMale.Text = "Male";
             this.radio_donorMale.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
@@ -427,7 +427,7 @@
             this.txt_donorPhoneNo.SelectedText = "";
             this.txt_donorPhoneNo.ShadowDecoration.Parent = this.txt_donorPhoneNo;
             this.txt_donorPhoneNo.Size = new System.Drawing.Size(200, 28);
-            this.txt_donorPhoneNo.TabIndex = 58;
+            this.txt_donorPhoneNo.TabIndex = 6;
             // 
             // txt_donorEmail
             // 
@@ -454,7 +454,7 @@
             this.txt_donorEmail.SelectedText = "";
             this.txt_donorEmail.ShadowDecoration.Parent = this.txt_donorEmail;
             this.txt_donorEmail.Size = new System.Drawing.Size(200, 28);
-            this.txt_donorEmail.TabIndex = 60;
+            this.txt_donorEmail.TabIndex = 7;
             // 
             // label19
             // 
@@ -492,7 +492,7 @@
             this.txt_donorWeight.SelectedText = "";
             this.txt_donorWeight.ShadowDecoration.Parent = this.txt_donorWeight;
             this.txt_donorWeight.Size = new System.Drawing.Size(84, 28);
-            this.txt_donorWeight.TabIndex = 56;
+            this.txt_donorWeight.TabIndex = 5;
             // 
             // label20
             // 
@@ -530,7 +530,7 @@
             this.combo_donorAboGroup.ShadowDecoration.Parent = this.combo_donorAboGroup;
             this.combo_donorAboGroup.Size = new System.Drawing.Size(200, 26);
             this.combo_donorAboGroup.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.combo_donorAboGroup.TabIndex = 54;
+            this.combo_donorAboGroup.TabIndex = 3;
             this.combo_donorAboGroup.SelectedIndexChanged += new System.EventHandler(this.combo_donorAboGroup_SelectedIndexChanged);
             // 
             // label21
@@ -560,7 +560,7 @@
             this.date_donorDOB.Name = "date_donorDOB";
             this.date_donorDOB.ShadowDecoration.Parent = this.date_donorDOB;
             this.date_donorDOB.Size = new System.Drawing.Size(200, 28);
-            this.date_donorDOB.TabIndex = 52;
+            this.date_donorDOB.TabIndex = 2;
             this.date_donorDOB.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
             // 
             // label22
@@ -599,7 +599,7 @@
             this.txt_donorLName.SelectedText = "";
             this.txt_donorLName.ShadowDecoration.Parent = this.txt_donorLName;
             this.txt_donorLName.Size = new System.Drawing.Size(200, 28);
-            this.txt_donorLName.TabIndex = 49;
+            this.txt_donorLName.TabIndex = 1;
             // 
             // txt_donorFName
             // 
@@ -626,7 +626,7 @@
             this.txt_donorFName.SelectedText = "";
             this.txt_donorFName.ShadowDecoration.Parent = this.txt_donorFName;
             this.txt_donorFName.Size = new System.Drawing.Size(200, 28);
-            this.txt_donorFName.TabIndex = 48;
+            this.txt_donorFName.TabIndex = 0;
             // 
             // label12
             // 
@@ -680,7 +680,7 @@
             this.btn_submit.Name = "btn_submit";
             this.btn_submit.ShadowDecoration.Parent = this.btn_submit;
             this.btn_submit.Size = new System.Drawing.Size(130, 33);
-            this.btn_submit.TabIndex = 46;
+            this.btn_submit.TabIndex = 0;
             this.btn_submit.Text = "Submit";
             this.btn_submit.Click += new System.EventHandler(this.guna2Button1_Click);
             // 
@@ -703,7 +703,7 @@
             this.guna2Button2.Name = "guna2Button2";
             this.guna2Button2.ShadowDecoration.Parent = this.guna2Button2;
             this.guna2Button2.Size = new System.Drawing.Size(87, 33);
-            this.guna2Button2.TabIndex = 47;
+            this.guna2Button2.TabIndex = 1;
             this.guna2Button2.Text = "Reset";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
