@@ -72,6 +72,57 @@ hospitalPhone,patientRegdNo,doctor,history,reqBlood,noReqBlood,phoneNo,email,add
         private void txt_searchPatient_TextChanged(object sender, EventArgs e)
         {
 
+            MySqlDataAdapter adapter;
+            DataSet ds = new DataSet();
+            #region OUTER LOOP
+            if (txt_searchPatient.Text != "")//checks if the text box is or not empty
+            {
+
+                string search_value = txt_searchPatient.Text;//get user entered text
+                #region ID INNER LOOP
+                if (search_value.All(char.IsDigit))//CHECKS IF THE ENTERD TEXT IS A DIGIT OR NOT
+                {
+                    foreach (DataGridViewRow a in grid_patient.Rows)//loop through row 
+                    {
+                        if (Convert.ToInt32(a.Cells[0].Value) == Convert.ToInt32(search_value))//check if the first coloum or id is equal
+                        {
+                            //string connectionString = ""; //Set your MySQL connection string here.
+                            string sql = "SELECT * FROM `blood_bank`.`patient` WHERE patient_id = '" + search_value + "';"; // set query to fetch data "Select * from  tabelname"; 
+
+                            adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
+                            adapter.Fill(ds);
+                            grid_patient.DataSource = ds.Tables[0];//show only the searched id data
+                        }
+                    }
+                }
+                #endregion
+                #region STRIG INNER LOOP
+                else //IF IT'S A STRING
+                {
+                    foreach (DataGridViewRow a in grid_patient.Rows)//loop through row 
+                    {
+                        if (a.Cells[6].Value != null)
+                        {
+                            if (a.Cells[6].Value.ToString() == search_value.ToUpper())//check if the fifth coloum or abo_groups is equal
+                            {
+                                //string connectionString = ""; //Set your MySQL connection string here.
+                                string sql = "SELECT * FROM `blood_bank`.`patient` WHERE abo_group = '" + search_value.ToUpper() + "';"; // set query to fetch data "Select * from  tabelname"; 
+
+                                adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
+
+                                adapter.Fill(ds);
+                                grid_patient.DataSource = ds.Tables[0];//show only the searched abo_groups data
+                            }
+                        }
+                    }
+                }
+                #endregion
+            }
+            #endregion
+            else//if the search box is empty show all data
+            {
+                grid_patient.DataSource = patient.retrieve().Tables[0];
+            }
         }
     }
 }
