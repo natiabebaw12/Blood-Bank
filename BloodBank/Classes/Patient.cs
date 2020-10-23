@@ -16,6 +16,7 @@ namespace BloodBank
     {
        private string hospitalName, doctor, history, requiredBloodUnit, hospitalPhoneNo, patientRegdNo;
        private int noRequiredUnit;
+        Blood bl = new Blood();
         //set and get method to set values and to return the value of defind variables
         public string HospitalName { get => hospitalName; set => hospitalName = value; }
         public string Doctor { get => doctor; set => doctor = value; }
@@ -46,6 +47,23 @@ namespace BloodBank
                 }
 
                 DBConnection.get_conn().Close();
+                 DBConnection.get_conn().Close();
+                if (ob.AboGroup == "A")
+                {
+                    bl.update(1, 1, "no_of_requisition");
+                }
+                else if (ob.AboGroup == "B")
+                {
+                    bl.update(2, 1, "no_of_requisition");
+                }
+                if (ob.AboGroup == "AB")
+                {
+                    bl.update(3, 1, "no_of_requisition");
+                }
+                if (ob.AboGroup == "O")
+                {
+                    bl.update(4, 1, "no_of_requisition");
+                }
             }
             catch (Exception ex)
             {
@@ -103,7 +121,7 @@ namespace BloodBank
        #endregion
    
         #region DELETE FROM DATABASE
-        public void delete(int id)
+        public void delete(int id, string aboGroup)
        {
 
            string sql = "DELETE FROM blood_bank.patient WHERE patient_id = '" + id + "';";
@@ -125,7 +143,23 @@ namespace BloodBank
                    }
                }
                DBConnection.get_conn().Close();
-           }
+                if (aboGroup == "A")
+                {
+                    bl.update(1, 0, "no_of_requisition");
+                }
+                else if (aboGroup == "B")
+                {
+                    bl.update(2, 0, "no_of_requisition");
+                }
+                if (aboGroup == "AB")
+                {
+                    bl.update(3, 0, "no_of_requisition");
+                }
+                if (aboGroup == "O")
+                {
+                    bl.update(4, 0, "no_of_requisition");
+                }
+            }
            catch (Exception ex)
            {
                MessageBox.Show(ex.Message);

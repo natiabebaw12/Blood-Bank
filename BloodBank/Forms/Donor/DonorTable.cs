@@ -63,7 +63,8 @@ namespace BloodBank
         private void btn_deleteDonor_Click(object sender, EventArgs e)
         {
             int donor_id = Convert.ToInt32(dataGrid_donor.SelectedRows[0].Cells[0].Value);
-            dn.delete(donor_id);
+            string aboGroup = dataGrid_donor.SelectedRows[0].Cells[5].Value.ToString();
+            dn.delete(donor_id, aboGroup);
             dataGrid_donor.DataSource = dn.retrieve().Tables[0];
         }
 

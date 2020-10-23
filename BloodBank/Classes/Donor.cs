@@ -48,19 +48,19 @@ namespace BloodBank
                 DBConnection.get_conn().Close();
                 if (ob.AboGroup == "A")
                 {
-                    bl.update(1, 1);
+                    bl.update(1, 1, "no_of_donation");
                 }
                 else if (ob.AboGroup == "B")
                 {
-                    bl.update(2, 1);
+                    bl.update(2, 1, "no_of_donation");
                 }
                 if (ob.AboGroup == "AB")
                 {
-                    bl.update(3, 1);
+                    bl.update(3, 1, "no_of_donation");
                 }
                 if (ob.AboGroup == "O")
                 {
-                    bl.update(4, 1);
+                    bl.update(4, 1, "no_of_donation");
                 }
             }
             catch (Exception ex)
@@ -119,7 +119,7 @@ namespace BloodBank
         #endregion
 
         #region DELETE FROM DATABASE
-        public void delete(int id)
+        public void delete(int id, string aboGroup)
         {
 
             string sql = "DELETE FROM `blood_bank`.`donor` WHERE donor_id = '" + id + "';";
@@ -141,7 +141,22 @@ namespace BloodBank
                     }
                 }
                 DBConnection.get_conn().Close();
-                
+                if (aboGroup == "A")
+                {
+                    bl.update(1, 0, "no_of_donation");
+                }
+                else if (aboGroup == "B")
+                {
+                    bl.update(2, 0, "no_of_donation");
+                }
+                if (aboGroup == "AB")
+                {
+                    bl.update(3, 0, "no_of_donation");
+                }
+                if (aboGroup == "O")
+                {
+                    bl.update(4, 0, "no_of_donation");
+                }
             }
             catch (Exception ex)
             {

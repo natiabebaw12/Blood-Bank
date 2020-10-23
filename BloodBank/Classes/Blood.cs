@@ -17,15 +17,28 @@ namespace BloodBank
        
      
         #region UPDATE THE DATABASE
-        public void update(int id, int flag)
+        public void update(int id, int flag, string DorR )
         {
             string sql = "";
-            if (flag == 1)
+            if (flag == 1)//checks if it is increments or decrements
             {
-                sql = "UPDATE blood_bank.blood_detail  SET no_of_donation = no_of_donation +1 WHERE idblood_detail = '" + id + "';";
-            }else if (flag == 0)
+                if (DorR == "no_of_donation") //checks which coloumn in the db
+                {
+                    sql = "UPDATE blood_bank.blood_detail  SET no_of_donation = no_of_donation  +1 WHERE idblood_detail = '" + id + "';";
+                }else if (DorR == "no_of_requisition")
+                {
+                    sql = "UPDATE blood_bank.blood_detail  SET no_of_requisition  = no_of_requisition +1 WHERE idblood_detail = '" + id + "';";
+                    }
+                }else if (flag == 0)
             {
-                sql = "UPDATE blood_bank.blood_detail  SET no_of_donation = no_of_donation -1 WHERE idblood_detail = '" + id + "';";
+                if (DorR == "no_of_donation")
+                {
+                    sql = "UPDATE blood_bank.blood_detail  SET no_of_donation = no_of_donation  -1 WHERE idblood_detail = '" + id + "';";
+                }
+                else if (DorR == "no_of_requisition")
+                {
+                    sql = "UPDATE blood_bank.blood_detail  SET no_of_requisition  = no_of_requisition  -1 WHERE idblood_detail = '" + id + "';";
+                }
             }
             cmd = new MySqlCommand(sql, DBConnection.get_conn());
             try
@@ -36,14 +49,8 @@ namespace BloodBank
                 adapter.UpdateCommand = DBConnection.get_conn().CreateCommand();
                 adapter.UpdateCommand.CommandText = sql;
 
-                if (adapter.UpdateCommand.ExecuteNonQuery() > 0)
-                {
-                    if (MessageBox.Show("Successfully Updated!") == DialogResult.OK)
-                    {
-                        //Dashboard db = new Dashboard();
-                        // db.btn_donorView.Click;
-                    }
-                }
+                adapter.UpdateCommand.ExecuteNonQuery();
+                
                 DBConnection.get_conn().Close();
             }
             catch (Exception ex)
