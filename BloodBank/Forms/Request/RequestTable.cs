@@ -1,4 +1,5 @@
 ﻿using BloodBank.Forms.Receiver;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -66,6 +67,11 @@ hospitalPhone,patientRegdNo,doctor,history,reqBlood,noReqBlood,phoneNo,email,add
         private void btn_updateDonor_Click(object sender, EventArgs e)
         {
             getFromGrid();
+        }
+
+        private void txt_searchPatient_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

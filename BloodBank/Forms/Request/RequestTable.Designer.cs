@@ -32,43 +32,44 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_searchPatient = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_deleteDonor = new Guna.UI2.WinForms.Guna2Button();
             this.btn_updateDonor = new Guna.UI2.WinForms.Guna2Button();
             this.grid_patient = new Guna.UI2.WinForms.Guna2DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.grid_patient)).BeginInit();
             this.SuspendLayout();
             // 
-            // guna2TextBox1
+            // txt_searchPatient
             // 
-            this.guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.guna2TextBox1.BorderRadius = 15;
-            this.guna2TextBox1.BorderThickness = 2;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.Black;
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.IconLeft = ((System.Drawing.Image)(resources.GetObject("guna2TextBox1.IconLeft")));
-            this.guna2TextBox1.IconLeftOffset = new System.Drawing.Point(5, 0);
-            this.guna2TextBox1.IconLeftSize = new System.Drawing.Size(15, 15);
-            this.guna2TextBox1.Location = new System.Drawing.Point(256, 30);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Search...";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(230, 36);
-            this.guna2TextBox1.TabIndex = 10;
+            this.txt_searchPatient.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txt_searchPatient.BorderRadius = 15;
+            this.txt_searchPatient.BorderThickness = 2;
+            this.txt_searchPatient.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_searchPatient.DefaultText = "";
+            this.txt_searchPatient.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_searchPatient.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_searchPatient.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_searchPatient.DisabledState.Parent = this.txt_searchPatient;
+            this.txt_searchPatient.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_searchPatient.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_searchPatient.FocusedState.Parent = this.txt_searchPatient;
+            this.txt_searchPatient.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_searchPatient.ForeColor = System.Drawing.Color.Black;
+            this.txt_searchPatient.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_searchPatient.HoverState.Parent = this.txt_searchPatient;
+            this.txt_searchPatient.IconLeft = ((System.Drawing.Image)(resources.GetObject("txt_searchPatient.IconLeft")));
+            this.txt_searchPatient.IconLeftOffset = new System.Drawing.Point(5, 0);
+            this.txt_searchPatient.IconLeftSize = new System.Drawing.Size(15, 15);
+            this.txt_searchPatient.Location = new System.Drawing.Point(256, 30);
+            this.txt_searchPatient.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txt_searchPatient.Name = "txt_searchPatient";
+            this.txt_searchPatient.PasswordChar = '\0';
+            this.txt_searchPatient.PlaceholderText = "Search...";
+            this.txt_searchPatient.SelectedText = "";
+            this.txt_searchPatient.ShadowDecoration.Parent = this.txt_searchPatient;
+            this.txt_searchPatient.Size = new System.Drawing.Size(230, 36);
+            this.txt_searchPatient.TabIndex = 10;
+            this.txt_searchPatient.TextChanged += new System.EventHandler(this.txt_searchPatient_TextChanged);
             // 
             // btn_deleteDonor
             // 
@@ -189,7 +190,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(768, 532);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txt_searchPatient);
             this.Controls.Add(this.btn_deleteDonor);
             this.Controls.Add(this.btn_updateDonor);
             this.Controls.Add(this.grid_patient);
@@ -204,7 +205,7 @@
 
         #endregion
 
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2TextBox txt_searchPatient;
         private Guna.UI2.WinForms.Guna2Button btn_deleteDonor;
         private Guna.UI2.WinForms.Guna2Button btn_updateDonor;
         private Guna.UI2.WinForms.Guna2DataGridView grid_patient;

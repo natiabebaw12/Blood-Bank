@@ -79,12 +79,15 @@ namespace BloodBank
         private void txt_searchDonor_TextChanged(object sender, EventArgs e)
         {
             MySqlDataAdapter adapter;
-            
-            if (txt_searchDonor.Text != "")
+            DataSet ds = new DataSet();
+            #region OUTER LOOP
+            if (txt_searchDonor.Text != "")//checks if the text box is or not empty
             {
                 
                 string search_value = txt_searchDonor.Text;//get user entered text
-                if (search_value.All(char.IsDigit)){
+                #region ID INNER LOOP
+                if (search_value.All(char.IsDigit))//CHECKS IF THE ENTERD TEXT IS A DIGIT OR NOT
+                {
                     foreach (DataGridViewRow a in dataGrid_donor.Rows)//loop through row 
                     {
                         if (Convert.ToInt32(a.Cells[0].Value) == Convert.ToInt32(search_value))//check if the first coloum or id is equal
@@ -93,24 +96,34 @@ namespace BloodBank
                             string sql = "SELECT * FROM `blood_bank`.`donor` WHERE donor_id = '" + search_value + "';"; // set query to fetch data "Select * from  tabelname"; 
 
                             adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
-
-                            DataSet ds = new DataSet();
                             adapter.Fill(ds);
-                            dataGrid_donor.DataSource = ds.Tables[0];//show only the searched id
+                            dataGrid_donor.DataSource = ds.Tables[0];//show only the searched id data
                         }
                     }
                 }
-                else
+                #endregion
+                #region STRIG INNER LOOP
+                else //IF IT'S A STRING
                 {
-                    /*foreach (DataGridViewRow a in dataGrid_donor.Rows)//loop through row 
-                    {   string b = a.Cells[1].Value.ToString();
-                        if ( b.ToString().Equals(search_value, StringComparison.OrdinalIgnoreCase))//check if the second coloum or first_name is equal
-                        {
-                            
+                    foreach (DataGridViewRow a in dataGrid_donor.Rows)//loop through row 
+                    {
+                      if (a.Cells[5].Value != null) { 
+                        if (a.Cells[5].Value.ToString() == search_value.ToUpper())//check if the fifth coloum or abo_groups is equal
+                            {
+                            //string connectionString = ""; //Set your MySQL connection string here.
+                            string sql = "SELECT * FROM `blood_bank`.`donor` WHERE abo_group = '" + search_value.ToUpper() + "';"; // set query to fetch data "Select * from  tabelname"; 
+
+                            adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
+
+                            adapter.Fill(ds);
+                            dataGrid_donor.DataSource = ds.Tables[0];//show only the searched abo_groups data
                         }
-                    }*/
+                      }
+                    }
                 }
+                #endregion
             }
+            #endregion
             else//if the search box is empty show all data
             {
                 dataGrid_donor.DataSource = dn.retrieve().Tables[0];
