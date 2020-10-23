@@ -1,5 +1,6 @@
 ﻿
 using BloodBank;
+using BloodBank.Forms;
 using BloodBank.Forms.Receiver;
 using BloodBank.Forms.Request;
 using System;
@@ -128,6 +129,7 @@ namespace BloodBank
 
         private void btn_blood_Click(object sender, EventArgs e)
         {
+            OpenChildForm(new bloodTable());//pass donor_table to display it on dashboard
             
             //if this is opend close the others
             panelSideSubMenu1.Visible = false;

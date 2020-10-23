@@ -69,6 +69,8 @@
             this.label14 = new System.Windows.Forms.Label();
             this.btn_submit = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.date_donorDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.label11 = new System.Windows.Forms.Label();
             this.guna2GroupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -83,6 +85,8 @@
             // 
             this.guna2GroupBox1.BorderColor = System.Drawing.Color.Black;
             this.guna2GroupBox1.BorderThickness = 2;
+            this.guna2GroupBox1.Controls.Add(this.date_donorDate);
+            this.guna2GroupBox1.Controls.Add(this.label11);
             this.guna2GroupBox1.Controls.Add(this.btn_checkBoxReset);
             this.guna2GroupBox1.Controls.Add(this.textBox_donorAddress);
             this.guna2GroupBox1.Controls.Add(this.label10);
@@ -207,7 +211,7 @@
             // 
             // cal_donorLastTime
             // 
-            this.cal_donorLastTime.Location = new System.Drawing.Point(422, 289);
+            this.cal_donorLastTime.Location = new System.Drawing.Point(422, 254);
             this.cal_donorLastTime.Name = "cal_donorLastTime";
             this.cal_donorLastTime.TabIndex = 9;
             // 
@@ -216,7 +220,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(418, 267);
+            this.label1.Location = new System.Drawing.Point(418, 232);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(251, 19);
             this.label1.TabIndex = 65;
@@ -233,7 +237,7 @@
             this.groupBox5.ForeColor = System.Drawing.Color.Black;
             this.groupBox5.Location = new System.Drawing.Point(422, 87);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(282, 164);
+            this.groupBox5.Size = new System.Drawing.Size(282, 142);
             this.groupBox5.TabIndex = 64;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Occupation";
@@ -244,7 +248,7 @@
             this.checkBox_donorOccOther.AutoSize = true;
             this.checkBox_donorOccOther.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkBox_donorOccOther.ForeColor = System.Drawing.Color.Black;
-            this.checkBox_donorOccOther.Location = new System.Drawing.Point(16, 133);
+            this.checkBox_donorOccOther.Location = new System.Drawing.Point(156, 108);
             this.checkBox_donorOccOther.Name = "checkBox_donorOccOther";
             this.checkBox_donorOccOther.Size = new System.Drawing.Size(56, 19);
             this.checkBox_donorOccOther.TabIndex = 4;
@@ -707,6 +711,36 @@
             this.guna2Button2.Text = "Reset";
             this.guna2Button2.Click += new System.EventHandler(this.guna2Button2_Click);
             // 
+            // date_donorDate
+            // 
+            this.date_donorDate.BorderRadius = 3;
+            this.date_donorDate.BorderThickness = 1;
+            this.date_donorDate.CheckedState.Parent = this.date_donorDate;
+            this.date_donorDate.FillColor = System.Drawing.Color.White;
+            this.date_donorDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.date_donorDate.ForeColor = System.Drawing.Color.Black;
+            this.date_donorDate.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.date_donorDate.HoverState.Parent = this.date_donorDate;
+            this.date_donorDate.Location = new System.Drawing.Point(515, 423);
+            this.date_donorDate.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.date_donorDate.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.date_donorDate.Name = "date_donorDate";
+            this.date_donorDate.ShadowDecoration.Parent = this.date_donorDate;
+            this.date_donorDate.Size = new System.Drawing.Size(189, 28);
+            this.date_donorDate.TabIndex = 87;
+            this.date_donorDate.Value = new System.DateTime(2020, 10, 16, 10, 46, 39, 401);
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.Black;
+            this.label11.Location = new System.Drawing.Point(418, 432);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(45, 19);
+            this.label11.TabIndex = 86;
+            this.label11.Text = "Date";
+            // 
             // DonnerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -771,5 +805,7 @@
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Button guna2Button2;
         private Guna.UI2.WinForms.Guna2Button btn_checkBoxReset;
+        private Guna.UI2.WinForms.Guna2DateTimePicker date_donorDate;
+        private System.Windows.Forms.Label label11;
     }
 }

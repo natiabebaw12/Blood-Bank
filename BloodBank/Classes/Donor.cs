@@ -16,12 +16,13 @@ namespace BloodBank
     {
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
-        private string occupation;
+        private string occupation, donation_date;
         //set and get method to set values and to return the value of defind variables
         public string Occupation { 
             get => occupation; 
             set => occupation = value;
         }
+        public string Donation_date { get => donation_date; set => donation_date = value; }
 
 
         //method to insert values to database
@@ -29,7 +30,7 @@ namespace BloodBank
         public void addDonner(Donor ob)
         {
             //SQL STMT
-            string sql = "INSERT INTO `blood_bank`.`donor`(first_name, last_name,sex, dob, abo_group, rh, weight, phone_no,email, address, occupation, last_time_donation) VALUES('" + ob.FName+"', '"+ob.LName+"', '"+ob.Sex+"', '"+ob.DOB1+"', '"+ob.AboGroup+"', '"+ob.RH1+"', '"+ob.Weight+"', '"+ob.PhoneNo+"', '"+ob.Email+"', '"+ob.Address+"', '"+ob.occupation+"', '"+ob.Date+"')";
+            string sql = "INSERT INTO `blood_bank`.`donor`(first_name, last_name,sex, dob, abo_group, rh, weight, phone_no,email, address, occupation, last_time_donation,date) VALUES('" + ob.FName+"', '"+ob.LName+"', '"+ob.Sex+"', '"+ob.DOB1+"', '"+ob.AboGroup+"', '"+ob.RH1+"', '"+ob.Weight+"', '"+ob.PhoneNo+"', '"+ob.Email+"', '"+ob.Address+"', '"+ob.occupation+"', '"+ob.Date+"', '"+ob.donation_date+"')";
             //This is command class which will handle the query and connection object.  
             cmd = new MySqlCommand(sql, DBConnection.get_conn());
             //open con and exec insert
@@ -47,6 +48,11 @@ namespace BloodBank
             {
                 MessageBox.Show(ex.Message);
                 DBConnection.get_conn().Close();
+            }
+
+            if(ob.AboGroup == "A")
+            {
+
             }
         }
         #endregion
@@ -68,7 +74,7 @@ namespace BloodBank
         #region UPDATE THE DATABASE
         public void update(Donor ob,int id)
         {
-            string sql = "UPDATE `blood_bank`.`donor` SET first_name='" + ob.FName+ "',last_name='"+ob.LName+ "',sex='"+ob.Sex+ "',dob='"+ob.DOB1+ "',abo_group='"+ob.AboGroup+ "',rh='"+ob.RH1+ "',weight='"+ob.Weight+ "',phone_no='"+ob.PhoneNo+ "',email='"+ob.Email+ "',address='"+ob.Address+ "',occupation='"+ob.occupation+ "',last_time_donation='"+ob.Date+"' WHERE donor_id = '"+id+"';";
+            string sql = "UPDATE `blood_bank`.`donor` SET first_name='" + ob.FName+ "',last_name='"+ob.LName+ "',sex='"+ob.Sex+ "',dob='"+ob.DOB1+ "',abo_group='"+ob.AboGroup+ "',rh='"+ob.RH1+ "',weight='"+ob.Weight+ "',phone_no='"+ob.PhoneNo+ "',email='"+ob.Email+ "',address='"+ob.Address+ "',occupation='"+ob.occupation+ "',last_time_donation='"+ob.Date+"', date='"+ob.Donation_date+"' WHERE donor_id = '"+id+"';";
             cmd = new MySqlCommand(sql, DBConnection.get_conn());
 
             try

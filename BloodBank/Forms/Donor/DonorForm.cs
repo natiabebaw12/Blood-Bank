@@ -14,7 +14,7 @@ namespace BloodBank
     
     public partial class DonnerForm : Form
     {
-        private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date, occupation;
+        private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date, donation_date, occupation;
         private float weight;
         //pass the values to donor set method
         Donor donorOb = new Donor();
@@ -55,6 +55,7 @@ namespace BloodBank
             donorOb.Email = email;
             donorOb.Address = address;
             donorOb.Date = date;
+            donorOb.Donation_date = date_donorDate.Value.ToString("dd MMM yyyy");
             donorOb.Occupation = occupation;
             donorOb.Weight = weight;
         }
@@ -62,7 +63,7 @@ namespace BloodBank
 
         #region SET THE FORM
         public void setForm(int donor_id, string fName, string lName, string sex, string DOB, string aboGroup, string RH,
-            float weight, string phoneNo, string email, string address, string occupation, string date)
+            float weight, string phoneNo, string email, string address, string occupation,string date, string donationDate)
         {
             lbl_donorId.Text = donor_id.ToString();
             txt_donorFName.Text = fName;
@@ -107,7 +108,7 @@ namespace BloodBank
                 checkBox_donorOccStudent.Checked = true;
             }
             cal_donorLastTime.SetDate(DateTime.Parse(date));
-
+            date_donorDate.Text = donationDate;
             //change the button text from 'submit' to 'update'
             btn_submit.Text = "Update";
             //pass this form to display on the panel with their data set
@@ -162,6 +163,7 @@ namespace BloodBank
             combo_donorAboGroup.SelectedIndex = 0;
             combo_donnerRH.SelectedIndex = 0;
             date_donorDOB.Value = DateTime.Now;
+            date_donorDate.Value = DateTime.Now;
         }
 
         private void checkBox_donorOccOther_CheckedChanged(object sender, EventArgs e)

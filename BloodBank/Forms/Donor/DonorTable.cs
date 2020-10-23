@@ -52,10 +52,10 @@ namespace BloodBank
             string address = dataGrid_donor.SelectedRows[0].Cells[10].Value.ToString();
             string occupation = dataGrid_donor.SelectedRows[0].Cells[11].Value.ToString();
             string date = dataGrid_donor.SelectedRows[0].Cells[12].Value.ToString();
-
+            string donationDate = dataGrid_donor.SelectedRows[0].Cells[13].Value.ToString();
             DonnerForm df = new DonnerForm();
             df.setForm(donor_id, fName, lName, sex, DOB, aboGroup, RH,
-                     weight, phoneNo, email, address, occupation, date);
+                     weight, phoneNo, email, address, occupation, date, donationDate);
 
         }
         #endregion
