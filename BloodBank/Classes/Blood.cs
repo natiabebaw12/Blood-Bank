@@ -7,35 +7,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace BloodBank.Classes
+namespace BloodBank
 {
     class Blood
     {
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
 
-        //SELECT no_of_donation FROM blood_bank.blood_detail  where abo_group = "A";
        
-        public string donationNo()
-        {
-            string a = "A";
-            //string connectionString = ""; //Set your MySQL connection string here.
-            string sql = "SELECT no_of_donation FROM blood_bank.blood_detail where abo_group = '"+a+"';"; // set query to fetch data "Select * from  tabelname"; 
-
-            adapter = new MySqlDataAdapter(sql, DBConnection.get_conn());
-
-            return adapter.ToString();
-            DataSet ds = new DataSet();
-            adapter.Fill(ds);
-            return ds.ToString();
-        }
-       /* #endregion
+     
         #region UPDATE THE DATABASE
-        public void update(string abo_group)
+        public void update(int id, int flag)
         {
-            string sql = "UPDATE blood_bank.blood_detail SET no_of_donation='" +  +"',no_of_requisition='" +  + "' WHERE abo_group = '" + abo_group + "';";
+            string sql = "";
+            if (flag == 1)
+            {
+                sql = "UPDATE blood_bank.blood_detail  SET no_of_donation = no_of_donation +1 WHERE idblood_detail = '" + id + "';";
+            }else if (flag == 0)
+            {
+                sql = "UPDATE blood_bank.blood_detail  SET no_of_donation = no_of_donation -1 WHERE idblood_detail = '" + id + "';";
+            }
             cmd = new MySqlCommand(sql, DBConnection.get_conn());
-
             try
             {
                 DBConnection.get_conn().Open();
@@ -61,12 +53,11 @@ namespace BloodBank.Classes
             }
         }
         #endregion
-    */
+    
 
         #region RETRIEVE DATA FROM DB
         public DataSet retrieve()
         {
-            MessageBox.Show(donationNo());
             //string connectionString = ""; //Set your MySQL connection string here.
             string sql = "SELECT * FROM blood_bank.blood_detail;"; // set query to fetch data "Select * from  tabelname"; 
 

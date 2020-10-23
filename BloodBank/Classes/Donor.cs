@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using BloodBank;
+using BloodBank;
 
 namespace BloodBank
 {
@@ -17,6 +18,7 @@ namespace BloodBank
         private MySqlCommand cmd;
         private MySqlDataAdapter adapter;
         private string occupation, donation_date;
+        Blood bl = new Blood();
         //set and get method to set values and to return the value of defind variables
         public string Occupation { 
             get => occupation; 
@@ -41,8 +43,25 @@ namespace BloodBank
                 {
                     MessageBox.Show("Successfully Inserted!");
                 }
-             
+
+                
                 DBConnection.get_conn().Close();
+                if (ob.AboGroup == "A")
+                {
+                    bl.update(1, 1);
+                }
+                else if (ob.AboGroup == "B")
+                {
+                    bl.update(2, 1);
+                }
+                if (ob.AboGroup == "AB")
+                {
+                    bl.update(3, 1);
+                }
+                if (ob.AboGroup == "O")
+                {
+                    bl.update(4, 1);
+                }
             }
             catch (Exception ex)
             {
@@ -50,10 +69,7 @@ namespace BloodBank
                 DBConnection.get_conn().Close();
             }
 
-            if(ob.AboGroup == "A")
-            {
-
-            }
+            
         }
         #endregion
 
@@ -125,6 +141,7 @@ namespace BloodBank
                     }
                 }
                 DBConnection.get_conn().Close();
+                
             }
             catch (Exception ex)
             {
