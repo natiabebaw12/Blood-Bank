@@ -38,7 +38,7 @@ namespace BloodBank
             }
             else if(username == "" && password == "")
             {
-                MessageBox.Show("please, enter username and password is not correct!");
+                MessageBox.Show("please, enter username and password!");
             }else
             {
                 MessageBox.Show("username or password is not correct!");

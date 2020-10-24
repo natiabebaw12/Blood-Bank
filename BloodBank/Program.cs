@@ -18,8 +18,8 @@ namespace BloodBank
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             DBConnection.Conn();
-            //Application.Run(new Login());
-            Application.Run(new Dashboard());
+            Application.Run(new Login());//first page
+            //Application.Run(new Dashboard());
             
         }
     }

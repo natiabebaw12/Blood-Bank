@@ -47,6 +47,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panelChildForm = new Guna.UI2.WinForms.Guna2Panel();
+            this.lbl_date = new System.Windows.Forms.Label();
+            this.lbl_clock = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -57,10 +61,11 @@
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelSideMenu.SuspendLayout();
             this.panelSideSubMenu2.SuspendLayout();
             this.panelSideSubMenu1.SuspendLayout();
@@ -114,7 +119,7 @@
             this.btn_blood.HoverState.Parent = this.btn_blood;
             this.btn_blood.Image = ((System.Drawing.Image)(resources.GetObject("btn_blood.Image")));
             this.btn_blood.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.btn_blood.Location = new System.Drawing.Point(0, 470);
+            this.btn_blood.Location = new System.Drawing.Point(0, 509);
             this.btn_blood.Name = "btn_blood";
             this.btn_blood.ShadowDecoration.Parent = this.btn_blood;
             this.btn_blood.Size = new System.Drawing.Size(200, 45);
@@ -130,7 +135,7 @@
             this.panelSideSubMenu2.Controls.Add(this.btn_updateRequest);
             this.panelSideSubMenu2.Controls.Add(this.btn_addRequest);
             this.panelSideSubMenu2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 385);
+            this.panelSideSubMenu2.Location = new System.Drawing.Point(0, 424);
             this.panelSideSubMenu2.Name = "panelSideSubMenu2";
             this.panelSideSubMenu2.ShadowDecoration.Parent = this.panelSideSubMenu2;
             this.panelSideSubMenu2.Size = new System.Drawing.Size(200, 85);
@@ -203,7 +208,7 @@
             this.btn_request.Image = ((System.Drawing.Image)(resources.GetObject("btn_request.Image")));
             this.btn_request.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_request.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_request.Location = new System.Drawing.Point(0, 340);
+            this.btn_request.Location = new System.Drawing.Point(0, 379);
             this.btn_request.Name = "btn_request";
             this.btn_request.ShadowDecoration.Parent = this.btn_request;
             this.btn_request.Size = new System.Drawing.Size(200, 45);
@@ -219,7 +224,7 @@
             this.panelSideSubMenu1.Controls.Add(this.btn_donorView);
             this.panelSideSubMenu1.Controls.Add(this.btn_addDonor);
             this.panelSideSubMenu1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelSideSubMenu1.Location = new System.Drawing.Point(0, 256);
+            this.panelSideSubMenu1.Location = new System.Drawing.Point(0, 295);
             this.panelSideSubMenu1.Name = "panelSideSubMenu1";
             this.panelSideSubMenu1.ShadowDecoration.Parent = this.panelSideSubMenu1;
             this.panelSideSubMenu1.Size = new System.Drawing.Size(200, 84);
@@ -292,7 +297,7 @@
             this.btn_Donor.Image = ((System.Drawing.Image)(resources.GetObject("btn_Donor.Image")));
             this.btn_Donor.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btn_Donor.ImageSize = new System.Drawing.Size(30, 30);
-            this.btn_Donor.Location = new System.Drawing.Point(0, 211);
+            this.btn_Donor.Location = new System.Drawing.Point(0, 250);
             this.btn_Donor.Name = "btn_Donor";
             this.btn_Donor.ShadowDecoration.Parent = this.btn_Donor;
             this.btn_Donor.Size = new System.Drawing.Size(200, 45);
@@ -310,7 +315,7 @@
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(200, 211);
+            this.panel2.Size = new System.Drawing.Size(200, 250);
             this.panel2.TabIndex = 0;
             // 
             // label2
@@ -318,7 +323,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Wide Latin", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(6, 100);
+            this.label2.Location = new System.Drawing.Point(7, 148);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(200, 19);
             this.label2.TabIndex = 2;
@@ -329,7 +334,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Wide Latin", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(60, 67);
+            this.label1.Location = new System.Drawing.Point(55, 115);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(86, 33);
             this.label1.TabIndex = 1;
@@ -337,13 +342,13 @@
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
+            this.pictureBox2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.InitialImage = null;
-            this.pictureBox2.Location = new System.Drawing.Point(78, 12);
+            this.pictureBox2.Location = new System.Drawing.Point(47, 6);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 52);
+            this.pictureBox2.Size = new System.Drawing.Size(100, 100);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox2.TabIndex = 0;
             this.pictureBox2.TabStop = false;
@@ -352,15 +357,19 @@
             // panelChildForm
             // 
             this.panelChildForm.BorderRadius = 15;
+            this.panelChildForm.Controls.Add(this.lbl_date);
+            this.panelChildForm.Controls.Add(this.lbl_clock);
+            this.panelChildForm.Controls.Add(this.label10);
+            this.panelChildForm.Controls.Add(this.button3);
             this.panelChildForm.Controls.Add(this.guna2HtmlLabel1);
             this.panelChildForm.Controls.Add(this.label6);
             this.panelChildForm.Controls.Add(this.guna2DateTimePicker1);
             this.panelChildForm.Controls.Add(panelAddForm);
             this.panelChildForm.Controls.Add(this.label5);
-            this.panelChildForm.Controls.Add(this.label4);
-            this.panelChildForm.Controls.Add(this.label3);
             this.panelChildForm.Controls.Add(this.button2);
+            this.panelChildForm.Controls.Add(this.label4);
             this.panelChildForm.Controls.Add(this.button1);
+            this.panelChildForm.Controls.Add(this.label3);
             this.panelChildForm.FillColor = System.Drawing.Color.White;
             this.panelChildForm.Location = new System.Drawing.Point(206, 5);
             this.panelChildForm.Name = "panelChildForm";
@@ -368,6 +377,56 @@
             this.panelChildForm.Size = new System.Drawing.Size(774, 602);
             this.panelChildForm.TabIndex = 2;
             this.panelChildForm.Paint += new System.Windows.Forms.PaintEventHandler(this.panelChildForm_Paint);
+            // 
+            // lbl_date
+            // 
+            this.lbl_date.AutoSize = true;
+            this.lbl_date.BackColor = System.Drawing.Color.White;
+            this.lbl_date.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_date.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_date.Location = new System.Drawing.Point(331, 36);
+            this.lbl_date.Name = "lbl_date";
+            this.lbl_date.Size = new System.Drawing.Size(106, 17);
+            this.lbl_date.TabIndex = 11;
+            this.lbl_date.Text = "00-aaa-sunday";
+            // 
+            // lbl_clock
+            // 
+            this.lbl_clock.AutoSize = true;
+            this.lbl_clock.BackColor = System.Drawing.Color.White;
+            this.lbl_clock.Font = new System.Drawing.Font("Digital-7 Mono", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_clock.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.lbl_clock.Location = new System.Drawing.Point(308, 3);
+            this.lbl_clock.Name = "lbl_clock";
+            this.lbl_clock.Size = new System.Drawing.Size(143, 33);
+            this.lbl_clock.TabIndex = 0;
+            this.lbl_clock.Text = "00:00:00";
+            this.lbl_clock.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.BackColor = System.Drawing.Color.White;
+            this.label10.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(693, 29);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 15);
+            this.label10.TabIndex = 10;
+            this.label10.Text = "Minz";
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.White;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Image = ((System.Drawing.Image)(resources.GetObject("button3.Image")));
+            this.button3.Location = new System.Drawing.Point(695, 6);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(22, 30);
+            this.button3.TabIndex = 9;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -384,7 +443,7 @@
             this.label6.AutoSize = true;
             this.label6.BackColor = System.Drawing.Color.White;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(647, 27);
+            this.label6.Location = new System.Drawing.Point(638, 29);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(25, 15);
             this.label6.TabIndex = 7;
@@ -397,7 +456,7 @@
             this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Gray;
             this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Long;
             this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(642, 1);
+            this.guna2DateTimePicker1.Location = new System.Drawing.Point(633, 3);
             this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
@@ -410,7 +469,7 @@
             // 
             panelAddForm.BackColor = System.Drawing.Color.White;
             panelAddForm.Controls.Add(this.richTextBox1);
-           panelAddForm.Controls.Add(this.label9);
+            panelAddForm.Controls.Add(this.label9);
             panelAddForm.Controls.Add(this.label7);
             panelAddForm.Controls.Add(this.label8);
             panelAddForm.Controls.Add(this.pictureBox1);
@@ -476,61 +535,66 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.White;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(684, 40);
+            this.label5.Location = new System.Drawing.Point(665, 38);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(26, 15);
             this.label5.TabIndex = 5;
             this.label5.Text = "Out";
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
+            this.button2.Location = new System.Drawing.Point(667, 7);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(20, 23);
+            this.button2.TabIndex = 2;
+            this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.White;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(684, 25);
+            this.label4.Location = new System.Drawing.Point(665, 24);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(26, 15);
             this.label4.TabIndex = 4;
             this.label4.Text = "Log";
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+            this.button1.Location = new System.Drawing.Point(725, 9);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(22, 23);
+            this.button1.TabIndex = 1;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.White;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(722, 27);
+            this.label3.Location = new System.Drawing.Point(725, 29);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(25, 15);
             this.label3.TabIndex = 3;
             this.label3.Text = "Exit";
             // 
-            // button2
+            // timer1
             // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
-            this.button2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button2.FlatAppearance.BorderSize = 0;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(687, 6);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(20, 49);
-            this.button2.TabIndex = 2;
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.White;
-            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
-            this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Location = new System.Drawing.Point(725, 8);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(22, 34);
-            this.button1.TabIndex = 1;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Dashboard
             // 
@@ -542,9 +606,11 @@
             this.Controls.Add(this.panelSideMenu);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelSideMenu.ResumeLayout(false);
             this.panelSideSubMenu2.ResumeLayout(false);
             this.panelSideSubMenu1.ResumeLayout(false);
@@ -592,8 +658,12 @@
         private System.Windows.Forms.RichTextBox richTextBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
         public Guna.UI2.WinForms.Guna2Button btn_donorView;
-
-        public  static System.Windows.Forms.Panel panelAddForm;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lbl_clock;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label lbl_date;
+        public static System.Windows.Forms.Panel panelAddForm;
     }
 }
 

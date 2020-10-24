@@ -217,6 +217,30 @@ namespace BloodBank
             HideMenu();
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            WindowState = FormWindowState.Maximized;
+        }
+
+        private void label11_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lbl_clock.Text = DateTime.Now.ToString("T");
+            lbl_date.Text = DateTime.Now.ToString("dd MMM dddd");
+;        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+            timer1.Start();
+        }
     }
 }

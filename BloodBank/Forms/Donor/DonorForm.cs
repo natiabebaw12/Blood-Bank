@@ -11,11 +11,12 @@ using BloodBank;
 
 namespace BloodBank
 {
-    
+
     public partial class DonnerForm : Form
     {
         private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date, donation_date, occupation;
         private float weight;
+        Boolean check = true; // checks the form entry
         //pass the values to donor set method
         Donor donorOb = new Donor();
 
@@ -43,7 +44,13 @@ namespace BloodBank
             address = textBox_donorAddress.Text;
             date = cal_donorLastTime.SelectionStart.ToString("dd MMM yyyy");
 
-            weight = float.Parse(txt_donorWeight.Text);
+            if (txt_donorWeight.Text == "") {
+                MessageBox.Show("'Weight' field is empty!");
+            }
+            else
+            {
+                weight = float.Parse(txt_donorWeight.Text);
+            }
 
             donorOb.FName = fName;
             donorOb.LName = lName;
@@ -63,7 +70,7 @@ namespace BloodBank
 
         #region SET THE FORM
         public void setForm(int donor_id, string fName, string lName, string sex, string DOB, string aboGroup, string RH,
-            float weight, string phoneNo, string email, string address, string occupation,string date, string donationDate)
+            float weight, string phoneNo, string email, string address, string occupation, string date, string donationDate)
         {
             lbl_donorId.Text = donor_id.ToString();
             txt_donorFName.Text = fName;
@@ -128,7 +135,7 @@ namespace BloodBank
             this.BringToFront();
             this.Show();
             copyForm = this; */
-             Dashboard.OpenChildForm(this);
+            Dashboard.OpenChildForm(this);
         }
         #endregion
         //function to reset the form or to make it empty
@@ -195,7 +202,7 @@ namespace BloodBank
         }
 
         private void combo_donorAboGroup_SelectedIndexChanged(object sender, EventArgs e)
-        {   
+        {
             string aboGroupSelected = combo_donorAboGroup.Text;
             //check the selected value and then change CheckBox_RH value dynamically
             if (aboGroupSelected == "A")
@@ -245,22 +252,24 @@ namespace BloodBank
 
         private void groupBox5_Enter(object sender, EventArgs e)
         {
-            
+
         }
 
-       
+
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             getFromForm();
-            if (btn_submit.Text == "Submit")
-            {
-                //invok this method to add to db
-                donorOb.addDonner(donorOb);
-            }
-            if (btn_submit.Text == "Update")
-            {
-                //invok this method to add to db
-                donorOb.update(donorOb, int.Parse(lbl_donorId.Text));
+            if (authenticate()) {
+                if (btn_submit.Text == "Submit")
+                {
+                    //invok this method to add to db
+                    donorOb.addDonner(donorOb);
+                }
+                if (btn_submit.Text == "Update")
+                {
+                    //invok this method to add to db
+                    donorOb.update(donorOb, int.Parse(lbl_donorId.Text));
+                }
             }
         }
 
@@ -269,6 +278,26 @@ namespace BloodBank
             reset();
         }
 
-       
+        public Boolean authenticate()
+        {
+            
+            if(fName == "")
+            {
+                MessageBox.Show("'First Name' field is empty!");
+                check = false;
+                return check;
+            }
+            if(weight < 50 && txt_donorWeight.Text != "")
+            {
+                MessageBox.Show("Minimum weigth to donate a blood is '50kg'!");
+                check = false;
+                return check;
+            }
+
+                check = true;
+                return check;
+            
+            
+        }
     }
 }

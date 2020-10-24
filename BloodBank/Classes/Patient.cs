@@ -137,10 +137,8 @@ namespace BloodBank
 
                if (MessageBox.Show("Sure?", "Delete", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning) == DialogResult.OK)
                {
-                   if (cmd.ExecuteNonQuery() > 0)
-                   {
-                       MessageBox.Show("Successfully Deleted!");
-                   }
+                    cmd.ExecuteNonQuery();
+                   
                }
                DBConnection.get_conn().Close();
                 if (aboGroup == "A")
