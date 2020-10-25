@@ -62,8 +62,15 @@ namespace BloodBank.Forms.Receiver
             email = txt_patientemail.Text;
             address = txt_address.Text;
             date = date_patientDate.Value.ToString("dd MMM yyyy");
-
-            weight = float.Parse(txt_patientWeight.Text);
+            if (txt_patientWeight.Text == "")
+            {
+                //
+            }
+            else
+            {
+                weight = float.Parse(txt_patientWeight.Text);
+            }
+           
             hospitalName = txt_hospitalName.Text;
             patientRegdNo = txt_patientRegdNo.Text;
             doctor = txt_doctor.Text;
