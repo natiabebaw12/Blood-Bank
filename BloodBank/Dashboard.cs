@@ -281,5 +281,11 @@ namespace BloodBank
                 }
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            About ab = new About();
+            ab.Show();
+        }
     }
 }

@@ -30,7 +30,7 @@ namespace BloodBank
             username = text_userName.Text;
             password = text_password.Text;
 
-            if(username == "nhatty" && password == "654321")
+            if(username == "microlink" && password == "pass123")
             {
                 this.Hide();
                 Dashboard board = new Dashboard();

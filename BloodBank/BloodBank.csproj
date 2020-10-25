@@ -111,6 +111,12 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\Blood\BloodTable.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -151,6 +157,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\About.resx">
+      <DependentUpon>About.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Blood\BloodTable.resx">
       <DependentUpon>BloodTable.cs</DependentUpon>
