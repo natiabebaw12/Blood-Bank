@@ -41,7 +41,7 @@ namespace BloodBank
                 DBConnection.get_conn().Open();
                 if (cmd.ExecuteNonQuery() > 0)
                 {
-                    MessageBox.Show("Successfully Inserted!");
+                    MessageBox.Show("Successfully Inserted into Donor Database!", "Inserted", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
 
                 
@@ -103,7 +103,7 @@ namespace BloodBank
 
                 if (adapter.UpdateCommand.ExecuteNonQuery() > 0)
                 {
-                    if(MessageBox.Show("Successfully Updated!" )== DialogResult.OK)
+                    if(MessageBox.Show("Successfully Updated!", "Update", MessageBoxButtons.OK, MessageBoxIcon.Information) == DialogResult.OK)
                     {
                          //Dashboard db = new Dashboard();
                         // db.btn_donorView.Click;
@@ -133,7 +133,7 @@ namespace BloodBank
                 adapter.DeleteCommand = DBConnection.get_conn().CreateCommand();
                 adapter.DeleteCommand.CommandText = sql;
 
-                if (MessageBox.Show("Sure?","Delete",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) == DialogResult.OK)
+                if (MessageBox.Show($"Are you sure you want to Delete id {id}?", "Delete",MessageBoxButtons.OKCancel,MessageBoxIcon.Warning) == DialogResult.OK)
                 {
                     cmd.ExecuteNonQuery();
                 }

@@ -45,7 +45,7 @@ namespace BloodBank
             date = cal_donorLastTime.SelectionStart.ToString("dd MMM yyyy");
 
             if (txt_donorWeight.Text == "") {
-                MessageBox.Show("'Weight' field is empty!");
+                //
             }
             else
             {
@@ -283,21 +283,59 @@ namespace BloodBank
             
             if(fName == "")
             {
-                MessageBox.Show("'First Name' field is empty!");
+                MessageBox.Show("'First Name' field is empty!", "Incomplet Form", MessageBoxButtons.OK ,MessageBoxIcon.Asterisk);
                 check = false;
                 return check;
             }
-            if(weight < 50 && txt_donorWeight.Text != "")
+            if (lName == "")
             {
-                MessageBox.Show("Minimum weigth to donate a blood is '50kg'!");
+                MessageBox.Show("'Last Name' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
                 check = false;
                 return check;
             }
-
-                check = true;
+            if (radio_donorMale.Checked == false && radio_donorFemale.Checked == false)
+            {
+                MessageBox.Show("Please, provide donor sex.", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
                 return check;
+            }
+            int born_date = Convert.ToInt32(date_donorDOB.Value.ToString("yyyy"));
+            int dobCheck = Convert.ToInt32(DateTime.Now.ToString("yyyy")) - born_date;
+            if (dobCheck < 17)
+            {
+                MessageBox.Show("Minimum age to donate blood is '17'!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (txt_donorWeight.Text == "")
+            {
+                MessageBox.Show("'Weight' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (weight < 50)
+            {
+                MessageBox.Show("Minimum weigth to donate blood is '50kg'!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
             
-            
+            if (phoneNo == "")
+            {
+                MessageBox.Show("'Phone no' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (address == "")
+            {
+                MessageBox.Show("'Address' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            check = true;
+                return check;
+
+
         }
     }
 }

@@ -33,6 +33,10 @@
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panelSideMenu = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.btn_blood = new Guna.UI2.WinForms.Guna2Button();
             this.panelSideSubMenu2 = new Guna.UI2.WinForms.Guna2Panel();
             this.btn_updateRequest = new Guna.UI2.WinForms.Guna2Button();
@@ -54,7 +58,7 @@
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            panelAddForm = new System.Windows.Forms.Panel();
+            this.panelAddForm = new System.Windows.Forms.Panel();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -66,13 +70,15 @@
             this.button1 = new System.Windows.Forms.Button();
             this.label3 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.button6 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
             this.panelSideMenu.SuspendLayout();
             this.panelSideSubMenu2.SuspendLayout();
             this.panelSideSubMenu1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panelChildForm.SuspendLayout();
-            panelAddForm.SuspendLayout();
+            this.panelAddForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -91,6 +97,10 @@
             // 
             // panelSideMenu
             // 
+            this.panelSideMenu.Controls.Add(this.label12);
+            this.panelSideMenu.Controls.Add(this.label11);
+            this.panelSideMenu.Controls.Add(this.button5);
+            this.panelSideMenu.Controls.Add(this.button4);
             this.panelSideMenu.Controls.Add(this.btn_blood);
             this.panelSideMenu.Controls.Add(this.panelSideSubMenu2);
             this.panelSideMenu.Controls.Add(this.btn_request);
@@ -102,6 +112,58 @@
             this.panelSideMenu.Name = "panelSideMenu";
             this.panelSideMenu.Size = new System.Drawing.Size(200, 611);
             this.panelSideMenu.TabIndex = 1;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label12.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(109, 583);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(47, 15);
+            this.label12.TabIndex = 13;
+            this.label12.Text = "Restore";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.ForeColor = System.Drawing.Color.White;
+            this.label11.Location = new System.Drawing.Point(20, 583);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(48, 15);
+            this.label11.TabIndex = 12;
+            this.label11.Text = "Backup";
+            // 
+            // button5
+            // 
+            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button5.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
+            this.button5.Location = new System.Drawing.Point(119, 550);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(22, 30);
+            this.button5.TabIndex = 11;
+            this.button5.UseVisualStyleBackColor = false;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.button4.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button4.FlatAppearance.BorderSize = 0;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.Location = new System.Drawing.Point(33, 550);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(22, 30);
+            this.button4.TabIndex = 10;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // btn_blood
             // 
@@ -357,6 +419,8 @@
             // panelChildForm
             // 
             this.panelChildForm.BorderRadius = 15;
+            this.panelChildForm.Controls.Add(this.label13);
+            this.panelChildForm.Controls.Add(this.button6);
             this.panelChildForm.Controls.Add(this.lbl_date);
             this.panelChildForm.Controls.Add(this.lbl_clock);
             this.panelChildForm.Controls.Add(this.label10);
@@ -364,7 +428,7 @@
             this.panelChildForm.Controls.Add(this.guna2HtmlLabel1);
             this.panelChildForm.Controls.Add(this.label6);
             this.panelChildForm.Controls.Add(this.guna2DateTimePicker1);
-            this.panelChildForm.Controls.Add(panelAddForm);
+            this.panelChildForm.Controls.Add(this.panelAddForm);
             this.panelChildForm.Controls.Add(this.label5);
             this.panelChildForm.Controls.Add(this.button2);
             this.panelChildForm.Controls.Add(this.label4);
@@ -467,16 +531,16 @@
             // 
             // panelAddForm
             // 
-            panelAddForm.BackColor = System.Drawing.Color.White;
-            panelAddForm.Controls.Add(this.richTextBox1);
-            panelAddForm.Controls.Add(this.label9);
-            panelAddForm.Controls.Add(this.label7);
-            panelAddForm.Controls.Add(this.label8);
-            panelAddForm.Controls.Add(this.pictureBox1);
-            panelAddForm.Location = new System.Drawing.Point(3, 62);
-            panelAddForm.Name = "panelAddForm";
-            panelAddForm.Size = new System.Drawing.Size(768, 532);
-            panelAddForm.TabIndex = 6;
+            this.panelAddForm.BackColor = System.Drawing.Color.White;
+            this.panelAddForm.Controls.Add(this.richTextBox1);
+            this.panelAddForm.Controls.Add(this.label9);
+            this.panelAddForm.Controls.Add(this.label7);
+            this.panelAddForm.Controls.Add(this.label8);
+            this.panelAddForm.Controls.Add(this.pictureBox1);
+            this.panelAddForm.Location = new System.Drawing.Point(3, 62);
+            this.panelAddForm.Name = "panelAddForm";
+            this.panelAddForm.Size = new System.Drawing.Size(768, 532);
+            this.panelAddForm.TabIndex = 6;
             // 
             // richTextBox1
             // 
@@ -596,6 +660,30 @@
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // button6
+            // 
+            this.button6.BackColor = System.Drawing.Color.White;
+            this.button6.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button6.FlatAppearance.BorderSize = 0;
+            this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
+            this.button6.Location = new System.Drawing.Point(607, 7);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(20, 23);
+            this.button6.TabIndex = 12;
+            this.button6.UseVisualStyleBackColor = false;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.White;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(607, 29);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(25, 15);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Cal";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -612,6 +700,7 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panelSideMenu.ResumeLayout(false);
+            this.panelSideMenu.PerformLayout();
             this.panelSideSubMenu2.ResumeLayout(false);
             this.panelSideSubMenu1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
@@ -619,8 +708,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panelChildForm.ResumeLayout(false);
             this.panelChildForm.PerformLayout();
-            panelAddForm.ResumeLayout(false);
-            panelAddForm.PerformLayout();
+            this.panelAddForm.ResumeLayout(false);
+            this.panelAddForm.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -663,7 +752,13 @@
         private System.Windows.Forms.Label lbl_clock;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label lbl_date;
-        public static System.Windows.Forms.Panel panelAddForm;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Button button6;
+        public System.Windows.Forms.Panel panelAddForm;
     }
 }
 

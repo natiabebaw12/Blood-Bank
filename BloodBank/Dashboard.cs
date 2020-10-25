@@ -3,6 +3,7 @@ using BloodBank;
 using BloodBank.Forms;
 using BloodBank.Forms.Receiver;
 using BloodBank.Forms.Request;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -241,6 +242,44 @@ namespace BloodBank
         private void Dashboard_Load(object sender, EventArgs e)
         {
             timer1.Start();
+        }
+
+        string file = "D:\\Books\\Microlink\\Projects\\Advance Database and C#\\blood_bank.sql";//This is path to save the backup db file..
+        string constring = "server=127.0.0.1;PORT=3306;user=root;pwd=nati brown;database=blood_bank; Convert Zero Datetime=True;";//
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        conn.Open();
+                        mb.ExportToFile(file);//This line will export the file to given path.
+                        conn.Close();
+                        MessageBox.Show("Backup Completed...!!!");
+                    }
+                }
+            }
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            using (MySqlConnection conn = new MySqlConnection(constring))
+            {
+                using (MySqlCommand cmd = new MySqlCommand())
+                {
+                    using (MySqlBackup mb = new MySqlBackup(cmd))
+                    {
+                        cmd.Connection = conn;
+                        conn.Open();
+                        mb.ImportFromFile(file);//This line will export the file to given path.
+                        conn.Close();
+                        MessageBox.Show("DB Restore Completed...!!!");
+                    }
+                }
+            }
         }
     }
 }

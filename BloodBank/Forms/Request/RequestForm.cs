@@ -16,24 +16,28 @@ namespace BloodBank.Forms.Receiver
         private int noRequiredUnit;
         private string fName, lName, sex, DOB, aboGroup, RH, phoneNo, email, address, date;
         float weight;
-
+        Boolean check = true; // checks the form entry
         Patient patient = new Patient();
         private void guna2Button1_Click(object sender, EventArgs e)
         {
             getFromForm();
-            if (btn_submit.Text == "Submit")
+            if (authenticate())
             {
-                //invok this method to add to db
-                patient.addPatient(patient);
+                if (btn_submit.Text == "Submit")
+                {
+                    //invok this method to add to db
+                    patient.addPatient(patient);
+                }
+                if (btn_submit.Text == "Update")
+                {
+                    //invok this method to add to db
+                    patient.update(patient, int.Parse(lbl_patientId.Text));
+                }
             }
-            if (btn_submit.Text == "Update")
-            {
-                //invok this method to add to db
-               patient.update(patient, int.Parse(lbl_patientId.Text));
-            }
+
         }
 
-        
+
 
         #region GET VALUE FROM THE FORM
         public void getFromForm()
@@ -97,9 +101,9 @@ namespace BloodBank.Forms.Receiver
         }
         #endregion
         #region SET THE FORM
-        public void setForm(int patient_id, string fName,string lName,string sex,string DOB,float weight,
-string aboGroup,string RH,string hospitalName,string hospitalPhone,string patientRegdNo,string doctor,
-string history,string reqBlood,int noReqBlood,string phoneNo,string email,string address,string date
+        public void setForm(int patient_id, string fName, string lName, string sex, string DOB, float weight,
+string aboGroup, string RH, string hospitalName, string hospitalPhone, string patientRegdNo, string doctor,
+string history, string reqBlood, int noReqBlood, string phoneNo, string email, string address, string date
 )
         {
             lbl_patientId.Text = patient_id.ToString();
@@ -137,23 +141,7 @@ string history,string reqBlood,int noReqBlood,string phoneNo,string email,string
             date_patientDate.Text = date;
             //change the button text from 'submit' to 'update'
             btn_submit.Text = "Update";
-            //pass this form to display on the panel with their data set
-            /* Form activeForm = null;
-            Form copyForm = null;
-           
-            if (activeForm != null)
-            {
-                activeForm.Close();
-            }
-            activeForm = this;
-            this.TopLevel = false;
-            this.FormBorderStyle = FormBorderStyle.None;
-            this.Dock = DockStyle.Fill;
-            dash.get_panelAddForm().Controls.Add(this);
-            dash.get_panelAddForm().Tag = this;
-            this.BringToFront();
-            this.Show();
-            copyForm = this; */
+            
             Dashboard.OpenChildForm(this);
         }
         #endregion
@@ -186,7 +174,7 @@ string history,string reqBlood,int noReqBlood,string phoneNo,string email,string
         public ReceiverForm()
         {
             InitializeComponent();
-        ///default choose for combo_box
+            ///default choose for combo_box
             combo_bloodRequired.SelectedIndex = 0;
             combo_patientAboGroup.SelectedIndex = 0;
             combo_patientRh.SelectedIndex = 0;
@@ -229,5 +217,48 @@ string history,string reqBlood,int noReqBlood,string phoneNo,string email,string
             }
             combo_patientRh.SelectedIndex = 0;
         }
+        public Boolean authenticate()
+        {
+
+            if (fName == "")
+            {
+                MessageBox.Show("'First Name' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (lName == "")
+            {
+                MessageBox.Show("'Last Name' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (radio_patientMale.Checked == false && radio_patientFemale.Checked == false)
+            {
+                MessageBox.Show("Please, provide donor sex.", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (txt_patientWeight.Text == "")
+            {
+                MessageBox.Show("'Weight' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (address == "")
+            {
+                MessageBox.Show("'Address' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            if (phoneNo == "")
+            {
+                MessageBox.Show("'Phone no' field is empty!", "Incomplet Form", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                check = false;
+                return check;
+            }
+            check = true;
+            return check;
+        }
     }
+
 }

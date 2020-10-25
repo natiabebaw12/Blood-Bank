@@ -30,7 +30,7 @@ namespace BloodBank
             username = text_userName.Text;
             password = text_password.Text;
 
-            if(username == "liongroup" && password == "654321")
+            if(username == "nhatty" && password == "654321")
             {
                 this.Hide();
                 Dashboard board = new Dashboard();
@@ -38,10 +38,10 @@ namespace BloodBank
             }
             else if(username == "" && password == "")
             {
-                MessageBox.Show("please, enter username and password!");
+                MessageBox.Show("Please, Enter username and password!");
             }else
             {
-                MessageBox.Show("username or password is not correct!");
+                MessageBox.Show("username or password is incorrect!");
             }
         }
     }
